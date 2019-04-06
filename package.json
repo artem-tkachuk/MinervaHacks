@@ -2,9 +2,10 @@
   "name": "minvervahacks",
   "version": "1.0.0",
   "description": "MinvervaHacks",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/artem-tkachuk/MinvervaHacks/issues"
   },
-  "homepage": "https://github.com/artem-tkachuk/MinvervaHacks#readme"
+  "homepage": "https://github.com/artem-tkachuk/MinvervaHacks#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
