@@ -1,0 +1,24 @@
+<!doctype html>
+
+<head>
+
+  <title>TranZip</title>
+  <meta name="description" content="TranZip">
+  <meta name="author" content="eshedd">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2hyZWF0aCIsImEiOiJjanU1eWcwYWsxZTEwNGRsbzA1ZHJ3YXpiIn0.qaCCr1XeaKaYOcpgd_0fIQ';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
+    </script>
+</body>
+</html>
