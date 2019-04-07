@@ -1,6 +1,5 @@
-# United Nations SDG Goal 11
-# Sustainable Cities and Optimized Transportation
-# TranZip - Minerva Hackathon 2019 Project
+# United Nations SDG Goal 11: Sustainable Cities and Optimized Transportation
+## TranZip - Minerva Hackathon 2019 Project
 
 
 ## Inspiration
@@ -14,9 +13,9 @@ We live in the Bay Area and take public transportation. That is why we want to m
   ------ Node.js server------------  
   ------ Express app --------------  
   -- iOS React-Native application - 
-  ---Java Application -------------  
-  -- Real-time updating map ----------  
-  -- Website (project info) -----------------  
+  ---Java Application -------------    
+  -- Real-time updating map -------  
+  -- Website (project info) -------  
   
 
 
