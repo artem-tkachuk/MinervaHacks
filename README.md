@@ -80,4 +80,4 @@ Future Aspirations for TranZip
 
 TransZip holds potential to ultimately change the infrastructure of city public transportation systems and reduce city pollution production. Thus, this would raise living conditions through better air quality and a cleaner environment. Implementing more complex machine learning to dynamically evolve along with the changing dataset files originating from the app Using machine learning to predict possible “queue hotspots” Connect the backend code to a map display through web development, servers, and map api Create higher accuracy for larger and more realistic data (shifting from random generators and simulation to real time input) This application will also target specific times of the day where human pattern shows huge “spikes” for those in need of transportation (morning and evening rush hour for jobs).
 
-![ScreenShot](screenshot3.png)
+![ScreenShot](screenshot3.jpg)
