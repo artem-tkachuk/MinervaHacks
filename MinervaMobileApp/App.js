@@ -16,9 +16,9 @@ export default class App extends React.Component {
     const timerState = !this.state.timerStart;
     navigator.geolocation.getCurrentPosition(
       location => {
-        const data = JSON.stringify({
-          data: { geo: location, time: this.currentTime }
-        });
+        const data = {
+            geo: location, time: this.currentTime
+        };
         console.log("start");
         if (timerState === false) {
           axios

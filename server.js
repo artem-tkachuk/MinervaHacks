@@ -1,12 +1,8 @@
 const express = require('express');
 const app = express();
-//const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
-const firebase = require('firebase');
-require('firebase/firestore');
 const admin = require('firebase-admin');
-
-//app.use(bodyParser.json());
 
 admin.initializeApp({
     credential: admin.credential.applicationDefault()
@@ -14,9 +10,14 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-//const nodemailer = require('nodemailer');
 
-/*var transporter = nodemailer.createTransport({
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+
+/*const nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: '@gmail.com',
@@ -46,19 +47,22 @@ app.get('/', (req, res) => {
 });
 
 app.post('/start', (req, res) => {
-    console.log(req.body);
 
-    //logging into firebase
-    //var docRef = db.collection('trips').doc();
+    db.collection('trips').add(req.body).then((ref) => {
+        console.log("Added document with id " + ref);
+    });
 
-    //var setAda = docRef.set(req.body);
+    res.send("Successfully logged the object " + req.body.toString());
 
-    res.send("Hi");
 });
 
 app.post('/finish', (req, res) => {
-    console.log(req);
-    res.send("uvu");
+
+    db.collection('trips').set
+
+
+
+    res.send("Successfully loaded the object" + );
    //log to db
    //past to UI
 });
