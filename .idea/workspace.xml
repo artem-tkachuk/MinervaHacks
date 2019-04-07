@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ba032d9-ab0b-472f-aa11-44b228c4361d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postQueryTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/composeStationsDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/composeStationsDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/jsonToFirestore.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/jsonToFirestore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stopscoordinates.json" beforeDir="false" afterPath="$PROJECT_DIR$/stopscoordinates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,18 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="-234">
+              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="94" column="150" lean-forward="true" selection-start-line="94" selection-start-column="150" selection-end-line="94" selection-end-column="150" />
               <folding>
-                <element signature="e#234#452#0" />
-                <element signature="e#406#938#0" />
-                <element signature="e#923#1000#0" />
-                <element signature="e#1015#1995#0" />
-                <element signature="e#2074#2272#0" />
-                <element signature="e#2312#2316#0" />
+                <element signature="n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#article#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -66,6 +67,9 @@
       <find>diamond</find>
       <find>github</find>
       <find>long</find>
+      <find>#</find>
+      <find>intro</find>
+      <find>&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,7 +86,6 @@
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/MinervaMobileApp/App.js" />
-        <option value="$PROJECT_DIR$/Website/index.html" />
         <option value="$PROJECT_DIR$/composeStationsDB.js" />
         <option value="$PROJECT_DIR$/jsonToFirestore.js" />
         <option value="$PROJECT_DIR$/stopscoordinates.json" />
@@ -90,10 +93,12 @@
         <option value="$PROJECT_DIR$/services/jsonToFirestore.js" />
         <option value="$PROJECT_DIR$/postQueryTest" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Website/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="905" />
     <option name="height" value="959" />
@@ -114,7 +119,7 @@
             <path>
               <item name="MinvervaHacks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Website" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -385,10 +390,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32149000" />
+    <option name="totallyTimeSpent" value="34448000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="959" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.11965812" />
@@ -412,24 +417,25 @@
       <window_info anchor="right" id="Run" order="4" weight="0.2887668" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.4059524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11965812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32942554" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.32902467" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32902467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36721992" />
+      <window_info anchor="bottom" x="21" y="578" width="1637" height="456" id="Terminal" order="9" weight="0.49001175" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Google Cloud Storage" order="3" weight="0.6017699" />
+      <window_info anchor="right" id="Google Cloud Storage" order="3" weight="0.2797801" />
+      <window_info anchor="right" id="Run" order="4" weight="0.2887668" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,23 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#13730#13736#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MinervaMobileApp/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -552,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="100">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#234#452#0" />
             <element signature="e#406#938#0" />
@@ -561,6 +550,24 @@
             <element signature="e#1015#1995#0" />
             <element signature="e#2074#2272#0" />
             <element signature="e#2312#2316#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="94" column="150" lean-forward="true" selection-start-line="94" selection-start-column="150" selection-end-line="94" selection-end-column="150" />
+          <folding>
+            <element signature="n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#article#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
