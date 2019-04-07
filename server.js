@@ -26,20 +26,20 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 //do mail
-/*const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: '@gmail.com',
+        user: 'tkachukjr@gmail.com',
         pass: 'yourpassword'
     }
 });
 
 var mailOptions = {
-    from: 'youremail@gmail.com',
+    from: 'tkachukjr@gmail.com',
     to: 'myfriend@yahoo.com',
-    subject: 'Sending Email using Node.js',
+    subject: 'Hello fr',
     text: 'That was easy!'
 };
 

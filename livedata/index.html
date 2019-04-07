@@ -3,6 +3,7 @@
     <head>
 
         <title>TranZip</title>
+        <meta charset="utf-8">
         <meta name="description" content="TransZip">
         <meta name="author" content="eshedd">
 
@@ -58,15 +59,15 @@ firebase.initializeApp(config);
                 //const response = await fetch('http://localhost:8000/Transzip2');
                 //const busStops = await response.json();
                 $(document).ready(function () {
-                    $.getJSON("stopscoordinates.json", function(json) {
-                        console.log(json); // this will show the info it in firebug console
+                    $.getJSON("../stopscoordinates.json", function(body) {
+                        console.log(typeof body[0].mag); // this will show the info it in firebug console
                         var i;
-                        for(i = 0; i < busStops.length; i++) {
-                            var features = busStops.map(function (stop) {
+                        for(i = 0; i < body.length; i++) {
+                            var features = body.map(function (stop) {
                                 return {
                                     "type": "Feature",
                                     "properties": {
-                                        "mag": busStops.mag,
+                                        "mag": body[i].mag,
                                         "time": 1507425650893,
                                         "felt": null,
                                         "tsunami": 0
@@ -74,8 +75,8 @@ firebase.initializeApp(config);
                                     "geometry": {
                                         "type": "Point",
                                         "coordinates": [
-                                            stop.lat, // stop.lat
-                                            stop.lng, //stop.lng
+                                            body[i].lat, // stop.lat
+                                            body[i].lng, //stop.lng
                                             0
                                         ]
                                     }
