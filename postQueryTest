@@ -1,0 +1,4 @@
+curl -H 'Content-Type: application/json' -d '{"geo": {"coords": {"latitude": 37.793598348301, "longitude": -122.404664904541}}}' http://localhost:8080/start
+
+
+

@@ -11,25 +11,25 @@ admin.initializeApp({
 var db = admin.firestore();
 
 
-async function writeToFirestore() {
+async function writeToFirestore(stops) {
 
-    for (var i = 0; i < 53; i++) {
+    for (var i = 0; i < stops.length; i++) {
 
-        //let log = await db.collection('liveTraffic').doc(i.toString()).set(stops[i]);
-
-        let doc = await db.collection('liveTraffic').doc(i.toString()).get();
-
-        console.log(doc.data());
+        let log = await db.collection('liveTraffic').doc(i.toString()).set(stops[i]);
+        console.log('Done with ' + i.toString() + '!');
 
     }
 
+    let doc = await db.collection('liveTraffic').doc("52").get();
+    console.log(doc);
+
 }
 
-//var file = fs.readFileSync('stopscoordinates.json');
+var file = fs.readFileSync('../stopscoordinates.json');
 
-//var stops = JSON.parse(file);
+var stops = JSON.parse(file);
 
-writeToFirestore().then(res => {
+writeToFirestore(stops).then(res => {
     console.log("Done with everything!");
 });
 

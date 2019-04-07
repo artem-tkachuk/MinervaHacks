@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let rawdata = fs.readFileSync('busstopsdata.json');
+let rawdata = fs.readFileSync('../busstopsdata.json');
 let data = JSON.parse(rawdata);
 data = data.data;
 console.log(data);
@@ -17,7 +17,7 @@ data.forEach(function(x) {
 	var longtitude = x[0];
 	var latitude = x[1];
 
-	var stop ="{ \"latitude\":" + latitude.toString() + ", \"longtitude\": " + longtitude.toString() + ", \"counter\": 0 },";
+	var stop ="{ \"latitude\":" + latitude.toString() + ", \"longitude\": " + longtitude.toString() + ", \"counter\": 0 },";
 	total += stop;
 	count++;
 
@@ -27,7 +27,7 @@ total = total.slice(0, -1);
 
 total += "]";
 
-fs.writeFile('stopscoordinates.json', total, (err) => {
+fs.writeFile('../stopscoordinates.json', total, (err) => {
 	if (err) {
 		throw err;
 	}
