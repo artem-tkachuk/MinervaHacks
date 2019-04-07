@@ -6,7 +6,7 @@ data = data.data;
 console.log(data);
 
 var count = 0;
-var total = '{';
+var total = '[';
 
 data.forEach(function(x) {
 
@@ -17,15 +17,15 @@ data.forEach(function(x) {
 	var longtitude = x[0];
 	var latitude = x[1];
 
-	var stop = count.toString() + ": { \"latitude\":" + latitude + ", \"longtitude\": " + longtitude + ", \"counter\": " + 0 + "},\n";
+	var stop ="{ \"latitude\":" + latitude.toString() + ", \"longtitude\": " + longtitude.toString() + ", \"counter\": 0 },";
 	total += stop;
 	count++;
 
 });
 
-total = total.slice(0, -2);
+total = total.slice(0, -1);
 
-total += "}";
+total += "]";
 
 fs.writeFile('stopscoordinates.json', total, (err) => {
 	if (err) {
