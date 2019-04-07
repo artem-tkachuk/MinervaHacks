@@ -2,7 +2,25 @@ import java.util.*;
 import java.awt.*;
 import java.util.Random;
 public class TransZip2{
+
+    static class MyHandler implements HttpHandler {
+        //server
+        @Override
+        public void handle(HttpExchange t) throws IOException {
+            String response = "This is the response";
+            t.sendResponseHeaders(200, response.length());
+            OutputStream os = t.getResponseBody();
+            os.write(response.getBytes());
+            os.close();
+        }
+    }
   public static void main(String[] args){
+    //calling server stuff
+    HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+    server.createContext("/test", new MyHandler());
+    server.setExecutor(null); // creates a default executor
+    server.start();
+    
     Scanner console = new Scanner(System.in);
     System.out.println("Welcome to TransZip! ");
     System.out.print("How many buses are originally assigned to each station? ");
