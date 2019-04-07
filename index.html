@@ -1,24 +1,121 @@
 <!doctype html>
+<html>
+    <head>
 
-<head>
+        <title>TranZip</title>
+        <meta name="description" content="TranZip">
+        <meta name="author" content="eshedd">
 
-  <title>TranZip</title>
-  <meta name="description" content="TranZip">
-  <meta name="author" content="eshedd">
+        <link rel="stylesheet" href="css/styles.css?v=1.0">
+        <script src=“https://www.gstatic.com/firebasejs/5.9.3/firebase.js“></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: “AIzaSyA6T0Z-XuHqqgPi64yUTGG2KyL4x_fMGY4”,
+                authDomain: “transzip.firebaseapp.com”,
+                databaseURL: “https://transzip.firebaseio.com”,
+                projectId: “transzip”,
+                storageBucket: “transzip.appspot.com”,
+                messagingSenderId: “1051254314980"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+        <style>
+            body { margin:0; padding:0; }
+            #map { position:absolute; top:0; bottom:0; width:100%; }
+        </style>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-</head>
+    </head>
 
-<body>
-    <div id='map' style='width: 400px; height: 300px;'></div>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1Ijoic2hyZWF0aCIsImEiOiJjanU1eWcwYWsxZTEwNGRsbzA1ZHJ3YXpiIn0.qaCCr1XeaKaYOcpgd_0fIQ';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-        });
-    </script>
-</body>
+    <body>
+        <div id='map'></div>
+        <script>
+            function getData() {
+                var busStops = [{lat: 0, lng: 0, mag: 0}, ] // some backend call
+
+                var features = busStops.map(function (stop) {
+                    return {
+                        "type": "Feature",
+                        "properties": {
+                            "mag": stop.mag,
+                            "time": 1507425650893,
+                            "felt": null,
+                            "tsunami": 0
+                        },
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                stop.lat, // stop.lat
+                                stop.lng, //stop.lng
+                                0
+                            ]
+                        }
+                    }
+                })
+
+                return {
+                    "type": "FeatureCollection",
+                    "crs": {
+                        "type": "name",
+                        "properties": {
+                            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+                        }
+                    },
+                    "features": features
+                }
+            }
+
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic2hyZWF0aCIsImEiOiJjanU1eWcwYWsxZTEwNGRsbzA1ZHJ3YXpiIn0.qaCCr1XeaKaYOcpgd_0fIQ';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-120, 50],
+                zoom: 3
+            });
+            map.on('load', function() {
+                // Add a geojson point source.
+                // Heatmap layers also work with a vector tile source.
+                map.addSource('earthquakes', {
+                    "type": "geojson",
+                    "data": getData()
+                });
+
+                map.addLayer({
+                    "id": "earthquakes-heat",
+                    "type": "heatmap",
+                    "source": "earthquakes",
+                    "paint": {
+                        // Increase the heatmap weight based on frequency and property magnitude
+                        "heatmap-weight": [
+                            "interpolate",
+                            ["linear"],
+                            ["get", "mag"],
+                            0, 0,
+                            6, 1
+                        ],
+
+                        // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
+                        // Begin color ramp at 0-stop with a 0-transparancy color
+                        // to create a blur-like effect.
+                        "heatmap-color": [
+                            "interpolate",
+                            ["linear"],
+                            ["heatmap-density"],
+                            0, "rgba(33,102,172,0)",
+                            0.2, "rgb(0,160,0)",
+                            0.4, "rgb(128,208,26)",
+                            0.6, "rgb(255,255,51)",
+                            0.8, "rgb(217,140,47)",
+                            1, "rgb(178,24,43)"
+                        ],
+
+                    }
+                }, 'waterway-label');
+
+
+            });
+        </script>
+    </body>
 </html>
