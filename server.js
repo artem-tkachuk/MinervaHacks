@@ -14,7 +14,7 @@ const db = admin.firestore();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-
+//do mail
 /*const nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
@@ -42,22 +42,50 @@ transporter.sendMail(mailOptions, function(error, info){
 */
 
 
+//try render a website
 app.get('/', (req, res) => {
     res.send('Thank you for visiting the TransZip application website!');
 });
 
+//incoming requests
 app.post('/start', (req, res) => {
 
     var latitude = req.body.geo.coords.latitude;
     var longtitude = req.body.geo.coords.longitude;
 
-    //for each in DB. Whenever the difference is the smallest ==> this is the station
+    var liveTraffic = db.collection('liveTraffic');
+    var allStops = liveTraffic.get()
+        .then(snapshot => {
 
-    db.collection('liveTraffic').add(req.body).then((ref) => {
-        console.log("Added document with id " + ref);
-    });
+            let epsilon = 0.01;     //set precision
+            var stopID = -1;        //placeholder
 
-    res.send("Successfully logged the object " + req.body.toString());
+            //find the stop the user is on
+            snapshot.forEach(doc => {
+                if (Math.abs(latitude - doc.latitude) < epsilon && Math.abs(longtitude - doc.longtitude) < epsilon) {
+                    stopID = doc.id;
+                }
+            });
+
+            //increment the value
+            var docToUpdate = liveTraffic.doc(stopID.toString());
+
+            var transaction = db.runTransaction(t => {
+               return t.get(docToUpdate)
+               .then(doc => {
+                    let newCount = doc.data().counter + 1;
+                    t.update(docToUpdate, {counter: newCount});
+                    return Promise.resolve('Stop counter is increased by 1');
+                });
+            }).then(result => {
+                console.log("Transaction success", result);
+                res.send("Successfully logged the object " + req.body.toString());
+            });
+
+        })
+        .catch(err => {
+            console.log('Error getting documents', err);
+        });
 
 });
 
