@@ -4,7 +4,7 @@ import java.util.Random;
 public class TransZip2{
 
     static class MyHandler implements HttpHandler {
-        //server
+        //serverx
         @Override
         public void handle(HttpExchange t) throws IOException {
             String response = "This is the response";
@@ -17,7 +17,7 @@ public class TransZip2{
   public static void main(String[] args){
     //calling server stuff
     HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
-    server.createContext("/test", new MyHandler());
+    server.createContext("/Transzip2", new MyHandler());
     server.setExecutor(null); // creates a default executor
     server.start();
     
