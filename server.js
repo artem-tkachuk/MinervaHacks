@@ -48,7 +48,12 @@ app.get('/', (req, res) => {
 
 app.post('/start', (req, res) => {
 
-    db.collection('trips').add(req.body).then((ref) => {
+    var latitude = req.body.geo.coords.latitude;
+    var longtitude = req.body.geo.coords.longitude;
+
+    //for each in DB. Whenever the difference is the smallest ==> this is the station
+
+    db.collection('liveTraffic').add(req.body).then((ref) => {
         console.log("Added document with id " + ref);
     });
 
@@ -58,13 +63,11 @@ app.post('/start', (req, res) => {
 
 app.post('/finish', (req, res) => {
 
-    db.collection('trips').set
+	db.collection('waitingData').add(req.body).then((ref) => {
+        console.log("Added document with id " + ref);
+    });
 
-
-
-    res.send("Successfully loaded the object" + );
-   //log to db
-   //past to UI
+    res.send("Successfully logged the object " + req.body.toString());
 });
 
 app.post('/feedback', (req, res) => {

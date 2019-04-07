@@ -1,1236 +1,3534 @@
 {
-  "meta" : {
-    "view" : {
-      "id" : "8una-jrgk",
-      "name" : "MTA.Muni_stops_data",
-      "averageRating" : 0,
-      "createdAt" : 1506482946,
-      "description" : "",
-      "displayType" : "geoRows",
-      "downloadCount" : 559,
-      "hideFromCatalog" : false,
-      "hideFromDataJson" : false,
-      "indexUpdatedAt" : 1538360672,
-      "newBackend" : true,
-      "numberOfComments" : 0,
-      "oid" : 29650325,
-      "provenance" : "official",
-      "publicationAppendEnabled" : false,
-      "publicationDate" : 1536369709,
-      "publicationGroup" : 14490198,
-      "publicationStage" : "published",
-      "rowsUpdatedAt" : 1538360668,
-      "rowsUpdatedBy" : "xiq3-38kp",
-      "tableId" : 15501800,
-      "totalTimesRated" : 0,
-      "viewCount" : 1,
-      "viewLastModified" : 1536369710,
-      "viewType" : "tabular",
-      "columns" : [ {
-        "id" : -1,
-        "name" : "sid",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":sid",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "id",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":id",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "position",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":position",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "created_at",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":created_at",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "created_meta",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":created_meta",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "updated_at",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":updated_at",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "updated_meta",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":updated_meta",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : -1,
-        "name" : "meta",
-        "dataTypeName" : "meta_data",
-        "fieldName" : ":meta",
-        "position" : 0,
-        "renderTypeName" : "meta_data",
-        "format" : { },
-        "flags" : [ "hidden" ]
-      }, {
-        "id" : 374046011,
-        "name" : "OBJECTID",
-        "dataTypeName" : "number",
-        "fieldName" : "objectid",
-        "position" : 2,
-        "renderTypeName" : "number",
-        "tableColumnId" : 53890232,
-        "cachedContents" : {
-          "largest" : "965",
-          "null" : "0",
-          "top" : [ {
-            "item" : "14",
-            "count" : "1"
-          }, {
-            "item" : "20",
-            "count" : "1"
-          }, {
-            "item" : "39",
-            "count" : "1"
-          }, {
-            "item" : "965",
-            "count" : "1"
-          }, {
-            "item" : "321",
-            "count" : "1"
-          }, {
-            "item" : "18",
-            "count" : "1"
-          }, {
-            "item" : "21",
-            "count" : "1"
-          }, {
-            "item" : "963",
-            "count" : "1"
-          }, {
-            "item" : "25",
-            "count" : "1"
-          }, {
-            "item" : "1",
-            "count" : "1"
-          }, {
-            "item" : "36",
-            "count" : "1"
-          }, {
-            "item" : "8",
-            "count" : "1"
-          }, {
-            "item" : "22",
-            "count" : "1"
-          }, {
-            "item" : "6",
-            "count" : "1"
-          }, {
-            "item" : "44",
-            "count" : "1"
-          }, {
-            "item" : "3",
-            "count" : "1"
-          }, {
-            "item" : "32",
-            "count" : "1"
-          }, {
-            "item" : "5",
-            "count" : "1"
-          }, {
-            "item" : "647",
-            "count" : "1"
-          }, {
-            "item" : "26",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "1",
-          "cardinality" : "53"
+  "meta": {
+    "view": {
+      "id": "8una-jrgk",
+      "name": "MTA.Muni_stops_data",
+      "averageRating": 0,
+      "createdAt": 1506482946,
+      "description": "",
+      "displayType": "geoRows",
+      "downloadCount": 559,
+      "hideFromCatalog": false,
+      "hideFromDataJson": false,
+      "indexUpdatedAt": 1538360672,
+      "newBackend": true,
+      "numberOfComments": 0,
+      "oid": 29650325,
+      "provenance": "official",
+      "publicationAppendEnabled": false,
+      "publicationDate": 1536369709,
+      "publicationGroup": 14490198,
+      "publicationStage": "published",
+      "rowsUpdatedAt": 1538360668,
+      "rowsUpdatedBy": "xiq3-38kp",
+      "tableId": 15501800,
+      "totalTimesRated": 0,
+      "viewCount": 1,
+      "viewLastModified": 1536369710,
+      "viewType": "tabular",
+      "columns": [
+        {
+          "id": -1,
+          "name": "sid",
+          "dataTypeName": "meta_data",
+          "fieldName": ":sid",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046029,
-        "name" : "CREATED_USER",
-        "dataTypeName" : "text",
-        "fieldName" : "created_user",
-        "position" : 20,
-        "renderTypeName" : "text",
-        "tableColumnId" : 53890250,
-        "cachedContents" : {
-          "largest" : "JKIBRICK",
-          "null" : "33",
-          "top" : [ {
-            "item" : "AZHANG",
-            "count" : "11"
-          }, {
-            "item" : "JKIBRICK",
-            "count" : "9"
-          } ],
-          "not_null" : "20",
-          "smallest" : "AZHANG",
-          "cardinality" : "2"
+        {
+          "id": -1,
+          "name": "id",
+          "dataTypeName": "meta_data",
+          "fieldName": ":id",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046030,
-        "name" : "CREATED_DATE",
-        "dataTypeName" : "date",
-        "fieldName" : "created_date",
-        "position" : 21,
-        "renderTypeName" : "date",
-        "tableColumnId" : 53890251,
-        "cachedContents" : {
-          "largest" : "2018-07-27T01:20:27.000Z",
-          "null" : "33",
-          "top" : [ {
-            "item" : "2017-12-20T22:13:59.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-03T20:42:04.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:10:53.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2016-03-01T00:21:51.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-10-17T01:44:49.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:29:31.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-27T01:11:15.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-27T01:16:26.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-08-10T20:50:57.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-09-19T17:57:46.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:35:54.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2016-03-01T00:23:44.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:17:40.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:21:10.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T01:02:25.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-10-17T01:56:48.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2015-12-09T22:34:11.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-10-17T01:56:53.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-03T20:35:48.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-27T01:20:27.000Z",
-            "count" : "1"
-          } ],
-          "not_null" : "20",
-          "smallest" : "2015-08-10T20:50:57.000Z",
-          "cardinality" : "20"
+        {
+          "id": -1,
+          "name": "position",
+          "dataTypeName": "meta_data",
+          "fieldName": ":position",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046031,
-        "name" : "LAST_EDITED_USER",
-        "dataTypeName" : "text",
-        "fieldName" : "last_edited_user",
-        "position" : 22,
-        "renderTypeName" : "text",
-        "tableColumnId" : 53890252,
-        "cachedContents" : {
-          "largest" : "AZHANG",
-          "null" : "0",
-          "top" : [ {
-            "item" : "AZHANG",
-            "count" : "53"
-          } ],
-          "not_null" : "53",
-          "smallest" : "AZHANG",
-          "cardinality" : "1"
+        {
+          "id": -1,
+          "name": "created_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046032,
-        "name" : "LAST_EDITED_DATE",
-        "dataTypeName" : "date",
-        "fieldName" : "last_edited_date",
-        "position" : 23,
-        "renderTypeName" : "date",
-        "tableColumnId" : 53890253,
-        "cachedContents" : {
-          "largest" : "2018-07-28T00:58:59.000Z",
-          "null" : "0",
-          "top" : [ {
-            "item" : "2017-12-21T01:39:46.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T00:52:48.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T01:15:30.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T00:53:09.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T01:16:24.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T00:52:18.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:50:47.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T01:22:48.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:52:19.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-03T20:15:25.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T01:30:05.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-28T00:58:59.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:40:03.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-03T20:36:12.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:36:40.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-21T00:50:57.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:34:46.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:49:16.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:20:09.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2017-12-20T22:34:59.000Z",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "2017-12-20T22:20:09.000Z",
-          "cardinality" : "53"
+        {
+          "id": -1,
+          "name": "created_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":created_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046033,
-        "name" : "DIRECTION",
-        "dataTypeName" : "text",
-        "fieldName" : "direction",
-        "position" : 24,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098039,
-        "cachedContents" : {
-          "largest" : "OB",
-          "null" : "38",
-          "top" : [ {
-            "item" : "OB",
-            "count" : "7"
-          }, {
-            "item" : "Both",
-            "count" : "4"
-          }, {
-            "item" : "IB",
-            "count" : "4"
-          } ],
-          "not_null" : "15",
-          "smallest" : "Both",
-          "cardinality" : "3"
+        {
+          "id": -1,
+          "name": "updated_at",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_at",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046034,
-        "name" : "BUSORTRAIN",
-        "dataTypeName" : "text",
-        "fieldName" : "busortrain",
-        "position" : 25,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098040,
-        "cachedContents" : {
-          "largest" : "Train",
-          "null" : "52",
-          "top" : [ {
-            "item" : "Train",
-            "count" : "1"
-          } ],
-          "not_null" : "1",
-          "smallest" : "Train",
-          "cardinality" : "1"
+        {
+          "id": -1,
+          "name": "updated_meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":updated_meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046035,
-        "name" : "ST_NAME",
-        "dataTypeName" : "text",
-        "fieldName" : "st_name",
-        "position" : 26,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098041,
-        "cachedContents" : {
-          "largest" : "West Portal Ave",
-          "null" : "0",
-          "top" : [ {
-            "item" : "Mission St",
-            "count" : "8"
-          }, {
-            "item" : "4th Street",
-            "count" : "3"
-          }, {
-            "item" : "Powell Street",
-            "count" : "3"
-          }, {
-            "item" : "Taraval St",
-            "count" : "2"
-          }, {
-            "item" : "Sansome Local Access",
-            "count" : "2"
-          }, {
-            "item" : "Geary Street",
-            "count" : "2"
-          }, {
-            "item" : "Sutter St.",
-            "count" : "2"
-          }, {
-            "item" : "Clay Street",
-            "count" : "2"
-          }, {
-            "item" : "Judah Ave",
-            "count" : "2"
-          }, {
-            "item" : "O'Farrell St.",
-            "count" : "2"
-          }, {
-            "item" : "Stockton",
-            "count" : "2"
-          }, {
-            "item" : "Van Ness",
-            "count" : "2"
-          }, {
-            "item" : "Market",
-            "count" : "2"
-          }, {
-            "item" : "Church Street",
-            "count" : "1"
-          }, {
-            "item" : "16th St",
-            "count" : "1"
-          }, {
-            "item" : "1st Street",
-            "count" : "1"
-          }, {
-            "item" : "Sacramento St",
-            "count" : "1"
-          }, {
-            "item" : "3rd Street",
-            "count" : "1"
-          }, {
-            "item" : "Bush St",
-            "count" : "1"
-          }, {
-            "item" : "Mission",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "16th St",
-          "cardinality" : "32"
+        {
+          "id": -1,
+          "name": "meta",
+          "dataTypeName": "meta_data",
+          "fieldName": ":meta",
+          "position": 0,
+          "renderTypeName": "meta_data",
+          "format": {},
+          "flags": [
+            "hidden"
+          ]
         },
-        "format" : { }
-      }, {
-        "id" : 374046036,
-        "name" : "MUNI_ROUTE",
-        "dataTypeName" : "text",
-        "fieldName" : "muni_route",
-        "position" : 27,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098042,
-        "cachedContents" : {
-          "null" : "53",
-          "not_null" : "0",
-          "cardinality" : "0"
+        {
+          "id": 374046011,
+          "name": "OBJECTID",
+          "dataTypeName": "number",
+          "fieldName": "objectid",
+          "position": 2,
+          "renderTypeName": "number",
+          "tableColumnId": 53890232,
+          "cachedContents": {
+            "largest": "965",
+            "null": "0",
+            "top": [
+              {
+                "item": "14",
+                "count": "1"
+              },
+              {
+                "item": "20",
+                "count": "1"
+              },
+              {
+                "item": "39",
+                "count": "1"
+              },
+              {
+                "item": "965",
+                "count": "1"
+              },
+              {
+                "item": "321",
+                "count": "1"
+              },
+              {
+                "item": "18",
+                "count": "1"
+              },
+              {
+                "item": "21",
+                "count": "1"
+              },
+              {
+                "item": "963",
+                "count": "1"
+              },
+              {
+                "item": "25",
+                "count": "1"
+              },
+              {
+                "item": "1",
+                "count": "1"
+              },
+              {
+                "item": "36",
+                "count": "1"
+              },
+              {
+                "item": "8",
+                "count": "1"
+              },
+              {
+                "item": "22",
+                "count": "1"
+              },
+              {
+                "item": "6",
+                "count": "1"
+              },
+              {
+                "item": "44",
+                "count": "1"
+              },
+              {
+                "item": "3",
+                "count": "1"
+              },
+              {
+                "item": "32",
+                "count": "1"
+              },
+              {
+                "item": "5",
+                "count": "1"
+              },
+              {
+                "item": "647",
+                "count": "1"
+              },
+              {
+                "item": "26",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "1",
+            "cardinality": "53"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046037,
-        "name" : "MTAB_DATE",
-        "dataTypeName" : "date",
-        "fieldName" : "mtab_date",
-        "position" : 28,
-        "renderTypeName" : "date",
-        "tableColumnId" : 69098043,
-        "cachedContents" : {
-          "null" : "53",
-          "not_null" : "0",
-          "cardinality" : "0"
+        {
+          "id": 374046029,
+          "name": "CREATED_USER",
+          "dataTypeName": "text",
+          "fieldName": "created_user",
+          "position": 20,
+          "renderTypeName": "text",
+          "tableColumnId": 53890250,
+          "cachedContents": {
+            "largest": "JKIBRICK",
+            "null": "33",
+            "top": [
+              {
+                "item": "AZHANG",
+                "count": "11"
+              },
+              {
+                "item": "JKIBRICK",
+                "count": "9"
+              }
+            ],
+            "not_null": "20",
+            "smallest": "AZHANG",
+            "cardinality": "2"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046038,
-        "name" : "the_geom",
-        "dataTypeName" : "multiline",
-        "fieldName" : "the_geom",
-        "position" : 29,
-        "renderTypeName" : "multiline",
-        "tableColumnId" : 69098044,
-        "format" : { }
-      }, {
-        "id" : 374046039,
-        "name" : "CORRIDOR",
-        "dataTypeName" : "text",
-        "fieldName" : "corridor",
-        "position" : 30,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098045,
-        "cachedContents" : {
-          "largest" : "West Portal Ave (15th Ave to Sloat Blvd)",
-          "null" : "49",
-          "top" : [ {
-            "item" : "Potrero Ave (18th St to 25th St)",
-            "count" : "1"
-          }, {
-            "item" : "West Portal Ave (15th Ave to Sloat Blvd)",
-            "count" : "1"
-          }, {
-            "item" : "16th St (4th St to Potrero Ave)",
-            "count" : "1"
-          }, {
-            "item" : "Stockton St. (Geary St. to O'Farrell St.)",
-            "count" : "1"
-          } ],
-          "not_null" : "4",
-          "smallest" : "16th St (4th St to Potrero Ave)",
-          "cardinality" : "4"
+        {
+          "id": 374046030,
+          "name": "CREATED_DATE",
+          "dataTypeName": "date",
+          "fieldName": "created_date",
+          "position": 21,
+          "renderTypeName": "date",
+          "tableColumnId": 53890251,
+          "cachedContents": {
+            "largest": "2018-07-27T01:20:27.000Z",
+            "null": "33",
+            "top": [
+              {
+                "item": "2017-12-20T22:13:59.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-03T20:42:04.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:10:53.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2016-03-01T00:21:51.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-10-17T01:44:49.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:29:31.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-27T01:11:15.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-27T01:16:26.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-08-10T20:50:57.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-09-19T17:57:46.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:35:54.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2016-03-01T00:23:44.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:17:40.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:21:10.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T01:02:25.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-10-17T01:56:48.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2015-12-09T22:34:11.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-10-17T01:56:53.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-03T20:35:48.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-27T01:20:27.000Z",
+                "count": "1"
+              }
+            ],
+            "not_null": "20",
+            "smallest": "2015-08-10T20:50:57.000Z",
+            "cardinality": "20"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046040,
-        "name" : "HRS_END",
-        "dataTypeName" : "number",
-        "fieldName" : "hrs_end",
-        "position" : 31,
-        "renderTypeName" : "number",
-        "tableColumnId" : 69098046,
-        "cachedContents" : {
-          "largest" : "2400",
-          "null" : "2",
-          "top" : [ {
-            "item" : "2400",
-            "count" : "38"
-          }, {
-            "item" : "1900",
-            "count" : "5"
-          }, {
-            "item" : "1800",
-            "count" : "4"
-          }, {
-            "item" : "2100",
-            "count" : "2"
-          }, {
-            "item" : "24",
-            "count" : "1"
-          }, {
-            "item" : "0",
-            "count" : "1"
-          } ],
-          "not_null" : "51",
-          "smallest" : "0",
-          "cardinality" : "6"
+        {
+          "id": 374046031,
+          "name": "LAST_EDITED_USER",
+          "dataTypeName": "text",
+          "fieldName": "last_edited_user",
+          "position": 22,
+          "renderTypeName": "text",
+          "tableColumnId": 53890252,
+          "cachedContents": {
+            "largest": "AZHANG",
+            "null": "0",
+            "top": [
+              {
+                "item": "AZHANG",
+                "count": "53"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "AZHANG",
+            "cardinality": "1"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046041,
-        "name" : "HOURS",
-        "dataTypeName" : "text",
-        "fieldName" : "hours",
-        "position" : 32,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098047,
-        "cachedContents" : {
-          "largest" : "unknown",
-          "null" : "3",
-          "top" : [ {
-            "item" : "24 hours",
-            "count" : "33"
-          }, {
-            "item" : "24 Hours",
-            "count" : "6"
-          }, {
-            "item" : "3pm to 7pm",
-            "count" : "2"
-          }, {
-            "item" : "7am to 9pm",
-            "count" : "2"
-          }, {
-            "item" : "4pm to 6pm",
-            "count" : "2"
-          }, {
-            "item" : "7am to 6pm",
-            "count" : "2"
-          }, {
-            "item" : "7am to 7pm",
-            "count" : "1"
-          }, {
-            "item" : "3pm to 6pm",
-            "count" : "1"
-          }, {
-            "item" : "unknown",
-            "count" : "1"
-          } ],
-          "not_null" : "50",
-          "smallest" : "24 hours",
-          "cardinality" : "9"
+        {
+          "id": 374046032,
+          "name": "LAST_EDITED_DATE",
+          "dataTypeName": "date",
+          "fieldName": "last_edited_date",
+          "position": 23,
+          "renderTypeName": "date",
+          "tableColumnId": 53890253,
+          "cachedContents": {
+            "largest": "2018-07-28T00:58:59.000Z",
+            "null": "0",
+            "top": [
+              {
+                "item": "2017-12-21T01:39:46.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T00:52:48.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T01:15:30.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T00:53:09.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T01:16:24.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T00:52:18.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:50:47.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T01:22:48.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:52:19.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-03T20:15:25.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T01:30:05.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-28T00:58:59.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:40:03.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-03T20:36:12.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:36:40.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-21T00:50:57.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:34:46.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:49:16.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:20:09.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2017-12-20T22:34:59.000Z",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "2017-12-20T22:20:09.000Z",
+            "cardinality": "53"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046042,
-        "name" : "TO_ST",
-        "dataTypeName" : "text",
-        "fieldName" : "to_st",
-        "position" : 33,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098048,
-        "cachedContents" : {
-          "largest" : "Van Ness Ave",
-          "null" : "0",
-          "top" : [ {
-            "item" : "Sansome St",
-            "count" : "3"
-          }, {
-            "item" : "Townsend St",
-            "count" : "2"
-          }, {
-            "item" : "Market St",
-            "count" : "2"
-          }, {
-            "item" : "Howard St",
-            "count" : "2"
-          }, {
-            "item" : "Sacramento St",
-            "count" : "2"
-          }, {
-            "item" : "Kearny St",
-            "count" : "2"
-          }, {
-            "item" : "Duboce Ave",
-            "count" : "2"
-          }, {
-            "item" : "19th Ave",
-            "count" : "2"
-          }, {
-            "item" : "15th Ave",
-            "count" : "2"
-          }, {
-            "item" : "Main St",
-            "count" : "2"
-          }, {
-            "item" : "Grant Ave",
-            "count" : "2"
-          }, {
-            "item" : "Ellis St",
-            "count" : "2"
-          }, {
-            "item" : "O'Farrell St",
-            "count" : "2"
-          }, {
-            "item" : "Mission St",
-            "count" : "1"
-          }, {
-            "item" : "Bush St",
-            "count" : "1"
-          }, {
-            "item" : "3rd St",
-            "count" : "1"
-          }, {
-            "item" : "Church St",
-            "count" : "1"
-          }, {
-            "item" : "South Van Ness Ave",
-            "count" : "1"
-          }, {
-            "item" : "5th St",
-            "count" : "1"
-          }, {
-            "item" : "Powell St",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "11th St",
-          "cardinality" : "39"
+        {
+          "id": 374046033,
+          "name": "DIRECTION",
+          "dataTypeName": "text",
+          "fieldName": "direction",
+          "position": 24,
+          "renderTypeName": "text",
+          "tableColumnId": 69098039,
+          "cachedContents": {
+            "largest": "OB",
+            "null": "38",
+            "top": [
+              {
+                "item": "OB",
+                "count": "7"
+              },
+              {
+                "item": "Both",
+                "count": "4"
+              },
+              {
+                "item": "IB",
+                "count": "4"
+              }
+            ],
+            "not_null": "15",
+            "smallest": "Both",
+            "cardinality": "3"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046043,
-        "name" : "SPAN_OPS",
-        "dataTypeName" : "text",
-        "fieldName" : "span_ops",
-        "position" : 34,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098049,
-        "cachedContents" : {
-          "largest" : "unknown",
-          "null" : "0",
-          "top" : [ {
-            "item" : "All Day",
-            "count" : "35"
-          }, {
-            "item" : "Part Time",
-            "count" : "9"
-          }, {
-            "item" : "unknown",
-            "count" : "7"
-          }, {
-            "item" : "Part time",
-            "count" : "1"
-          }, {
-            "item" : "24 Hours",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "24 Hours",
-          "cardinality" : "5"
+        {
+          "id": 374046034,
+          "name": "BUSORTRAIN",
+          "dataTypeName": "text",
+          "fieldName": "busortrain",
+          "position": 25,
+          "renderTypeName": "text",
+          "tableColumnId": 69098040,
+          "cachedContents": {
+            "largest": "Train",
+            "null": "52",
+            "top": [
+              {
+                "item": "Train",
+                "count": "1"
+              }
+            ],
+            "not_null": "1",
+            "smallest": "Train",
+            "cardinality": "1"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046044,
-        "name" : "FROM_ST",
-        "dataTypeName" : "text",
-        "fieldName" : "from_st",
-        "position" : 35,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098050,
-        "cachedContents" : {
-          "largest" : "Washington St",
-          "null" : "0",
-          "top" : [ {
-            "item" : "Market St",
-            "count" : "4"
-          }, {
-            "item" : "Powell St",
-            "count" : "4"
-          }, {
-            "item" : "Gough St",
-            "count" : "3"
-          }, {
-            "item" : "Kearny St",
-            "count" : "2"
-          }, {
-            "item" : "11th St",
-            "count" : "2"
-          }, {
-            "item" : "Geary Blvd",
-            "count" : "2"
-          }, {
-            "item" : "4th St",
-            "count" : "2"
-          }, {
-            "item" : "1st St",
-            "count" : "2"
-          }, {
-            "item" : "Larkin St",
-            "count" : "1"
-          }, {
-            "item" : "20th Ave",
-            "count" : "1"
-          }, {
-            "item" : "Filbert St",
-            "count" : "1"
-          }, {
-            "item" : "Harrison St",
-            "count" : "1"
-          }, {
-            "item" : "17th Ave",
-            "count" : "1"
-          }, {
-            "item" : "46th Ave",
-            "count" : "1"
-          }, {
-            "item" : "Mission St",
-            "count" : "1"
-          }, {
-            "item" : "La Playa St",
-            "count" : "1"
-          }, {
-            "item" : "Sacramento St",
-            "count" : "1"
-          }, {
-            "item" : "19th Ave",
-            "count" : "1"
-          }, {
-            "item" : "Montgomery St",
-            "count" : "1"
-          }, {
-            "item" : "18th St",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "11th St",
-          "cardinality" : "40"
+        {
+          "id": 374046035,
+          "name": "ST_NAME",
+          "dataTypeName": "text",
+          "fieldName": "st_name",
+          "position": 26,
+          "renderTypeName": "text",
+          "tableColumnId": 69098041,
+          "cachedContents": {
+            "largest": "West Portal Ave",
+            "null": "0",
+            "top": [
+              {
+                "item": "Mission St",
+                "count": "8"
+              },
+              {
+                "item": "4th Street",
+                "count": "3"
+              },
+              {
+                "item": "Powell Street",
+                "count": "3"
+              },
+              {
+                "item": "Taraval St",
+                "count": "2"
+              },
+              {
+                "item": "Sansome Local Access",
+                "count": "2"
+              },
+              {
+                "item": "Geary Street",
+                "count": "2"
+              },
+              {
+                "item": "Sutter St.",
+                "count": "2"
+              },
+              {
+                "item": "Clay Street",
+                "count": "2"
+              },
+              {
+                "item": "Judah Ave",
+                "count": "2"
+              },
+              {
+                "item": "O'Farrell St.",
+                "count": "2"
+              },
+              {
+                "item": "Stockton",
+                "count": "2"
+              },
+              {
+                "item": "Van Ness",
+                "count": "2"
+              },
+              {
+                "item": "Market",
+                "count": "2"
+              },
+              {
+                "item": "Church Street",
+                "count": "1"
+              },
+              {
+                "item": "16th St",
+                "count": "1"
+              },
+              {
+                "item": "1st Street",
+                "count": "1"
+              },
+              {
+                "item": "Sacramento St",
+                "count": "1"
+              },
+              {
+                "item": "3rd Street",
+                "count": "1"
+              },
+              {
+                "item": "Bush St",
+                "count": "1"
+              },
+              {
+                "item": "Mission",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "16th St",
+            "cardinality": "32"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046045,
-        "name" : "IMPLEMENT",
-        "dataTypeName" : "date",
-        "fieldName" : "implement",
-        "position" : 36,
-        "renderTypeName" : "date",
-        "tableColumnId" : 69098051,
-        "cachedContents" : {
-          "largest" : "2018-07-01T00:00:00.000Z",
-          "null" : "51",
-          "top" : [ {
-            "item" : "2017-01-01T00:00:00.000Z",
-            "count" : "1"
-          }, {
-            "item" : "2018-07-01T00:00:00.000Z",
-            "count" : "1"
-          } ],
-          "not_null" : "2",
-          "smallest" : "2017-01-01T00:00:00.000Z",
-          "cardinality" : "2"
+        {
+          "id": 374046036,
+          "name": "MUNI_ROUTE",
+          "dataTypeName": "text",
+          "fieldName": "muni_route",
+          "position": 27,
+          "renderTypeName": "text",
+          "tableColumnId": 69098042,
+          "cachedContents": {
+            "null": "53",
+            "not_null": "0",
+            "cardinality": "0"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046046,
-        "name" : "REDLANE",
-        "dataTypeName" : "text",
-        "fieldName" : "redlane",
-        "position" : 37,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098052,
-        "cachedContents" : {
-          "largest" : "red lane",
-          "null" : "2",
-          "top" : [ {
-            "item" : "no",
-            "count" : "28"
-          }, {
-            "item" : "red lane",
-            "count" : "23"
-          } ],
-          "not_null" : "51",
-          "smallest" : "no",
-          "cardinality" : "2"
+        {
+          "id": 374046037,
+          "name": "MTAB_DATE",
+          "dataTypeName": "date",
+          "fieldName": "mtab_date",
+          "position": 28,
+          "renderTypeName": "date",
+          "tableColumnId": 69098043,
+          "cachedContents": {
+            "null": "53",
+            "not_null": "0",
+            "cardinality": "0"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046047,
-        "name" : "LAYOUT",
-        "dataTypeName" : "text",
-        "fieldName" : "layout",
-        "position" : 38,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098053,
-        "cachedContents" : {
-          "largest" : "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
-          "null" : "52",
-          "top" : [ {
-            "item" : "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
-            "count" : "1"
-          } ],
-          "not_null" : "1",
-          "smallest" : "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
-          "cardinality" : "1"
+        {
+          "id": 374046038,
+          "name": "the_geom",
+          "dataTypeName": "multiline",
+          "fieldName": "the_geom",
+          "position": 29,
+          "renderTypeName": "multiline",
+          "tableColumnId": 69098044,
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046048,
-        "name" : "DAYTYPE_WE",
-        "dataTypeName" : "text",
-        "fieldName" : "daytype_we",
-        "position" : 39,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098054,
-        "cachedContents" : {
-          "largest" : "weekends",
-          "null" : "3",
-          "top" : [ {
-            "item" : "weekends",
-            "count" : "39"
-          }, {
-            "item" : "weekday only",
-            "count" : "10"
-          }, {
-            "item" : "unknown",
-            "count" : "1"
-          } ],
-          "not_null" : "50",
-          "smallest" : "unknown",
-          "cardinality" : "3"
+        {
+          "id": 374046039,
+          "name": "CORRIDOR",
+          "dataTypeName": "text",
+          "fieldName": "corridor",
+          "position": 30,
+          "renderTypeName": "text",
+          "tableColumnId": 69098045,
+          "cachedContents": {
+            "largest": "West Portal Ave (15th Ave to Sloat Blvd)",
+            "null": "49",
+            "top": [
+              {
+                "item": "Potrero Ave (18th St to 25th St)",
+                "count": "1"
+              },
+              {
+                "item": "West Portal Ave (15th Ave to Sloat Blvd)",
+                "count": "1"
+              },
+              {
+                "item": "16th St (4th St to Potrero Ave)",
+                "count": "1"
+              },
+              {
+                "item": "Stockton St. (Geary St. to O'Farrell St.)",
+                "count": "1"
+              }
+            ],
+            "not_null": "4",
+            "smallest": "16th St (4th St to Potrero Ave)",
+            "cardinality": "4"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046049,
-        "name" : "DAYTYPE_WD",
-        "dataTypeName" : "text",
-        "fieldName" : "daytype_wd",
-        "position" : 40,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098055,
-        "cachedContents" : {
-          "largest" : "weekdays",
-          "null" : "3",
-          "top" : [ {
-            "item" : "weekdays",
-            "count" : "49"
-          }, {
-            "item" : "unknown",
-            "count" : "1"
-          } ],
-          "not_null" : "50",
-          "smallest" : "unknown",
-          "cardinality" : "2"
+        {
+          "id": 374046040,
+          "name": "HRS_END",
+          "dataTypeName": "number",
+          "fieldName": "hrs_end",
+          "position": 31,
+          "renderTypeName": "number",
+          "tableColumnId": 69098046,
+          "cachedContents": {
+            "largest": "2400",
+            "null": "2",
+            "top": [
+              {
+                "item": "2400",
+                "count": "38"
+              },
+              {
+                "item": "1900",
+                "count": "5"
+              },
+              {
+                "item": "1800",
+                "count": "4"
+              },
+              {
+                "item": "2100",
+                "count": "2"
+              },
+              {
+                "item": "24",
+                "count": "1"
+              },
+              {
+                "item": "0",
+                "count": "1"
+              }
+            ],
+            "not_null": "51",
+            "smallest": "0",
+            "cardinality": "6"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046050,
-        "name" : "DAY_TYPE",
-        "dataTypeName" : "text",
-        "fieldName" : "day_type",
-        "position" : 41,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098056,
-        "cachedContents" : {
-          "largest" : "weekdays",
-          "null" : "5",
-          "top" : [ {
-            "item" : "All times",
-            "count" : "38"
-          }, {
-            "item" : "weekdays",
-            "count" : "10"
-          } ],
-          "not_null" : "48",
-          "smallest" : "All times",
-          "cardinality" : "2"
+        {
+          "id": 374046041,
+          "name": "HOURS",
+          "dataTypeName": "text",
+          "fieldName": "hours",
+          "position": 32,
+          "renderTypeName": "text",
+          "tableColumnId": 69098047,
+          "cachedContents": {
+            "largest": "unknown",
+            "null": "3",
+            "top": [
+              {
+                "item": "24 hours",
+                "count": "33"
+              },
+              {
+                "item": "24 Hours",
+                "count": "6"
+              },
+              {
+                "item": "3pm to 7pm",
+                "count": "2"
+              },
+              {
+                "item": "7am to 9pm",
+                "count": "2"
+              },
+              {
+                "item": "4pm to 6pm",
+                "count": "2"
+              },
+              {
+                "item": "7am to 6pm",
+                "count": "2"
+              },
+              {
+                "item": "7am to 7pm",
+                "count": "1"
+              },
+              {
+                "item": "3pm to 6pm",
+                "count": "1"
+              },
+              {
+                "item": "unknown",
+                "count": "1"
+              }
+            ],
+            "not_null": "50",
+            "smallest": "24 hours",
+            "cardinality": "9"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046051,
-        "name" : "HRS_BEGIN",
-        "dataTypeName" : "number",
-        "fieldName" : "hrs_begin",
-        "position" : 42,
-        "renderTypeName" : "number",
-        "tableColumnId" : 69098057,
-        "cachedContents" : {
-          "largest" : "1600",
-          "null" : "2",
-          "top" : [ {
-            "item" : "0",
-            "count" : "40"
-          }, {
-            "item" : "700",
-            "count" : "6"
-          }, {
-            "item" : "1500",
-            "count" : "3"
-          }, {
-            "item" : "1530",
-            "count" : "1"
-          }, {
-            "item" : "1600",
-            "count" : "1"
-          } ],
-          "not_null" : "51",
-          "smallest" : "0",
-          "cardinality" : "5"
+        {
+          "id": 374046042,
+          "name": "TO_ST",
+          "dataTypeName": "text",
+          "fieldName": "to_st",
+          "position": 33,
+          "renderTypeName": "text",
+          "tableColumnId": 69098048,
+          "cachedContents": {
+            "largest": "Van Ness Ave",
+            "null": "0",
+            "top": [
+              {
+                "item": "Sansome St",
+                "count": "3"
+              },
+              {
+                "item": "Townsend St",
+                "count": "2"
+              },
+              {
+                "item": "Market St",
+                "count": "2"
+              },
+              {
+                "item": "Howard St",
+                "count": "2"
+              },
+              {
+                "item": "Sacramento St",
+                "count": "2"
+              },
+              {
+                "item": "Kearny St",
+                "count": "2"
+              },
+              {
+                "item": "Duboce Ave",
+                "count": "2"
+              },
+              {
+                "item": "19th Ave",
+                "count": "2"
+              },
+              {
+                "item": "15th Ave",
+                "count": "2"
+              },
+              {
+                "item": "Main St",
+                "count": "2"
+              },
+              {
+                "item": "Grant Ave",
+                "count": "2"
+              },
+              {
+                "item": "Ellis St",
+                "count": "2"
+              },
+              {
+                "item": "O'Farrell St",
+                "count": "2"
+              },
+              {
+                "item": "Mission St",
+                "count": "1"
+              },
+              {
+                "item": "Bush St",
+                "count": "1"
+              },
+              {
+                "item": "3rd St",
+                "count": "1"
+              },
+              {
+                "item": "Church St",
+                "count": "1"
+              },
+              {
+                "item": "South Van Ness Ave",
+                "count": "1"
+              },
+              {
+                "item": "5th St",
+                "count": "1"
+              },
+              {
+                "item": "Powell St",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "11th St",
+            "cardinality": "39"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046052,
-        "name" : "TAXI",
-        "dataTypeName" : "text",
-        "fieldName" : "taxi",
-        "position" : 43,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098058,
-        "cachedContents" : {
-          "largest" : "taxi allowed",
-          "null" : "1",
-          "top" : [ {
-            "item" : "taxi allowed",
-            "count" : "43"
-          }, {
-            "item" : "no",
-            "count" : "9"
-          } ],
-          "not_null" : "52",
-          "smallest" : "no",
-          "cardinality" : "2"
+        {
+          "id": 374046043,
+          "name": "SPAN_OPS",
+          "dataTypeName": "text",
+          "fieldName": "span_ops",
+          "position": 34,
+          "renderTypeName": "text",
+          "tableColumnId": 69098049,
+          "cachedContents": {
+            "largest": "unknown",
+            "null": "0",
+            "top": [
+              {
+                "item": "All Day",
+                "count": "35"
+              },
+              {
+                "item": "Part Time",
+                "count": "9"
+              },
+              {
+                "item": "unknown",
+                "count": "7"
+              },
+              {
+                "item": "Part time",
+                "count": "1"
+              },
+              {
+                "item": "24 Hours",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "24 Hours",
+            "cardinality": "5"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046053,
-        "name" : "SHAPE.LEN",
-        "dataTypeName" : "number",
-        "fieldName" : "shape_len",
-        "position" : 44,
-        "renderTypeName" : "number",
-        "tableColumnId" : 69098059,
-        "cachedContents" : {
-          "largest" : "9800.1361304183301",
-          "null" : "0",
-          "top" : [ {
-            "item" : "3145.6271246061201",
-            "count" : "1"
-          }, {
-            "item" : "650.88237955287195",
-            "count" : "1"
-          }, {
-            "item" : "4826.46421072867",
-            "count" : "1"
-          }, {
-            "item" : "4461.5973342445404",
-            "count" : "1"
-          }, {
-            "item" : "4858.7855606063204",
-            "count" : "1"
-          }, {
-            "item" : "1073.0370737107701",
-            "count" : "1"
-          }, {
-            "item" : "3315.26020598684",
-            "count" : "1"
-          }, {
-            "item" : "3629.8348867719501",
-            "count" : "1"
-          }, {
-            "item" : "1276.5915360310801",
-            "count" : "1"
-          }, {
-            "item" : "213.04269238241602",
-            "count" : "1"
-          }, {
-            "item" : "1900.1764567015",
-            "count" : "1"
-          }, {
-            "item" : "4270.8836681121702",
-            "count" : "1"
-          }, {
-            "item" : "625.55626293574198",
-            "count" : "1"
-          }, {
-            "item" : "1480.73725993468",
-            "count" : "1"
-          }, {
-            "item" : "1015.2281171619201",
-            "count" : "1"
-          }, {
-            "item" : "1444.1988913478101",
-            "count" : "1"
-          }, {
-            "item" : "407.38970227395998",
-            "count" : "1"
-          }, {
-            "item" : "202.05604019809101",
-            "count" : "1"
-          }, {
-            "item" : "1034.6148962269601",
-            "count" : "1"
-          }, {
-            "item" : "1044.2050232641502",
-            "count" : "1"
-          } ],
-          "not_null" : "53",
-          "smallest" : "202.05604019809101",
-          "cardinality" : "53"
+        {
+          "id": 374046044,
+          "name": "FROM_ST",
+          "dataTypeName": "text",
+          "fieldName": "from_st",
+          "position": 35,
+          "renderTypeName": "text",
+          "tableColumnId": 69098050,
+          "cachedContents": {
+            "largest": "Washington St",
+            "null": "0",
+            "top": [
+              {
+                "item": "Market St",
+                "count": "4"
+              },
+              {
+                "item": "Powell St",
+                "count": "4"
+              },
+              {
+                "item": "Gough St",
+                "count": "3"
+              },
+              {
+                "item": "Kearny St",
+                "count": "2"
+              },
+              {
+                "item": "11th St",
+                "count": "2"
+              },
+              {
+                "item": "Geary Blvd",
+                "count": "2"
+              },
+              {
+                "item": "4th St",
+                "count": "2"
+              },
+              {
+                "item": "1st St",
+                "count": "2"
+              },
+              {
+                "item": "Larkin St",
+                "count": "1"
+              },
+              {
+                "item": "20th Ave",
+                "count": "1"
+              },
+              {
+                "item": "Filbert St",
+                "count": "1"
+              },
+              {
+                "item": "Harrison St",
+                "count": "1"
+              },
+              {
+                "item": "17th Ave",
+                "count": "1"
+              },
+              {
+                "item": "46th Ave",
+                "count": "1"
+              },
+              {
+                "item": "Mission St",
+                "count": "1"
+              },
+              {
+                "item": "La Playa St",
+                "count": "1"
+              },
+              {
+                "item": "Sacramento St",
+                "count": "1"
+              },
+              {
+                "item": "19th Ave",
+                "count": "1"
+              },
+              {
+                "item": "Montgomery St",
+                "count": "1"
+              },
+              {
+                "item": "18th St",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "11th St",
+            "cardinality": "40"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046054,
-        "name" : "ID",
-        "dataTypeName" : "number",
-        "fieldName" : "id",
-        "position" : 45,
-        "renderTypeName" : "number",
-        "tableColumnId" : 69098060,
-        "cachedContents" : {
-          "largest" : "0",
-          "null" : "16",
-          "top" : [ {
-            "item" : "0",
-            "count" : "37"
-          } ],
-          "not_null" : "37",
-          "smallest" : "0",
-          "cardinality" : "1"
+        {
+          "id": 374046045,
+          "name": "IMPLEMENT",
+          "dataTypeName": "date",
+          "fieldName": "implement",
+          "position": 36,
+          "renderTypeName": "date",
+          "tableColumnId": 69098051,
+          "cachedContents": {
+            "largest": "2018-07-01T00:00:00.000Z",
+            "null": "51",
+            "top": [
+              {
+                "item": "2017-01-01T00:00:00.000Z",
+                "count": "1"
+              },
+              {
+                "item": "2018-07-01T00:00:00.000Z",
+                "count": "1"
+              }
+            ],
+            "not_null": "2",
+            "smallest": "2017-01-01T00:00:00.000Z",
+            "cardinality": "2"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046055,
-        "name" : "STATUS",
-        "dataTypeName" : "text",
-        "fieldName" : "status",
-        "position" : 46,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098061,
-        "cachedContents" : {
-          "largest" : "suspended",
-          "null" : "0",
-          "top" : [ {
-            "item" : "active",
-            "count" : "43"
-          }, {
-            "item" : "suspended",
-            "count" : "6"
-          }, {
-            "item" : "pending",
-            "count" : "4"
-          } ],
-          "not_null" : "53",
-          "smallest" : "active",
-          "cardinality" : "3"
+        {
+          "id": 374046046,
+          "name": "REDLANE",
+          "dataTypeName": "text",
+          "fieldName": "redlane",
+          "position": 37,
+          "renderTypeName": "text",
+          "tableColumnId": 69098052,
+          "cachedContents": {
+            "largest": "red lane",
+            "null": "2",
+            "top": [
+              {
+                "item": "no",
+                "count": "28"
+              },
+              {
+                "item": "red lane",
+                "count": "23"
+              }
+            ],
+            "not_null": "51",
+            "smallest": "no",
+            "cardinality": "2"
+          },
+          "format": {}
         },
-        "format" : { }
-      }, {
-        "id" : 374046056,
-        "name" : "MTAB_MOTION",
-        "dataTypeName" : "text",
-        "fieldName" : "mtab_motion",
-        "position" : 47,
-        "renderTypeName" : "text",
-        "tableColumnId" : 69098062,
-        "cachedContents" : {
-          "null" : "53",
-          "not_null" : "0",
-          "cardinality" : "0"
+        {
+          "id": 374046047,
+          "name": "LAYOUT",
+          "dataTypeName": "text",
+          "fieldName": "layout",
+          "position": 38,
+          "renderTypeName": "text",
+          "tableColumnId": 69098053,
+          "cachedContents": {
+            "largest": "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
+            "null": "52",
+            "top": [
+              {
+                "item": "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
+                "count": "1"
+              }
+            ],
+            "not_null": "1",
+            "smallest": "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
+            "cardinality": "1"
+          },
+          "format": {}
         },
-        "format" : { }
-      } ],
-      "grants" : [ {
-        "inherited" : false,
-        "type" : "viewer",
-        "flags" : [ "public" ]
-      } ],
-      "owner" : {
-        "id" : "dbag-6qd9",
-        "displayName" : "OpenData",
-        "screenName" : "OpenData",
-        "type" : "interactive"
+        {
+          "id": 374046048,
+          "name": "DAYTYPE_WE",
+          "dataTypeName": "text",
+          "fieldName": "daytype_we",
+          "position": 39,
+          "renderTypeName": "text",
+          "tableColumnId": 69098054,
+          "cachedContents": {
+            "largest": "weekends",
+            "null": "3",
+            "top": [
+              {
+                "item": "weekends",
+                "count": "39"
+              },
+              {
+                "item": "weekday only",
+                "count": "10"
+              },
+              {
+                "item": "unknown",
+                "count": "1"
+              }
+            ],
+            "not_null": "50",
+            "smallest": "unknown",
+            "cardinality": "3"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046049,
+          "name": "DAYTYPE_WD",
+          "dataTypeName": "text",
+          "fieldName": "daytype_wd",
+          "position": 40,
+          "renderTypeName": "text",
+          "tableColumnId": 69098055,
+          "cachedContents": {
+            "largest": "weekdays",
+            "null": "3",
+            "top": [
+              {
+                "item": "weekdays",
+                "count": "49"
+              },
+              {
+                "item": "unknown",
+                "count": "1"
+              }
+            ],
+            "not_null": "50",
+            "smallest": "unknown",
+            "cardinality": "2"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046050,
+          "name": "DAY_TYPE",
+          "dataTypeName": "text",
+          "fieldName": "day_type",
+          "position": 41,
+          "renderTypeName": "text",
+          "tableColumnId": 69098056,
+          "cachedContents": {
+            "largest": "weekdays",
+            "null": "5",
+            "top": [
+              {
+                "item": "All times",
+                "count": "38"
+              },
+              {
+                "item": "weekdays",
+                "count": "10"
+              }
+            ],
+            "not_null": "48",
+            "smallest": "All times",
+            "cardinality": "2"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046051,
+          "name": "HRS_BEGIN",
+          "dataTypeName": "number",
+          "fieldName": "hrs_begin",
+          "position": 42,
+          "renderTypeName": "number",
+          "tableColumnId": 69098057,
+          "cachedContents": {
+            "largest": "1600",
+            "null": "2",
+            "top": [
+              {
+                "item": "0",
+                "count": "40"
+              },
+              {
+                "item": "700",
+                "count": "6"
+              },
+              {
+                "item": "1500",
+                "count": "3"
+              },
+              {
+                "item": "1530",
+                "count": "1"
+              },
+              {
+                "item": "1600",
+                "count": "1"
+              }
+            ],
+            "not_null": "51",
+            "smallest": "0",
+            "cardinality": "5"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046052,
+          "name": "TAXI",
+          "dataTypeName": "text",
+          "fieldName": "taxi",
+          "position": 43,
+          "renderTypeName": "text",
+          "tableColumnId": 69098058,
+          "cachedContents": {
+            "largest": "taxi allowed",
+            "null": "1",
+            "top": [
+              {
+                "item": "taxi allowed",
+                "count": "43"
+              },
+              {
+                "item": "no",
+                "count": "9"
+              }
+            ],
+            "not_null": "52",
+            "smallest": "no",
+            "cardinality": "2"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046053,
+          "name": "SHAPE.LEN",
+          "dataTypeName": "number",
+          "fieldName": "shape_len",
+          "position": 44,
+          "renderTypeName": "number",
+          "tableColumnId": 69098059,
+          "cachedContents": {
+            "largest": "9800.1361304183301",
+            "null": "0",
+            "top": [
+              {
+                "item": "3145.6271246061201",
+                "count": "1"
+              },
+              {
+                "item": "650.88237955287195",
+                "count": "1"
+              },
+              {
+                "item": "4826.46421072867",
+                "count": "1"
+              },
+              {
+                "item": "4461.5973342445404",
+                "count": "1"
+              },
+              {
+                "item": "4858.7855606063204",
+                "count": "1"
+              },
+              {
+                "item": "1073.0370737107701",
+                "count": "1"
+              },
+              {
+                "item": "3315.26020598684",
+                "count": "1"
+              },
+              {
+                "item": "3629.8348867719501",
+                "count": "1"
+              },
+              {
+                "item": "1276.5915360310801",
+                "count": "1"
+              },
+              {
+                "item": "213.04269238241602",
+                "count": "1"
+              },
+              {
+                "item": "1900.1764567015",
+                "count": "1"
+              },
+              {
+                "item": "4270.8836681121702",
+                "count": "1"
+              },
+              {
+                "item": "625.55626293574198",
+                "count": "1"
+              },
+              {
+                "item": "1480.73725993468",
+                "count": "1"
+              },
+              {
+                "item": "1015.2281171619201",
+                "count": "1"
+              },
+              {
+                "item": "1444.1988913478101",
+                "count": "1"
+              },
+              {
+                "item": "407.38970227395998",
+                "count": "1"
+              },
+              {
+                "item": "202.05604019809101",
+                "count": "1"
+              },
+              {
+                "item": "1034.6148962269601",
+                "count": "1"
+              },
+              {
+                "item": "1044.2050232641502",
+                "count": "1"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "202.05604019809101",
+            "cardinality": "53"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046054,
+          "name": "ID",
+          "dataTypeName": "number",
+          "fieldName": "id",
+          "position": 45,
+          "renderTypeName": "number",
+          "tableColumnId": 69098060,
+          "cachedContents": {
+            "largest": "0",
+            "null": "16",
+            "top": [
+              {
+                "item": "0",
+                "count": "37"
+              }
+            ],
+            "not_null": "37",
+            "smallest": "0",
+            "cardinality": "1"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046055,
+          "name": "STATUS",
+          "dataTypeName": "text",
+          "fieldName": "status",
+          "position": 46,
+          "renderTypeName": "text",
+          "tableColumnId": 69098061,
+          "cachedContents": {
+            "largest": "suspended",
+            "null": "0",
+            "top": [
+              {
+                "item": "active",
+                "count": "43"
+              },
+              {
+                "item": "suspended",
+                "count": "6"
+              },
+              {
+                "item": "pending",
+                "count": "4"
+              }
+            ],
+            "not_null": "53",
+            "smallest": "active",
+            "cardinality": "3"
+          },
+          "format": {}
+        },
+        {
+          "id": 374046056,
+          "name": "MTAB_MOTION",
+          "dataTypeName": "text",
+          "fieldName": "mtab_motion",
+          "position": 47,
+          "renderTypeName": "text",
+          "tableColumnId": 69098062,
+          "cachedContents": {
+            "null": "53",
+            "not_null": "0",
+            "cardinality": "0"
+          },
+          "format": {}
+        }
+      ],
+      "grants": [
+        {
+          "inherited": false,
+          "type": "viewer",
+          "flags": [
+            "public"
+          ]
+        }
+      ],
+      "owner": {
+        "id": "dbag-6qd9",
+        "displayName": "OpenData",
+        "screenName": "OpenData",
+        "type": "interactive"
       },
-      "query" : { },
-      "rights" : [ "read" ],
-      "tableAuthor" : {
-        "id" : "dbag-6qd9",
-        "displayName" : "OpenData",
-        "screenName" : "OpenData",
-        "type" : "interactive"
+      "query": {},
+      "rights": [
+        "read"
+      ],
+      "tableAuthor": {
+        "id": "dbag-6qd9",
+        "displayName": "OpenData",
+        "screenName": "OpenData",
+        "type": "interactive"
       },
-      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+      "flags": [
+        "default",
+        "restorable",
+        "restorePossibleForType"
+      ]
     }
   },
-  "data" : [ [ "row-aycc-kics-3nyr", "00000000-0000-0000-340E-7BA8949B5201", 0, 1536369715, null, 1536369715, null, "{ }", "6", null, null, "AZHANG", 1530648925, null, null, "Fremont Street", null, null, "MULTILINESTRING ((-122.396699384301 37.790463147891, -122.39670291647 37.790465963172, -122.398277670781 37.791720953301, -122.398273568514 37.791732863929))", null, "2400", "24 hours", "Mission St", "All Day", "Market St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "650.88237955287195", "0", "active", null ]
-, [ "row-fpuu~nxk6_g48y", "00000000-0000-0000-526B-33A8FFF1946F", 0, 1536369715, null, 1536369715, null, "{ }", "10", null, null, "AZHANG", 1513817508, null, null, "Post St", null, null, "MULTILINESTRING ((-122.424869811762 37.786192083519, -122.42487164885 37.786201320512, -122.423227097481 37.786407213211, -122.421583341167 37.786623854067, -122.419941172418 37.786832419643, -122.418284205907 37.787042841339, -122.417003056951 37.787205519242, -122.416821835662 37.787228529212, -122.414732630382 37.787494403436, -122.411252998776 37.787928303571, -122.409370575079 37.788176244912, -122.407559456071 37.788412915422, -122.405220685944 37.788694664162))", null, "2400", "24 hours", "Grant Ave", "All Day", "Gough St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "5754.6163413594304", "0", "active", null ]
-, [ "row-f7kv_8k7y-26mh", "00000000-0000-0000-0F95-DA9EF5089EC6", 0, 1536369715, null, 1536369715, null, "{ }", "321", "AZHANG", 1505843866, "AZHANG", 1513819807, "Both", null, "Taraval St", null, null, "MULTILINESTRING ((-122.473593688508 37.743181732519, -122.504702197955 37.741752593832))", null, "2400", "24 hours", "17th Ave", "All Day", "46th Ave", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "9010.7048104405603", null, "active", null ]
-, [ "row-fb5b.37y4~ss4b", "00000000-0000-0000-E883-B65358FD1219", 0, 1536369715, null, 1536369715, null, "{ }", "23", null, null, "AZHANG", 1513808438, null, null, "Lincoln", null, null, "MULTILINESTRING ((-122.47732293768 37.765451822926, -122.478020765406 37.765420257065))", null, "2400", "24 hours", "19th Ave", "All Day", "20th Ave", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "202.05604019809101", "0", "active", null ]
-, [ "row-ag3b~ixre_vkku", "00000000-0000-0000-20AE-4AA2D1F3F0CD", 0, 1536369715, null, 1536369715, null, "{ }", "33", null, null, "AZHANG", 1513810130, null, null, "Powell Street", null, null, "MULTILINESTRING ((-122.409188290427 37.792047433271, -122.408992204673 37.791084828796, -122.40880206197 37.790164473518, -122.408605976239 37.789244105792))", null, "2400", "24 hours", "California St", "All Day", "Sutter St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "1034.6148962269601", "0", "active", null ]
-, [ "row-4nif.tj2k.cym6", "00000000-0000-0000-EEFE-4897966F8E81", 0, 1536369715, null, 1536369715, null, "{ }", "29", null, null, "AZHANG", 1513818469, "Both", null, "Market", null, null, "MULTILINESTRING ((-122.403548211577 37.787625969658, -122.407987711454 37.784123870557, -122.414511577172 37.778971718456, -122.414848536789 37.778705503741, -122.416022719399 37.777777964946, -122.416274478526 37.777577158029, -122.41640473623 37.777474259062, -122.416520091112 37.777383337547, -122.417072963059 37.776949118357, -122.416561532457 37.777350673393, -122.417485931751 37.776622707134, -122.417655278599 37.776493551032, -122.419057588767 37.775382799156, -122.419056086431 37.775381607696, -122.419180960113 37.775282954924))", null, "2400", "24 hours", "3rd St", "All Day", "Van Ness Ave", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "6789.5611288059008", "0", "active", null ]
-, [ "row-dgpf-tfyz_jjma", "00000000-0000-0000-7EED-BA82AD2AE9B7", 0, 1536369715, null, 1536369715, null, "{ }", "45", "JKIBRICK", 1449699460, "AZHANG", 1513810339, "OB", null, "Mission St", null, null, "MULTILINESTRING ((-122.417149032545 37.774417544099, -122.418631431666 37.77305839804))", null, "2400", "24 hours", "11th St", "All Day", "South Van Ness Ave", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "654.64339890549707", null, "pending", null ]
-, [ "row-i7vt_y9by_49p2", "00000000-0000-0000-A71C-80F230F294BD", 0, 1536369715, null, 1536369715, null, "{ }", "27", null, null, "AZHANG", 1513810247, null, null, "Sansome Local Access", null, null, "MULTILINESTRING ((-122.401325524554 37.794020192583, -122.400725359115 37.791192512921))", null, "2400", "24 hours", "Bush St", "All Day", "Sacramento St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1044.2050232641502", "0", "active", null ]
-, [ "row-pqj7_ehq4_e79x", "00000000-0000-0000-517B-DEAF7D7782D9", 0, 1536369715, null, 1536369715, null, "{ }", "24", null, null, "AZHANG", 1513809286, null, null, "Church Street", null, null, "MULTILINESTRING ((-122.42915688227 37.769471631083, -122.428985751784 37.767741222901, -122.428957230753 37.767515760052, -122.428828884242 37.766129145797, -122.428686275941 37.764500121775))", null, "2400", "24 hours", "Duboce Ave", "All Day", "16th St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1815.5140105269202", "0", "active", null ]
-, [ "row-5b4y~r6ai_ubjp", "00000000-0000-0000-83DB-25EEFBA19666", 0, 1536369715, null, 1536369715, null, "{ }", "7", null, null, "AZHANG", 1513817538, null, null, "Geary Street", null, null, "MULTILINESTRING ((-122.408236118281 37.787362517596, -122.408247042474 37.78736111868, -122.413196723198 37.786745953757, -122.416500472464 37.78633270967, -122.423387243802 37.785440470453, -122.423815066577 37.785388814499, -122.424355788702 37.785393510301, -122.424539989889 37.785416990431, -122.424718250621 37.78541699008, -122.424724192122 37.785431078706))", null, "2400", "24 hours", "Powell St", "All Day", "Gough St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "4826.46421072867", "0", "active", null ]
-, [ "row-bdru-vti6~cdfc", "00000000-0000-0000-3C96-6D2A00D51292", 0, 1536369715, null, 1536369715, null, "{ }", "42", null, null, "AZHANG", 1513809628, null, null, "Sacramento St", null, null, "MULTILINESTRING ((-122.404664904541 37.793598348301, -122.408212276085 37.793128795745, -122.41061878281 37.792823585698, -122.413375867721 37.792457330513, -122.416031939072 37.792123944945, -122.419252500415 37.791715426514))", null, "1900", "4pm to 6pm", "Kearny St", "Part Time", "Larkin St", null, "no", null, "weekday only", "weekdays", "weekdays", "1530", "taxi allowed", "4270.8836681121702", "0", "active", null ]
-, [ "row-6uap-d6ma.vmdt", "00000000-0000-0000-6913-A8D508F25BE6", 0, 1536369715, null, 1536369715, null, "{ }", "12", null, null, "AZHANG", 1513819354, null, null, "Sutter St.", null, null, "MULTILINESTRING ((-122.40385783017 37.789831418944, -122.406952420699 37.789448245429, -122.418446614899 37.788005691405, -122.421769377215 37.787547373197, -122.425049357563 37.787129438447))", null, "2400", "24 hours", "Kearny St", "All Day", "Gough St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "6202.8038968243509", "0", "active", null ]
-, [ "row-kkxb~bu8q~k3a2", "00000000-0000-0000-B091-7929DE4D44F9", 0, 1536369715, null, 1536369715, null, "{ }", "642", "AZHANG", 1508205413, "AZHANG", 1513810156, null, null, "California", null, null, "MULTILINESTRING ((-122.409096524223 37.79208068543, -122.405902135172 37.792520359522))", null, "2400", "24 hours", "Grant Ave", "All Day", "Powell St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "936.88555646026805", null, "active", null ]
-, [ "row-ivxr~67ie-y7z9", "00000000-0000-0000-162B-54A892F201C9", 0, 1536369715, null, 1536369715, null, "{ }", "338", "AZHANG", 1508204689, "AZHANG", 1513810261, null, null, "Sansome Local Access", null, null, "MULTILINESTRING ((-122.4016850895 37.795714180413, -122.401325524554 37.794020192583))", null, "0", "unknown", "Sacramento St", "unknown", "Washington St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "625.55626293574198", "0", "active", null ]
-, [ "row-uif9.sdcn-t9hw", "00000000-0000-0000-14D6-47DF2FC33220", 0, 1536369715, null, 1536369715, null, "{ }", "16", null, null, "AZHANG", 1513819122, null, null, "Sutter St.", null, null, "MULTILINESTRING ((-122.400570870555 37.790255074493, -122.403856001316 37.789833084095))", null, "1800", "3pm to 6pm", "Sansome St", "Part Time", "Kearny St", null, "no", null, "weekday only", "weekdays", "weekdays", "1500", "taxi allowed", "961.71103891024904", "0", "active", null ]
-, [ "row-57vp_apnb.eh4n", "00000000-0000-0000-4E2E-7D4EFCB9CEC0", 0, 1536369715, null, 1536369715, null, "{ }", "32", null, null, "AZHANG", 1513819027, null, null, "4th Street", null, null, "MULTILINESTRING ((-122.402713156567 37.783262352946, -122.401927415661 37.782655311946))", null, "1900", "3pm to 7pm", "Clementina St", "unknown", "Howard St", null, "no", null, "weekday only", "weekdays", "weekdays", "1500", "taxi allowed", "316.91391225227301", "0", "suspended", null ]
-, [ "row-v7za~yykv~ma4p", "00000000-0000-0000-BD27-1AFE6852F452", 0, 1536369715, null, 1536369715, null, "{ }", "1", "JKIBRICK", 1449699053, "AZHANG", 1513809486, null, null, "Van Ness", null, null, "MULTILINESTRING ((-122.41864644487 37.773058154272, -122.418660926818 37.773098380496, -122.418666236481 37.773111899883, -122.4186762423 37.773137655528, -122.418685882202 37.773164459791, -122.418690595566 37.773178960161, -122.418697805063 37.7732091721, -122.418711808795 37.773261174612, -122.418827449174 37.773641153666, -122.418846754735 37.773698885852, -122.41896653823 37.774081703853, -122.418984443179 37.774142586293, -122.419102651654 37.774522319735, -122.419126546477 37.774586035429, -122.419234243631 37.774954313881, -122.419241778266 37.774995201312, -122.419244057551 37.775025153347, -122.419249019178 37.775046446075, -122.419251087635 37.775053775906, -122.419261848422 37.775085771724, -122.419267277121 37.77510025063, -122.419274035718 37.775118441829, -122.419276378601 37.775126409609, -122.419281481486 37.775143766088, -122.419283834571 37.775151773513, -122.419308683607 37.775211781071, -122.419314018393 37.775236566906, -122.419321808977 37.775292756262, -122.419326901318 37.775343925679, -122.419328246505 37.775357345795, -122.419340197557 37.775437273763, -122.419387495572 37.775672159421, -122.419441785163 37.775908997437, -122.419478744486 37.776093842074, -122.419511574316 37.776251637977, -122.419517127852 37.776285845169, -122.419512529601 37.776302491873, -122.419534024553 37.776371957657, -122.419534523329 37.776373569599, -122.419536784959 37.776402677419, -122.419537326274 37.776405737211, -122.419543710634 37.776431846809, -122.419549229949 37.776452698195, -122.419556492438 37.776479870248, -122.419558954449 37.77649092203, -122.419560732035 37.77649912841, -122.419589877851 37.776642745862, -122.419628666629 37.776838469061, -122.419668461206 37.777034434858, -122.419697514933 37.777179434315, -122.41969915839 37.777188179431, -122.419701156191 37.777199230188, -122.419704936166 37.777226798655, -122.419707875496 37.777247674594, -122.419712090818 37.777273773711, -122.419712725328 37.777276581257, -122.419721274352 37.777302950874, -122.419706781784 37.777304800418, -122.419721274352 37.777302950874, -122.419721795843 37.777304555613, -122.419724934171 37.77733292937, -122.419725620947 37.777335610796, -122.41973034505 37.777361109104, -122.419735567222 37.777381637859, -122.419743004596 37.777409004548, -122.419745762649 37.777420738425, -122.419747772539 37.777430011594, -122.419760772355 37.777492534166, -122.41977754517 37.777577615874, -122.419795225777 37.777669091906, -122.419813835812 37.777764014334, -122.419833900712 37.777862692319, -122.419854279965 37.777958884639, -122.419873909932 37.778049889951, -122.419888734848 37.778121727967, -122.419891627524 37.778137504468, -122.419895983687 37.778166471358, -122.419899436064 37.778190429594, -122.419903958745 37.778223057115, -122.419904326398 37.77822616371, -122.419910765302 37.778252829185, -122.419911462227 37.778255716931, -122.419917868887 37.778289135972, -122.419920644966 37.77830135186, -122.419922789198 37.778318158864, -122.419923159627 37.778325619785, -122.419923313342 37.778349660968, -122.419923163767 37.77836022195, -122.420004191067 37.778735396687, -122.420083601633 37.779133090358, -122.420169008683 37.779531130533, -122.420252162936 37.779916157529, -122.420262881446 37.779940345525, -122.420266317695 37.779971060917, -122.42026071502 37.77999278518, -122.420261319186 37.780034603252, -122.42027537251 37.780079258226, -122.42027541559 37.780079396984, -122.420274412225 37.780118825312, -122.420275090841 37.780156167446, -122.420281712893 37.780193950747, -122.420285097987 37.780213557326, -122.42028835709 37.780230306938, -122.420302010353 37.780296180244, -122.420322306055 37.780383074547, -122.420344133444 37.780474838001, -122.42036625576 37.780570108049, -122.420387412892 37.780663440791, -122.420407585056 37.780753200086, -122.420426189082 37.780835766643, -122.420439537335 37.780895652992, -122.420442068625 37.780907314711, -122.420444680274 37.780919573786, -122.420450365852 37.780949119389, -122.420453426677 37.780970806188, -122.420458078807 37.781001514666, -122.420458629322 37.78100445733, -122.420467277696 37.781033935202, -122.420467749281 37.781035542627, -122.420472523574 37.781064515892, -122.420473338124 37.781068606441, -122.420485694309 37.781102854906, -122.420493276872 37.781129277364, -122.420498975646 37.781154269531, -122.420500799833 37.781162867819, -122.420513171624 37.781226478467, -122.420529444338 37.781314579896, -122.420547233916 37.78140777481, -122.420566103233 37.781503444918, -122.420584683418 37.781598391481, -122.420602004418 37.781691313275, -122.420617734485 37.781780030804, -122.420629126233 37.781842276239, -122.420631231148 37.78185296121, -122.420636467849 37.781881229131, -122.42064086338 37.781900923338, -122.42065160043 37.781939553631, -122.420665593124 37.781963919886, -122.420651466352 37.781965711073, -122.420665593124 37.781963919886, -122.420666481351 37.781965466148, -122.420667384042 37.781996476402, -122.420667822093 37.781999664095, -122.420672785125 37.782028229262, -122.420678046636 37.7820512365, -122.420685151796 37.782079675164, -122.420687882574 37.782092300048, -122.420689468744 37.782100078402, -122.420700837928 37.782156495533, -122.420717423888 37.782240081406, -122.420735843911 37.782333365628, -122.420755459457 37.782432068495, -122.420774803631 37.782528183744, -122.420793322335 37.782619151617, -122.420809926206 37.782701017549, -122.42082118715 37.782758914006, -122.420823168366 37.782769643088, -122.420825257908 37.782782032659, -122.420829138309 37.782812920213, -122.42083201726 37.782835707919, -122.420836292347 37.782864632386, -122.420836782686 37.782867675938, -122.420844799105 37.782897217585, -122.420845234385 37.782898821395, -122.420845781403 37.782925187123, -122.420852818217 37.782957488156, -122.42085788659 37.782981205289, -122.420862628669 37.783006190888, -122.420864247445 37.783014865698, -122.420876985598 37.783083719044, -122.420894438358 37.783175360545, -122.420913448455 37.78327037741, -122.420933171166 37.783366247652, -122.420951540914 37.783455969428, -122.420969126909 37.783544100819, -122.420986088215 37.783630282383, -122.421000466613 37.783699989318, -122.421003917175 37.783715634375, -122.421007554945 37.783731538953, -122.421014844833 37.783764408538, -122.421023464282 37.783796671205, -122.421035959958 37.783827269856, -122.421036592794 37.783828818756, -122.421039079383 37.783856619278, -122.421047544322 37.783889250396, -122.421053684205 37.783913593944, -122.421059185021 37.783940726697, -122.42106189035 37.783954909316, -122.42107434546 37.784025616729, -122.421089186491 37.784114574497, -122.421105166208 37.784206344426, -122.421122691146 37.784297691281, -122.421141536301 37.784386304954, -122.421161927646 37.784474942426, -122.421182216858 37.7845606896, -122.421197725428 37.78462969313, -122.421200918456 37.784645146212, -122.421206124193 37.784672362671, -122.421209419431 37.784696497392, -122.421213537137 37.784730865376, -122.421220306157 37.784754937878, -122.421220760749 37.78475655971, -122.421221207407 37.784758146403, -122.421220924138 37.784791895255, -122.421225496604 37.784824549729, -122.421232189609 37.784860254458, -122.421235043508 37.784874975879, -122.421238143588 37.784890118107, -122.421253817781 37.784959739722, -122.421274501972 37.785046300534, -122.42129548157 37.785135275073, -122.421316397987 37.785226303773, -122.421337695225 37.785319052486, -122.421359380024 37.785410775098, -122.421380890313 37.785498877621, -122.421397417575 37.78556784262, -122.421400285934 37.785580551303, -122.42140560162 37.78560561449, -122.421409508273 37.785628306018, -122.421413741674 37.785660354956, -122.42141412079 37.78566342911, -122.421421109644 37.785688930567, -122.421406524676 37.78569074696, -122.421421540425 37.78569050284, -122.42142183493 37.785695149142, -122.421423840017 37.785726860581, -122.421426604194 37.785744818208, -122.421428386305 37.785774814172, -122.421429731423 37.785783993439, -122.421434564037 37.785813627058, -122.421436310788 37.785823428983, -122.421446693167 37.785877652839, -122.421464990359 37.785967392499, -122.421484197482 37.786061567782, -122.421503461733 37.786157873834, -122.421522128793 37.786251497592, -122.421540865867 37.78634325368, -122.421559496768 37.786430759028, -122.421571849297 37.786487072661, -122.421573995709 37.786496815216, -122.421580512143 37.786526047404, -122.421583143599 37.786537984805, -122.421591582454 37.786569004052, -122.421593829642 37.786588334605, -122.421598123898 37.786621906161, -122.42159813069 37.786621955715, -122.421598348004 37.786623661278, -122.421608269907 37.786659555052, -122.421610206726 37.786677107944, -122.421615031202 37.786704614391, -122.421615884213 37.786709390564, -122.421620746338 37.786736422216, -122.421622631666 37.786746142183, -122.421633423009 37.786800335481, -122.421651608434 37.7868896309, -122.42167054957 37.786982965481, -122.421689724903 37.787078519169, -122.421709351166 37.787176563202, -122.42172892586 37.787273029645, -122.421748168428 37.78736532728, -122.421760714498 37.787423969, -122.421762621773 37.787432792518, -122.421768557821 37.787460162277, -122.421771011031 37.78746931027, -122.421777593344 37.787498879416, -122.421782390799 37.787517142039, -122.421785506579 37.787545318377, -122.421786157114 37.787551200874, -122.421786338132 37.787552839756, -122.421795732692 37.787587846843, -122.421800449586 37.787606024756, -122.421804384443 37.787635750933, -122.421806002237 37.787644575282, -122.421811159214 37.787672779136, -122.421812867815 37.787681646752, -122.421823935374 37.787738635756, -122.421841686091 37.787828884238, -122.421860424191 37.78792301427, -122.421879700941 37.78801885534, -122.42189967613 37.788117160687, -122.421919514655 37.788213746071, -122.421938765544 37.788306324761, -122.421951207313 37.788365405192, -122.421953082839 37.78837424942, -122.421959313938 37.788402318377, -122.42196125874 37.788411102257, -122.421969246811 37.788440314043, -122.421971939514 37.788458759049, -122.421976593789 37.78849270186, -122.421976819088 37.788494343455, -122.421987066549 37.788529077734, -122.421989380079 37.788547522649, -122.42199491917 37.788577329382, -122.421996415276 37.788586833919, -122.422001674847 37.788614291793, -122.422003376688 37.788623139583, -122.422014396887 37.78868003575, -122.42203209698 37.788770263455, -122.422050845711 37.788864568229, -122.422070185297 37.788960657031, -122.422089225066 37.78905413659, -122.422108098704 37.789145734909, -122.422126360853 37.789233295898, -122.422137864621 37.789287825352, -122.422139739063 37.78929665516, -122.422145576617 37.789324054599, -122.422147906094 37.789333459324, -122.422154400127 37.789363141038, -122.42215948168 37.789381234328, -122.422163259678 37.789415123763, -122.422163441845 37.789416761743, -122.422173865467 37.789451553704, -122.422177699157 37.789470166549, -122.422180978048 37.789499947508, -122.422182819579 37.789508771901, -122.422188098655 37.789536036963, -122.422189529367 37.789544454028, -122.422213378737 37.789685843002, -122.422258135713 37.789887960392, -122.422303825834 37.790084829012, -122.42232766055 37.790217851675, -122.422328702149 37.790225557791, -122.422330480561 37.790239337421, -122.422334284847 37.79027003747, -122.422337133605 37.790293602628, -122.422341789803 37.790329232904, -122.422343307665 37.79033540931, -122.422356622151 37.790372768749, -122.422342172513 37.790374605108, -122.422356622151 37.790372768749, -122.422357189208 37.790374359969, -122.422360193227 37.790413928834, -122.422360860008 37.790419057228, -122.422371292327 37.790455510529, -122.42237654319 37.790479642049, -122.4223851106 37.790508989075, -122.422388871469 37.790522222289, -122.422390925872 37.790529648444, -122.422418857314 37.790652832705, -122.422451020752 37.790841612, -122.422486208218 37.791035066143, -122.422517437268 37.791166591283, -122.422519500576 37.791174580535, -122.422525700157 37.791200062798, -122.422527642989 37.791208415107, -122.422533101278 37.791239866025, -122.422539542094 37.7912577614, -122.42254301371 37.791291964273, -122.422543178864 37.791293591437, -122.422552349425 37.791328697494, -122.422555978931 37.791347359826, -122.422561268489 37.791377705231, -122.42256286275 37.791386161067, -122.422567916341 37.791412968366, -122.422569545729 37.791421608906, -122.422595093001 37.791555735553, -122.422630825095 37.79173662053, -122.422668246793 37.791917313979, -122.422696954135 37.792051135903, -122.422698818572 37.792059755773, -122.422704612509 37.792086513681, -122.422706436145 37.792094946143, -122.422713384606 37.792125081999, -122.422717298028 37.792143732677, -122.422722164032 37.792177710624, -122.422722398443 37.792179345011, -122.422731613463 37.792214487097, -122.422735034826 37.792234418818, -122.422740541833 37.792263500221, -122.422742132731 37.792271944341, -122.422747173968 37.792298726398, -122.422748797723 37.792307357023, -122.422773770959 37.792438898638, -122.422808939459 37.792617212078, -122.422845883869 37.79279531689, -122.42287410463 37.792926526769, -122.422875970252 37.792935125914, -122.422881752986 37.792961833353, -122.422883572127 37.792970252296, -122.422889801357 37.792999239254, -122.422894399057 37.793019045105, -122.422899208413 37.793053075282, -122.422899438292 37.793054703361, -122.422908633087 37.793089794069, -122.422912258216 37.793108487917, -122.422917507172 37.793138834188, -122.422919090155 37.793147297222, -122.422924101973 37.793174143229, -122.422925714409 37.793182788263, -122.422950966634 37.793316833639, -122.422986342871 37.793497541785, -122.423023418985 37.793678012453, -122.423051808712 37.793811558485, -122.423053656206 37.793820174739, -122.423059390245 37.793846902877, -122.423061191266 37.793855311901, -122.423068087813 37.793885439607, -122.423071973038 37.793904075845, -122.423076807522 37.79393807268, -122.423077039677 37.793939705264, -122.423086233523 37.793974813071, -122.423089873502 37.793993501508, -122.423095157788 37.79402385228, -122.42309675443 37.794032326125, -122.423101798169 37.794059152306, -122.42310342427 37.794067794637, -122.423128740956 37.794201122809, -122.423164256798 37.794381174111, -122.423201481615 37.794560998744, -122.423229964201 37.794693892444, -122.423231825363 37.794702503291, -122.423237602681 37.794729224218, -122.423239421904 37.794737648559, -122.423246362883 37.794767779864, -122.423250272038 37.794786425109, -122.423255147538 37.794820412931, -122.423255383101 37.794822056326, -122.423266044105 37.794856973444, -122.42326696841 37.794875556746, -122.423274176966 37.794906779166, -122.423275630611 37.794915197115, -122.423279793815 37.794940949147, -122.423280981897 37.794949056207, -122.423303265551 37.795082215156, -122.423346281328 37.795275055325, -122.423390264281 37.795462652134, -122.423412274426 37.795586954605, -122.423413230023 37.795594384994, -122.423414877128 37.795607976266, -122.423418240906 37.795637470675, -122.423422781637 37.795661852432, -122.423427186102 37.795698974557, -122.423428524123 37.79570379857, -122.42344075163 37.795740200794, -122.423441291495 37.79574181002, -122.423443129088 37.795781510097, -122.423444301585 37.795788838726, -122.423453667597 37.795823050983, -122.423461154084 37.795845896374, -122.423468901637 37.795875305276, -122.42347263465 37.795888360948, -122.423474529421 37.795895226649, -122.423503625398 37.796023768779, -122.423537279422 37.796220923214, -122.423575000576 37.796424513163, -122.42360876109 37.796565938149, -122.423610620229 37.796574111124, -122.4236160265 37.796600984202, -122.423617825879 37.796611181608, -122.423625774353 37.796641112194, -122.423626800541 37.796660861345, -122.423629404671 37.79669410985, -122.42362953352 37.796695758625, -122.423642540851 37.796730244667, -122.42364543294 37.796748759026, -122.423651408519 37.796777566579, -122.42365277159 37.79678548267, -122.423658040781 37.7968115863, -122.423659705697 37.796819987171, -122.423687653038 37.796965362411, -122.423725274966 37.797156414583, -122.423764924853 37.797347665397, -122.423795758862 37.797492882674, -122.423797616721 37.797501585405, -122.423803387544 37.797528599101, -122.423805656312 37.797537616356, -122.423812244883 37.797567143896, -122.423817511282 37.797585392094, -122.423821032586 37.797619647159, -122.423821201185 37.797621282429, -122.423831046391 37.797656500217, -122.423835586113 37.797674820329, -122.423839298643 37.79770453823, -122.423840865827 37.797713301259, -122.423845906435 37.797740814819, -122.423847559926 37.797749535523, -122.423875776561 37.797896377509, -122.423914062973 37.798089392917, -122.423953773462 37.798282236538, -122.423984876865 37.798428758383, -122.423986743855 37.798437454805, -122.423992809892 37.798464861369, -122.42399477566 37.798473576733, -122.424002962063 37.798502724407, -122.424005870197 37.798521266685, -122.424010177348 37.798555516507, -122.424010382285 37.798557154487, -122.424020256087 37.798592380369, -122.424024800451 37.798610711283, -122.424028500616 37.798640424666, -122.424030066706 37.798649187691, -122.424035104044 37.798676696733, -122.424036756444 37.798685413829, -122.424064762948 37.798831312401, -122.424102849686 37.799023396987, -122.424142385499 37.799215301682, -122.424173302657 37.799360848581, -122.424175169695 37.799369540494, -122.424181230207 37.799396928122, -122.424183197158 37.799405640779, -122.424191392823 37.799434782131, -122.424194302175 37.799453327105, -122.424198596971 37.799487595832, -122.424198801915 37.79948923291))", null, "2400", "24 Hours", "Filbert St", "All Day", "Mission St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "9800.1361304183301", null, "pending", null ]
-, [ "row-eicn-s5at-pfkw", "00000000-0000-0000-6F60-43017A2A3E82", 0, 1536369715, null, 1536369715, null, "{ }", "961", "AZHANG", 1530650148, "AZHANG", 1530650553, "IB", null, "Mission St", null, null, "MULTILINESTRING ((-122.397575192516 37.789757905407, -122.395828782948 37.791156023262))", null, "2400", "24 Hours", "Beale St", "All Day", "1st St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "716.87837797829604", "0", "active", null ]
-, [ "row-4nrc-ya34-ywtv", "00000000-0000-0000-202F-C1F6B1F62BCB", 0, 1536369715, null, 1536369715, null, "{ }", "2", "JKIBRICK", 1449700171, "AZHANG", 1513809272, null, null, "Mission St", null, null, "MULTILINESTRING ((-122.420021535214 37.770116392352, -122.42003703313 37.770114485361, -122.420067474707 37.770010259405, -122.420089670502 37.769934259279, -122.420097811236 37.769656573305, -122.420087112782 37.769056793423, -122.420065301134 37.768988567292, -122.419994726055 37.768278597461, -122.419838448306 37.766678544627, -122.419682186335 37.765056280708, -122.419525950378 37.763434216155, -122.41950807606 37.763248640893, -122.419489501197 37.763055782985, -122.419456949933 37.762717810185, -122.41937248074 37.761840798584, -122.419219256646 37.760240298, -122.419175709882 37.759785427923, -122.419065819928 37.758637509189, -122.419024746514 37.758204728426, -122.4189142417 37.757040344928, -122.418760786802 37.755441878555, -122.418751616098 37.755346349056, -122.418760786802 37.755441878555, -122.41860715772 37.753841530296, -122.418458483499 37.752244396457, -122.418301081924 37.750644592804, -122.418148463435 37.749046229537, -122.418106840319 37.748610302344, -122.4181098495 37.748483262138, -122.418234382626 37.748170631378, -122.418234409876 37.748170588139, -122.418249390801 37.748170386757))", null, "2400", "24 hours", "Duboce Ave", "All Day", "Cesar Chavez St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "8099.2001724598604", null, "active", null ]
-, [ "row-kxfd~eys7.vzsy", "00000000-0000-0000-CC5F-475BFDB35539", 0, 1536369715, null, 1536369715, null, "{ }", "9", null, null, "AZHANG", 1513817552, null, null, "O'Farrell St.", null, null, "MULTILINESTRING ((-122.408033947895 37.786423032544, -122.409990919143 37.786187056562, -122.412208471513 37.785910933082, -122.418183740955 37.785144542185, -122.421214157543 37.784755708495, -122.422832756531 37.784552838032, -122.422904039641 37.784553234652, -122.423053409956 37.784558141284, -122.423337992899 37.784620000824, -122.423625135061 37.784771351335, -122.423755995892 37.784889484213, -122.423886857139 37.785007616043, -122.424183386907 37.785197757934, -122.424550791367 37.785278477058, -122.424700266716 37.785339515701, -122.424662314814 37.785360304316))", null, "2400", "24 hours", "Powell St.", "All Day", "Gough St.", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "4976.3263669581502", "0", "active", null ]
-, [ "row-n3by_c28g-ejup", "00000000-0000-0000-6C6F-D8A791CED8AB", 0, 1536369715, null, 1536369715, null, "{ }", "15", null, null, "AZHANG", 1513810220, null, null, "Clay Street", null, null, "MULTILINESTRING ((-122.40151072246 37.794843627159, -122.402387574039 37.794775824883, -122.403152519548 37.794671176643, -122.403642256603 37.794608148583, -122.403633680509 37.79460925158, -122.404809696471 37.794457899497, -122.405676441498 37.794350116924, -122.406318209809 37.794268522013, -122.406834440041 37.794202851602, -122.407307229699 37.794142705866, -122.407545483523 37.794112396456, -122.407916526616 37.79406519162, -122.408733581866 37.793961241991, -122.409204675523 37.793901303372, -122.40955427389 37.793856823049, -122.409557017515 37.793870275246))", null, "2100", "7am to 9pm", "Sansome St", "Part Time", "Powell St", null, "no", null, "weekday only", "weekdays", "weekdays", "700", "taxi allowed", "2362.3978820270304", "0", "active", null ]
-, [ "row-83ir_xfrc~3u6y", "00000000-0000-0000-4186-EDF60B847882", 0, 1536369715, null, 1536369715, null, "{ }", "20", null, null, "AZHANG", 1513819892, null, null, "Stockton", null, null, "MULTILINESTRING ((-122.406831554189 37.788491280959, -122.406237536991 37.785743490573))", null, "2400", "24 hours", "Ellis St", "unknown", "Post St", null, "no", null, "unknown", "unknown", null, "0", "taxi allowed", "1015.2281171619201", "0", "active", null ]
-, [ "row-9aru.payp_65jq", "00000000-0000-0000-2911-2FA7E1B44A4A", 0, 1536369715, null, 1536369715, null, "{ }", "17", null, null, "AZHANG", 1513810286, null, null, "Bush St", null, null, "MULTILINESTRING ((-122.399593610885 37.791329915414, -122.40111476194 37.791137394335, -122.402374463073 37.79097304541))", null, "1900", "3pm to 7pm", "Battery St", "Part Time", "Montgomery St", null, "no", null, "weekday only", "weekdays", "weekdays", "1500", "taxi allowed", "814.05567516318104", "0", "active", null ]
-, [ "row-m9vq.eshe~tdre", "00000000-0000-0000-4586-4B52A26D4B89", 0, 1536369715, null, 1536369715, null, "{ }", "645", "AZHANG", 1513808039, "AZHANG", 1513819805, "IB", null, "Taraval St", null, null, "MULTILINESTRING ((-122.473593688508 37.743181732519, -122.471374318434 37.743287099002))", null, "2400", "24 hours", "15th Ave", "All Day", "17th Ave", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "642.91564692305803", null, "active", null ]
-, [ "row-2s6v~vmnq.4gx8", "00000000-0000-0000-2C90-A383F9805F02", 0, 1536369715, null, 1536369715, null, "{ }", "41", "JKIBRICK", 1456791824, "AZHANG", 1513817589, null, null, "Powell Street", null, null, "MULTILINESTRING ((-122.408236118281 37.787362517596, -122.408033947895 37.786423032544))", null, "2400", "24 hours", "O'Farrell St", "All Day", "Geary Blvd", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "347.06701753009503", null, "active", null ]
-, [ "row-7c8d~kehr_hc26", "00000000-0000-0000-D6B5-1FF7EDE8456E", 0, 1536369715, null, 1536369715, null, "{ }", "5", null, null, "AZHANG", 1513819156, null, null, "Clay Street", null, null, "MULTILINESTRING ((-122.401498194166 37.794844617556, -122.401390970833 37.794853817158, -122.400472993509 37.794965418968, -122.400342555423 37.795018045579, -122.399162642684 37.795168281038, -122.398479631858 37.795255239969, -122.397992349737 37.795313668092))", null, "2400", "24 hours", "Sansome St", "All Day", "Davis St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1029.4204943167799", "0", "active", null ]
-, [ "row-w2dr_trrn-fgay", "00000000-0000-0000-0166-807CF3C825B9", 0, 1536369715, null, 1536369715, null, "{ }", "18", null, null, "AZHANG", 1513820386, null, null, "Geary Street", null, null, "MULTILINESTRING ((-122.403178522357 37.788013846038, -122.405460247278 37.787718006377, -122.408236118281 37.787362517596))", null, null, null, "Market St", "unknown", "Powell St", null, null, null, null, null, null, null, "taxi allowed", "1480.73725993468", "0", "suspended", null ]
-, [ "row-avjb.nduu~augt", "00000000-0000-0000-53CC-A92945BC129B", 0, 1536369715, null, 1536369715, null, "{ }", "21", null, null, "AZHANG", 1513819753, null, null, "Stockton", null, null, "MULTILINESTRING ((-122.406605186485 37.787571950865, -122.406410289879 37.786613984435))", "Stockton St. (Geary St. to O'Farrell St.)", "1900", null, "O'Farrell St", "Part time", "Geary Blvd", null, "no", "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.", null, null, null, "700", "taxi allowed", "353.36161839601903", "0", "suspended", null ]
-, [ "row-2pch_32tk~q2a5", "00000000-0000-0000-8184-F5D6229357E1", 0, 1536369715, null, 1536369715, null, "{ }", "965", "AZHANG", 1532654427, "AZHANG", 1532739539, "OB", null, "Potrero Ave", null, null, "MULTILINESTRING ((-122.406392471411 37.752951177058, -122.406461924711 37.754225171513, -122.406725223103 37.75618338868, -122.407170750138 37.762032315437))", "Potrero Ave (18th St to 25th St)", "2400", "24 Hours", "24th St", "All Day", "18th St", 1530403200, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "3315.26020598684", null, "active", null ]
-, [ "row-c26b~kr95~i8f8", "00000000-0000-0000-9655-873B9A758975", 0, 1536369715, null, 1536369715, null, "{ }", "647", "AZHANG", 1513818145, "AZHANG", 1513819368, null, null, "Market", null, null, "MULTILINESTRING ((-122.420265843185 37.774369166085, -122.420267503742 37.77436356615, -122.420162194685 37.774382947962, -122.419292591892 37.775071515777, -122.419268830047 37.77515196691))", null, "2400", "24 hours", "Van Ness Ave", "All Day", "12th St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "418.46794328829003", "0", "active", null ]
-, [ "row-i3mg-frnj_gr78", "00000000-0000-0000-AF37-454C772DB8E4", 0, 1536369715, null, 1536369715, null, "{ }", "641", "AZHANG", 1508205408, "AZHANG", 1513810119, null, null, "Powell", null, null, "MULTILINESTRING ((-122.409212273787 37.792043990018, -122.40942004401 37.793035921377))", null, "2400", "24 hours", "Sacramento St", "All Day", "California St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "366.16840064949901", null, "active", null ]
-, [ "row-bhr2-k86i-72xn", "00000000-0000-0000-0CF6-742342DFB9E3", 0, 1536369715, null, 1536369715, null, "{ }", "8", null, null, "AZHANG", 1513808409, null, null, "Judah Ave", null, null, "MULTILINESTRING ((-122.477077932459 37.761702580584, -122.484515405352 37.761374681806, -122.493100399506 37.760983843314, -122.495762412174 37.760878617687, -122.509129521415 37.760292356958))", null, "2400", "24 hours", "19th Ave", "All Day", "La Playa St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "9280.3002233235202", "0", "active", null ]
-, [ "row-gzjz~7va9~dadk", "00000000-0000-0000-91B5-A6A8A961510A", 0, 1536369715, null, 1536369715, null, "{ }", "4", null, null, "AZHANG", 1513818807, null, null, "3rd Street", null, null, "MULTILINESTRING ((-122.403442323516 37.787651865477, -122.403444022805 37.787646743314, -122.403355863631 37.787279522103, -122.403041416435 37.787029313468, -122.402588450032 37.786683101923, -122.402038642718 37.786253046814, -122.4015030578 37.785834108257, -122.401211951831 37.785606398458, -122.400480063764 37.785034421132, -122.400287542734 37.784879452174, -122.399100332719 37.783915814905, -122.39816268577 37.78316631041, -122.396914867128 37.78216602011, -122.396258870173 37.781644737339, -122.395702700426 37.781202347753, -122.394814966919 37.780497900642, -122.394034187535 37.77986952847, -122.392789934324 37.77887483024))", null, "2400", "24 hours", "Townsend St", "All Day", "Market St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "4461.5973342445404", "0", "active", null ]
-, [ "row-mzzv-2fed-nudk", "00000000-0000-0000-8333-5C7616C0947F", 0, 1536369715, null, 1536369715, null, "{ }", "39", null, null, "AZHANG", 1513817306, "IB", null, "Mission St", null, null, "MULTILINESTRING ((-122.406478064147 37.782728553705, -122.407366034729 37.782002706455, -122.41302534755 37.777509707847, -122.415259538232 37.775736279048, -122.417056396091 37.774346059663))", null, "2100", "7am to 9pm", "5th St", "Part Time", "11th St", null, "no", null, "weekday only", "weekdays", "weekdays", "700", "taxi allowed", "4320.4801409959009", "0", "active", null ]
-, [ "row-embt~pdmt.b3es", "00000000-0000-0000-3A32-2B6A6C379216", 0, 1536369715, null, 1536369715, null, "{ }", "31", null, null, "AZHANG", 1513818930, null, null, "4th Street", null, null, "MULTILINESTRING ((-122.402715442643 37.783255537227, -122.404269867982 37.784484042616, -122.40523960089 37.785299277655, -122.40573872915 37.785693742641, -122.405838554672 37.785738824301))", null, "2400", "24 hours", "Howard St", "unknown", "Market St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1279.0207001538699", "0", "suspended", null ]
-, [ "row-gqar~66du-cbaf", "00000000-0000-0000-DDDA-B9DBF944D064", 0, 1536369715, null, 1536369715, null, "{ }", "36", null, null, "AZHANG", 1513817291, "OB", null, "Mission St", null, null, "MULTILINESTRING ((-122.404212123895 37.78458243164, -122.40677906419 37.782579057971, -122.409201022279 37.78064325743, -122.417149032545 37.774417544099))", null, "1800", "4pm to 6pm", "4th St", "Part Time", "11th St", null, "no", null, "weekday only", "weekdays", "weekdays", "1600", "taxi allowed", "5261.44749360264", "0", "active", null ]
-, [ "row-cn6q.fpp4.dj6g", "00000000-0000-0000-BDCA-83E5EEBE4668", 0, 1536369715, null, 1536369715, null, "{ }", "43", "JKIBRICK", 1456791711, "AZHANG", 1513817568, null, null, "Powell Street", null, null, "MULTILINESTRING ((-122.408033947895 37.786423032544, -122.407852861286 37.785459874711))", null, "2400", "24 hours", "Ellis St", "All Day", "O'Farrell St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "354.61715478230798", null, "active", null ]
-, [ "row-s29f~rcyu.v9d2", "00000000-0000-0000-62DA-D4A25F9D6C07", 0, 1536369715, null, 1536369715, null, "{ }", "19", null, null, "AZHANG", 1514316164, null, null, "O'Farrell St.", null, null, "MULTILINESTRING ((-122.404600341652 37.786739301366, -122.404814252871 37.786840733935, -122.406532678154 37.786604058774, -122.408033947895 37.786423032544))", null, null, null, "Market St", "unknown", "Powell St", null, null, null, null, null, null, null, "taxi allowed", "1014.9038913055", "0", "suspended", null ]
-, [ "row-2dqg-u6y4.vxnn", "00000000-0000-0000-BD26-234BED0CE9E1", 0, 1536369715, null, 1536369715, null, "{ }", "35", "JKIBRICK", 1449700554, "AZHANG", 1513809603, "OB", null, "Van Ness", null, null, "MULTILINESTRING ((-122.4245665632 37.801308420751, -122.424526225867 37.801182465008, -122.424497682245 37.801047990581, -122.42446020189 37.800866272694, -122.424424081066 37.800683957753, -122.424398244099 37.800548067579, -122.424396618848 37.800539402752, -122.424391577631 37.800512511788, -122.424389987514 37.800504038872, -122.424384827106 37.800473781016, -122.424381180803 37.800455104351, -122.424371886765 37.800419974137, -122.424386694858 37.800418092563, -122.424382273949 37.80038364363, -122.424379238393 37.800365346398, -122.424371138853 37.800336816833, -122.424369415588 37.800329231327, -122.424363390027 37.800302141035, -122.424361511613 37.800293380652, -122.424330951205 37.800148295191, -122.424291537029 37.799956411338, -122.424253239395 37.799763958307, -122.424225154022 37.799617488581, -122.424223506124 37.799608763382, -122.424218409462 37.799581681391, -122.424216985395 37.79957253009, -122.424213290776 37.799542845549, -122.424208795139 37.799524495736, -122.424198801915 37.79948923291))", null, "2400", "24 hours", "Lombard St", "All Day", "Filbert St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "675.57815691304506", null, "pending", null ]
-, [ "row-qpys~jsp6_tssv", "00000000-0000-0000-15B1-C44C8CB4D230", 0, 1536369715, null, 1536369715, null, "{ }", "14", null, null, "AZHANG", 1513810236, null, null, "Sacramento", null, null, "MULTILINESTRING ((-122.396590487457 37.794612323415, -122.397745612376 37.794465825453, -122.400241248989 37.794172828039, -122.40296505827 37.79380094632, -122.404662092434 37.793598100357))", null, "1900", "7am to 7pm", "Drumm St", "Part Time", "Kearny St", null, "no", null, "weekday only", "weekdays", "weekdays", "700", "taxi allowed", "2361.6306236134601", "0", "active", null ]
-, [ "row-kzqw-54v8~wwjd", "00000000-0000-0000-EDB7-BA45B99C4936", 0, 1536369715, null, 1536369715, null, "{ }", "34", "JKIBRICK", 1449700451, "AZHANG", 1513809175, "Both", null, "Mission St", null, null, "MULTILINESTRING ((-122.4235934519 37.739888646146, -122.423103118239 37.740646828144, -122.422853789469 37.741032348906, -122.4223796708 37.741765429753, -122.422096996478 37.742202495012, -122.421981973226 37.742380339398, -122.421693660024 37.742826115514, -122.421498662262 37.743127605407, -122.421097699831 37.743747535803, -122.420906871651 37.744042573899, -122.420169877608 37.745181429596, -122.420047765322 37.745370124101, -122.419934812005 37.745567609698, -122.419898975686 37.745600037895, -122.419642590715 37.745995805385, -122.419518325491 37.7461876251, -122.419404445794 37.746363412049, -122.419134512972 37.74678008259, -122.418795012496 37.747304558513, -122.418234409876 37.748170588139, -122.418234382626 37.748170631378))", null, "2400", "24 hours", "Cesar Chavez Ave", "All Day", "Randall St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "3391.2664421300301", null, "active", null ]
-, [ "row-4ck9_hfzi_du3s", "00000000-0000-0000-53BF-A88D128CDAFC", 0, 1536369715, null, 1536369715, null, "{ }", "26", null, null, "AZHANG", 1513808423, null, null, "Judah Ave", null, null, "MULTILINESTRING ((-122.466214063287 37.762186415122, -122.472688461048 37.761893289873, -122.477014232602 37.761705389076, -122.477077932459 37.761702580584))", null, "2400", "24 hours", "9th Ave", "All Day", "19th Ave", null, "no", null, "weekends", "weekdays", "All times", "0", "no", "3145.6271246061201", "0", "active", null ]
-, [ "row-f3b3.653q.msii", "00000000-0000-0000-9609-5E248DC388FA", 0, 1536369715, null, 1536369715, null, "{ }", "3", null, null, "AZHANG", 1530648713, null, null, "1st Street", null, null, "MULTILINESTRING ((-122.399165014967 37.791010402093, -122.399161821655 37.79102154463, -122.398602733909 37.790576121122, -122.398172914926 37.790233689622, -122.397951795198 37.790057562579, -122.397587689824 37.789767493529, -122.397283060758 37.789524802387, -122.39704801759 37.789337546903, -122.396812577352 37.789149973629, -122.396583988046 37.788967859172, -122.396054420966 37.788545951748))", null, "2400", "24 hours", "Howard St", "All Day", "Market St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1276.5915360310801", "0", "active", null ]
-, [ "row-xj5g.xk3w-2d3r", "00000000-0000-0000-880D-8C85508E8BAC", 0, 1536369715, null, 1536369715, null, "{ }", "13", null, null, "AZHANG", 1513817457, "OB", null, "Mission", null, null, "MULTILINESTRING ((-122.395021800086 37.791896430983, -122.402394626645 37.786024805152, -122.404204319567 37.784583874642, -122.404204320726 37.784581996148))", null, "1800", "7am to 6pm", "Main St", "Part Time", "4th St", null, "no", null, "weekday only", "weekdays", "weekdays", "700", "taxi allowed", "3760.0572284519803", "0", "active", null ]
-, [ "row-iy4s~zgxv-shzf", "00000000-0000-0000-3B25-0E0C85C4102D", 0, 1536369715, null, 1536369715, null, "{ }", "30", null, null, "AZHANG", 1513818984, null, null, "4th Street", null, null, "MULTILINESTRING ((-122.394995603148 37.777086403815, -122.396545274738 37.77833004077, -122.398066425377 37.77956614136, -122.398722422012 37.780110922018, -122.399226303113 37.780445301542, -122.399625605465 37.780787194157))", null, "2400", "24 hours", "Townsend St", "unknown", "Harrison St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1900.1764567015", "0", "suspended", null ]
-, [ "row-ttxa~6pb3~w58c", "00000000-0000-0000-A238-020F546E601F", 0, 1536369715, null, 1536369715, null, "{ }", "38", null, null, "AZHANG", 1530650172, null, null, "Mission St", null, null, "MULTILINESTRING ((-122.4064756468 37.782735288363, -122.404303254707 37.78445970993, -122.404122618116 37.784534847053, -122.403728068802 37.784846666871, -122.402021529024 37.78619160636, -122.401066056555 37.78696549942, -122.400101075922 37.787735626315, -122.397575192516 37.789757905407))", null, "1800", "7am to 6pm", "1st St", "Part Time", "5th St", null, "no", null, "weekday only", "weekdays", "weekdays", "700", "taxi allowed", "3629.8348867719501", "0", "active", null ]
-, [ "row-6xny~9rsj~32ff", "00000000-0000-0000-F3F7-448E15DD61DC", 0, 1536369715, null, 1536369715, null, "{ }", "963", "AZHANG", 1532653875, "AZHANG", 1532654080, null, null, "16th St", null, null, "MULTILINESTRING ((-122.39078125165 37.766819582861, -122.407537837187 37.765777943854))", "16th St (4th St to Potrero Ave)", "2400", "24 Hours", "Potrero Ave", "All Day", "4th St", 1483228800, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "4858.7855606063204", null, "active", null ]
-, [ "row-d3wu.wzt5_zia3", "00000000-0000-0000-2D2B-5734F6A943AF", 0, 1536369715, null, 1536369715, null, "{ }", "964", "AZHANG", 1532654186, "AZHANG", 1532654489, "Both", "Train", "West Portal Ave", null, null, "MULTILINESTRING ((-122.470595051823 37.736598951277, -122.471571548254 37.734742984937))", "West Portal Ave (15th Ave to Sloat Blvd)", "2400", "24 Hours", "15th Ave", "24 Hours", "Sloat Blvd", null, "no", null, "weekends", "weekdays", "All times", "0", "no", "732.47233816677999", null, "active", null ]
-, [ "row-vnmg~7tpb.uzxd", "00000000-0000-0000-00A9-F265F92544EA", 0, 1536369715, null, 1536369715, null, "{ }", "25", null, null, "AZHANG", 1513809299, null, null, "Duboce Ave", null, null, "MULTILINESTRING ((-122.42919000828 37.769461767838, -122.429924439478 37.769412918258))", null, "2400", "24 hours", "Church St", "All Day", "Fillmore St", null, "no", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "213.04269238241602", "0", "active", null ]
-, [ "row-7e5v~9p8w_5anu", "00000000-0000-0000-00F6-925A3E5D2E71", 0, 1536369715, null, 1536369715, null, "{ }", "22", null, null, "AZHANG", 1513809352, "IB", null, "Haight Street", null, null, "MULTILINESTRING ((-122.427156298585 37.772578980978, -122.423792047323 37.772955717238, -122.422213853437 37.773158618962))", null, "2400", "24 hours", "Gough St", "All Day", "Buchanan St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "no", "1444.1988913478101", "0", "active", null ]
-, [ "row-k3bp.5qaf_pzm6", "00000000-0000-0000-3044-41FD28A21E1F", 0, 1536369715, null, 1536369715, null, "{ }", "44", "JKIBRICK", 1449699670, "AZHANG", 1513809400, "OB", null, "Otis St", null, null, "MULTILINESTRING ((-122.41864644487 37.773058154272, -122.418631431666 37.77305839804, -122.418830702959 37.772985154382, -122.419685044319 37.772308147797, -122.420357583438 37.771775194011, -122.420318949723 37.771681709865, -122.420188177689 37.770257936472, -122.420031674004 37.77012500449, -122.420036548954 37.770116148407))", null, "2400", "24 hours", "South Van Ness Ave", "All Day", "13th St", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "1316.8985526046399", null, "pending", null ]
-, [ "row-pb4i-xe2z_s9f3", "00000000-0000-0000-3CFC-D4E5068BDF02", 0, 1536369715, null, 1536369715, null, "{ }", "962", "AZHANG", 1530650524, "AZHANG", 1530650583, "OB", null, "Mission St", null, null, "MULTILINESTRING ((-122.394951279811 37.791842499314, -122.397587689824 37.789767493529))", null, "2400", "24 Hours", "Main St", "All Day", "1st St", null, "red lane", null, "weekends", "weekdays", null, "0", null, "1073.0370737107701", null, "active", null ]
-, [ "row-3y2e_bqfr.ewmz", "00000000-0000-0000-37E2-FD7235A4EB23", 0, 1536369715, null, 1536369715, null, "{ }", "40", "JKIBRICK", 1439239857, "AZHANG", 1513808606, null, null, "Geneva Ave", null, null, "MULTILINESTRING ((-122.445216229246 37.720194825099, -122.445421276231 37.720301744599, -122.446463090289 37.720712569704))", null, "24", "24 hours", "San Jose Ave", "All Day", "Delano Ave", null, "red lane", null, "weekends", "weekdays", "All times", "0", "taxi allowed", "407.38970227395998", "0", "active", null ]
- ]
+  "data": [
+    [
+      "row-aycc-kics-3nyr",
+      "00000000-0000-0000-340E-7BA8949B5201",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "6",
+      null,
+      null,
+      "AZHANG",
+      1530648925,
+      null,
+      null,
+      "Fremont Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.396699384301 37.790463147891, -122.39670291647 37.790465963172, -122.398277670781 37.791720953301, -122.398273568514 37.791732863929))",
+      null,
+      "2400",
+      "24 hours",
+      "Mission St",
+      "All Day",
+      "Market St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "650.88237955287195",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-fpuu~nxk6_g48y",
+      "00000000-0000-0000-526B-33A8FFF1946F",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "10",
+      null,
+      null,
+      "AZHANG",
+      1513817508,
+      null,
+      null,
+      "Post St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.424869811762 37.786192083519, -122.42487164885 37.786201320512, -122.423227097481 37.786407213211, -122.421583341167 37.786623854067, -122.419941172418 37.786832419643, -122.418284205907 37.787042841339, -122.417003056951 37.787205519242, -122.416821835662 37.787228529212, -122.414732630382 37.787494403436, -122.411252998776 37.787928303571, -122.409370575079 37.788176244912, -122.407559456071 37.788412915422, -122.405220685944 37.788694664162))",
+      null,
+      "2400",
+      "24 hours",
+      "Grant Ave",
+      "All Day",
+      "Gough St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "5754.6163413594304",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-f7kv_8k7y-26mh",
+      "00000000-0000-0000-0F95-DA9EF5089EC6",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "321",
+      "AZHANG",
+      1505843866,
+      "AZHANG",
+      1513819807,
+      "Both",
+      null,
+      "Taraval St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.473593688508 37.743181732519, -122.504702197955 37.741752593832))",
+      null,
+      "2400",
+      "24 hours",
+      "17th Ave",
+      "All Day",
+      "46th Ave",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "9010.7048104405603",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-fb5b.37y4~ss4b",
+      "00000000-0000-0000-E883-B65358FD1219",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "23",
+      null,
+      null,
+      "AZHANG",
+      1513808438,
+      null,
+      null,
+      "Lincoln",
+      null,
+      null,
+      "MULTILINESTRING ((-122.47732293768 37.765451822926, -122.478020765406 37.765420257065))",
+      null,
+      "2400",
+      "24 hours",
+      "19th Ave",
+      "All Day",
+      "20th Ave",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "202.05604019809101",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-ag3b~ixre_vkku",
+      "00000000-0000-0000-20AE-4AA2D1F3F0CD",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "33",
+      null,
+      null,
+      "AZHANG",
+      1513810130,
+      null,
+      null,
+      "Powell Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.409188290427 37.792047433271, -122.408992204673 37.791084828796, -122.40880206197 37.790164473518, -122.408605976239 37.789244105792))",
+      null,
+      "2400",
+      "24 hours",
+      "California St",
+      "All Day",
+      "Sutter St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "1034.6148962269601",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-4nif.tj2k.cym6",
+      "00000000-0000-0000-EEFE-4897966F8E81",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "29",
+      null,
+      null,
+      "AZHANG",
+      1513818469,
+      "Both",
+      null,
+      "Market",
+      null,
+      null,
+      "MULTILINESTRING ((-122.403548211577 37.787625969658, -122.407987711454 37.784123870557, -122.414511577172 37.778971718456, -122.414848536789 37.778705503741, -122.416022719399 37.777777964946, -122.416274478526 37.777577158029, -122.41640473623 37.777474259062, -122.416520091112 37.777383337547, -122.417072963059 37.776949118357, -122.416561532457 37.777350673393, -122.417485931751 37.776622707134, -122.417655278599 37.776493551032, -122.419057588767 37.775382799156, -122.419056086431 37.775381607696, -122.419180960113 37.775282954924))",
+      null,
+      "2400",
+      "24 hours",
+      "3rd St",
+      "All Day",
+      "Van Ness Ave",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "6789.5611288059008",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-dgpf-tfyz_jjma",
+      "00000000-0000-0000-7EED-BA82AD2AE9B7",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "45",
+      "JKIBRICK",
+      1449699460,
+      "AZHANG",
+      1513810339,
+      "OB",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.417149032545 37.774417544099, -122.418631431666 37.77305839804))",
+      null,
+      "2400",
+      "24 hours",
+      "11th St",
+      "All Day",
+      "South Van Ness Ave",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "654.64339890549707",
+      null,
+      "pending",
+      null
+    ],
+    [
+      "row-i7vt_y9by_49p2",
+      "00000000-0000-0000-A71C-80F230F294BD",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "27",
+      null,
+      null,
+      "AZHANG",
+      1513810247,
+      null,
+      null,
+      "Sansome Local Access",
+      null,
+      null,
+      "MULTILINESTRING ((-122.401325524554 37.794020192583, -122.400725359115 37.791192512921))",
+      null,
+      "2400",
+      "24 hours",
+      "Bush St",
+      "All Day",
+      "Sacramento St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1044.2050232641502",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-pqj7_ehq4_e79x",
+      "00000000-0000-0000-517B-DEAF7D7782D9",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "24",
+      null,
+      null,
+      "AZHANG",
+      1513809286,
+      null,
+      null,
+      "Church Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.42915688227 37.769471631083, -122.428985751784 37.767741222901, -122.428957230753 37.767515760052, -122.428828884242 37.766129145797, -122.428686275941 37.764500121775))",
+      null,
+      "2400",
+      "24 hours",
+      "Duboce Ave",
+      "All Day",
+      "16th St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1815.5140105269202",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-5b4y~r6ai_ubjp",
+      "00000000-0000-0000-83DB-25EEFBA19666",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "7",
+      null,
+      null,
+      "AZHANG",
+      1513817538,
+      null,
+      null,
+      "Geary Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.408236118281 37.787362517596, -122.408247042474 37.78736111868, -122.413196723198 37.786745953757, -122.416500472464 37.78633270967, -122.423387243802 37.785440470453, -122.423815066577 37.785388814499, -122.424355788702 37.785393510301, -122.424539989889 37.785416990431, -122.424718250621 37.78541699008, -122.424724192122 37.785431078706))",
+      null,
+      "2400",
+      "24 hours",
+      "Powell St",
+      "All Day",
+      "Gough St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "4826.46421072867",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-bdru-vti6~cdfc",
+      "00000000-0000-0000-3C96-6D2A00D51292",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "42",
+      null,
+      null,
+      "AZHANG",
+      1513809628,
+      null,
+      null,
+      "Sacramento St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.404664904541 37.793598348301, -122.408212276085 37.793128795745, -122.41061878281 37.792823585698, -122.413375867721 37.792457330513, -122.416031939072 37.792123944945, -122.419252500415 37.791715426514))",
+      null,
+      "1900",
+      "4pm to 6pm",
+      "Kearny St",
+      "Part Time",
+      "Larkin St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "1530",
+      "taxi allowed",
+      "4270.8836681121702",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-6uap-d6ma.vmdt",
+      "00000000-0000-0000-6913-A8D508F25BE6",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "12",
+      null,
+      null,
+      "AZHANG",
+      1513819354,
+      null,
+      null,
+      "Sutter St.",
+      null,
+      null,
+      "MULTILINESTRING ((-122.40385783017 37.789831418944, -122.406952420699 37.789448245429, -122.418446614899 37.788005691405, -122.421769377215 37.787547373197, -122.425049357563 37.787129438447))",
+      null,
+      "2400",
+      "24 hours",
+      "Kearny St",
+      "All Day",
+      "Gough St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "6202.8038968243509",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-kkxb~bu8q~k3a2",
+      "00000000-0000-0000-B091-7929DE4D44F9",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "642",
+      "AZHANG",
+      1508205413,
+      "AZHANG",
+      1513810156,
+      null,
+      null,
+      "California",
+      null,
+      null,
+      "MULTILINESTRING ((-122.409096524223 37.79208068543, -122.405902135172 37.792520359522))",
+      null,
+      "2400",
+      "24 hours",
+      "Grant Ave",
+      "All Day",
+      "Powell St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "936.88555646026805",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-ivxr~67ie-y7z9",
+      "00000000-0000-0000-162B-54A892F201C9",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "338",
+      "AZHANG",
+      1508204689,
+      "AZHANG",
+      1513810261,
+      null,
+      null,
+      "Sansome Local Access",
+      null,
+      null,
+      "MULTILINESTRING ((-122.4016850895 37.795714180413, -122.401325524554 37.794020192583))",
+      null,
+      "0",
+      "unknown",
+      "Sacramento St",
+      "unknown",
+      "Washington St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "625.55626293574198",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-uif9.sdcn-t9hw",
+      "00000000-0000-0000-14D6-47DF2FC33220",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "16",
+      null,
+      null,
+      "AZHANG",
+      1513819122,
+      null,
+      null,
+      "Sutter St.",
+      null,
+      null,
+      "MULTILINESTRING ((-122.400570870555 37.790255074493, -122.403856001316 37.789833084095))",
+      null,
+      "1800",
+      "3pm to 6pm",
+      "Sansome St",
+      "Part Time",
+      "Kearny St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "1500",
+      "taxi allowed",
+      "961.71103891024904",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-57vp_apnb.eh4n",
+      "00000000-0000-0000-4E2E-7D4EFCB9CEC0",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "32",
+      null,
+      null,
+      "AZHANG",
+      1513819027,
+      null,
+      null,
+      "4th Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.402713156567 37.783262352946, -122.401927415661 37.782655311946))",
+      null,
+      "1900",
+      "3pm to 7pm",
+      "Clementina St",
+      "unknown",
+      "Howard St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "1500",
+      "taxi allowed",
+      "316.91391225227301",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-v7za~yykv~ma4p",
+      "00000000-0000-0000-BD27-1AFE6852F452",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "1",
+      "JKIBRICK",
+      1449699053,
+      "AZHANG",
+      1513809486,
+      null,
+      null,
+      "Van Ness",
+      null,
+      null,
+      "MULTILINESTRING ((-122.41864644487 37.773058154272, -122.418660926818 37.773098380496, -122.418666236481 37.773111899883, -122.4186762423 37.773137655528, -122.418685882202 37.773164459791, -122.418690595566 37.773178960161, -122.418697805063 37.7732091721, -122.418711808795 37.773261174612, -122.418827449174 37.773641153666, -122.418846754735 37.773698885852, -122.41896653823 37.774081703853, -122.418984443179 37.774142586293, -122.419102651654 37.774522319735, -122.419126546477 37.774586035429, -122.419234243631 37.774954313881, -122.419241778266 37.774995201312, -122.419244057551 37.775025153347, -122.419249019178 37.775046446075, -122.419251087635 37.775053775906, -122.419261848422 37.775085771724, -122.419267277121 37.77510025063, -122.419274035718 37.775118441829, -122.419276378601 37.775126409609, -122.419281481486 37.775143766088, -122.419283834571 37.775151773513, -122.419308683607 37.775211781071, -122.419314018393 37.775236566906, -122.419321808977 37.775292756262, -122.419326901318 37.775343925679, -122.419328246505 37.775357345795, -122.419340197557 37.775437273763, -122.419387495572 37.775672159421, -122.419441785163 37.775908997437, -122.419478744486 37.776093842074, -122.419511574316 37.776251637977, -122.419517127852 37.776285845169, -122.419512529601 37.776302491873, -122.419534024553 37.776371957657, -122.419534523329 37.776373569599, -122.419536784959 37.776402677419, -122.419537326274 37.776405737211, -122.419543710634 37.776431846809, -122.419549229949 37.776452698195, -122.419556492438 37.776479870248, -122.419558954449 37.77649092203, -122.419560732035 37.77649912841, -122.419589877851 37.776642745862, -122.419628666629 37.776838469061, -122.419668461206 37.777034434858, -122.419697514933 37.777179434315, -122.41969915839 37.777188179431, -122.419701156191 37.777199230188, -122.419704936166 37.777226798655, -122.419707875496 37.777247674594, -122.419712090818 37.777273773711, -122.419712725328 37.777276581257, -122.419721274352 37.777302950874, -122.419706781784 37.777304800418, -122.419721274352 37.777302950874, -122.419721795843 37.777304555613, -122.419724934171 37.77733292937, -122.419725620947 37.777335610796, -122.41973034505 37.777361109104, -122.419735567222 37.777381637859, -122.419743004596 37.777409004548, -122.419745762649 37.777420738425, -122.419747772539 37.777430011594, -122.419760772355 37.777492534166, -122.41977754517 37.777577615874, -122.419795225777 37.777669091906, -122.419813835812 37.777764014334, -122.419833900712 37.777862692319, -122.419854279965 37.777958884639, -122.419873909932 37.778049889951, -122.419888734848 37.778121727967, -122.419891627524 37.778137504468, -122.419895983687 37.778166471358, -122.419899436064 37.778190429594, -122.419903958745 37.778223057115, -122.419904326398 37.77822616371, -122.419910765302 37.778252829185, -122.419911462227 37.778255716931, -122.419917868887 37.778289135972, -122.419920644966 37.77830135186, -122.419922789198 37.778318158864, -122.419923159627 37.778325619785, -122.419923313342 37.778349660968, -122.419923163767 37.77836022195, -122.420004191067 37.778735396687, -122.420083601633 37.779133090358, -122.420169008683 37.779531130533, -122.420252162936 37.779916157529, -122.420262881446 37.779940345525, -122.420266317695 37.779971060917, -122.42026071502 37.77999278518, -122.420261319186 37.780034603252, -122.42027537251 37.780079258226, -122.42027541559 37.780079396984, -122.420274412225 37.780118825312, -122.420275090841 37.780156167446, -122.420281712893 37.780193950747, -122.420285097987 37.780213557326, -122.42028835709 37.780230306938, -122.420302010353 37.780296180244, -122.420322306055 37.780383074547, -122.420344133444 37.780474838001, -122.42036625576 37.780570108049, -122.420387412892 37.780663440791, -122.420407585056 37.780753200086, -122.420426189082 37.780835766643, -122.420439537335 37.780895652992, -122.420442068625 37.780907314711, -122.420444680274 37.780919573786, -122.420450365852 37.780949119389, -122.420453426677 37.780970806188, -122.420458078807 37.781001514666, -122.420458629322 37.78100445733, -122.420467277696 37.781033935202, -122.420467749281 37.781035542627, -122.420472523574 37.781064515892, -122.420473338124 37.781068606441, -122.420485694309 37.781102854906, -122.420493276872 37.781129277364, -122.420498975646 37.781154269531, -122.420500799833 37.781162867819, -122.420513171624 37.781226478467, -122.420529444338 37.781314579896, -122.420547233916 37.78140777481, -122.420566103233 37.781503444918, -122.420584683418 37.781598391481, -122.420602004418 37.781691313275, -122.420617734485 37.781780030804, -122.420629126233 37.781842276239, -122.420631231148 37.78185296121, -122.420636467849 37.781881229131, -122.42064086338 37.781900923338, -122.42065160043 37.781939553631, -122.420665593124 37.781963919886, -122.420651466352 37.781965711073, -122.420665593124 37.781963919886, -122.420666481351 37.781965466148, -122.420667384042 37.781996476402, -122.420667822093 37.781999664095, -122.420672785125 37.782028229262, -122.420678046636 37.7820512365, -122.420685151796 37.782079675164, -122.420687882574 37.782092300048, -122.420689468744 37.782100078402, -122.420700837928 37.782156495533, -122.420717423888 37.782240081406, -122.420735843911 37.782333365628, -122.420755459457 37.782432068495, -122.420774803631 37.782528183744, -122.420793322335 37.782619151617, -122.420809926206 37.782701017549, -122.42082118715 37.782758914006, -122.420823168366 37.782769643088, -122.420825257908 37.782782032659, -122.420829138309 37.782812920213, -122.42083201726 37.782835707919, -122.420836292347 37.782864632386, -122.420836782686 37.782867675938, -122.420844799105 37.782897217585, -122.420845234385 37.782898821395, -122.420845781403 37.782925187123, -122.420852818217 37.782957488156, -122.42085788659 37.782981205289, -122.420862628669 37.783006190888, -122.420864247445 37.783014865698, -122.420876985598 37.783083719044, -122.420894438358 37.783175360545, -122.420913448455 37.78327037741, -122.420933171166 37.783366247652, -122.420951540914 37.783455969428, -122.420969126909 37.783544100819, -122.420986088215 37.783630282383, -122.421000466613 37.783699989318, -122.421003917175 37.783715634375, -122.421007554945 37.783731538953, -122.421014844833 37.783764408538, -122.421023464282 37.783796671205, -122.421035959958 37.783827269856, -122.421036592794 37.783828818756, -122.421039079383 37.783856619278, -122.421047544322 37.783889250396, -122.421053684205 37.783913593944, -122.421059185021 37.783940726697, -122.42106189035 37.783954909316, -122.42107434546 37.784025616729, -122.421089186491 37.784114574497, -122.421105166208 37.784206344426, -122.421122691146 37.784297691281, -122.421141536301 37.784386304954, -122.421161927646 37.784474942426, -122.421182216858 37.7845606896, -122.421197725428 37.78462969313, -122.421200918456 37.784645146212, -122.421206124193 37.784672362671, -122.421209419431 37.784696497392, -122.421213537137 37.784730865376, -122.421220306157 37.784754937878, -122.421220760749 37.78475655971, -122.421221207407 37.784758146403, -122.421220924138 37.784791895255, -122.421225496604 37.784824549729, -122.421232189609 37.784860254458, -122.421235043508 37.784874975879, -122.421238143588 37.784890118107, -122.421253817781 37.784959739722, -122.421274501972 37.785046300534, -122.42129548157 37.785135275073, -122.421316397987 37.785226303773, -122.421337695225 37.785319052486, -122.421359380024 37.785410775098, -122.421380890313 37.785498877621, -122.421397417575 37.78556784262, -122.421400285934 37.785580551303, -122.42140560162 37.78560561449, -122.421409508273 37.785628306018, -122.421413741674 37.785660354956, -122.42141412079 37.78566342911, -122.421421109644 37.785688930567, -122.421406524676 37.78569074696, -122.421421540425 37.78569050284, -122.42142183493 37.785695149142, -122.421423840017 37.785726860581, -122.421426604194 37.785744818208, -122.421428386305 37.785774814172, -122.421429731423 37.785783993439, -122.421434564037 37.785813627058, -122.421436310788 37.785823428983, -122.421446693167 37.785877652839, -122.421464990359 37.785967392499, -122.421484197482 37.786061567782, -122.421503461733 37.786157873834, -122.421522128793 37.786251497592, -122.421540865867 37.78634325368, -122.421559496768 37.786430759028, -122.421571849297 37.786487072661, -122.421573995709 37.786496815216, -122.421580512143 37.786526047404, -122.421583143599 37.786537984805, -122.421591582454 37.786569004052, -122.421593829642 37.786588334605, -122.421598123898 37.786621906161, -122.42159813069 37.786621955715, -122.421598348004 37.786623661278, -122.421608269907 37.786659555052, -122.421610206726 37.786677107944, -122.421615031202 37.786704614391, -122.421615884213 37.786709390564, -122.421620746338 37.786736422216, -122.421622631666 37.786746142183, -122.421633423009 37.786800335481, -122.421651608434 37.7868896309, -122.42167054957 37.786982965481, -122.421689724903 37.787078519169, -122.421709351166 37.787176563202, -122.42172892586 37.787273029645, -122.421748168428 37.78736532728, -122.421760714498 37.787423969, -122.421762621773 37.787432792518, -122.421768557821 37.787460162277, -122.421771011031 37.78746931027, -122.421777593344 37.787498879416, -122.421782390799 37.787517142039, -122.421785506579 37.787545318377, -122.421786157114 37.787551200874, -122.421786338132 37.787552839756, -122.421795732692 37.787587846843, -122.421800449586 37.787606024756, -122.421804384443 37.787635750933, -122.421806002237 37.787644575282, -122.421811159214 37.787672779136, -122.421812867815 37.787681646752, -122.421823935374 37.787738635756, -122.421841686091 37.787828884238, -122.421860424191 37.78792301427, -122.421879700941 37.78801885534, -122.42189967613 37.788117160687, -122.421919514655 37.788213746071, -122.421938765544 37.788306324761, -122.421951207313 37.788365405192, -122.421953082839 37.78837424942, -122.421959313938 37.788402318377, -122.42196125874 37.788411102257, -122.421969246811 37.788440314043, -122.421971939514 37.788458759049, -122.421976593789 37.78849270186, -122.421976819088 37.788494343455, -122.421987066549 37.788529077734, -122.421989380079 37.788547522649, -122.42199491917 37.788577329382, -122.421996415276 37.788586833919, -122.422001674847 37.788614291793, -122.422003376688 37.788623139583, -122.422014396887 37.78868003575, -122.42203209698 37.788770263455, -122.422050845711 37.788864568229, -122.422070185297 37.788960657031, -122.422089225066 37.78905413659, -122.422108098704 37.789145734909, -122.422126360853 37.789233295898, -122.422137864621 37.789287825352, -122.422139739063 37.78929665516, -122.422145576617 37.789324054599, -122.422147906094 37.789333459324, -122.422154400127 37.789363141038, -122.42215948168 37.789381234328, -122.422163259678 37.789415123763, -122.422163441845 37.789416761743, -122.422173865467 37.789451553704, -122.422177699157 37.789470166549, -122.422180978048 37.789499947508, -122.422182819579 37.789508771901, -122.422188098655 37.789536036963, -122.422189529367 37.789544454028, -122.422213378737 37.789685843002, -122.422258135713 37.789887960392, -122.422303825834 37.790084829012, -122.42232766055 37.790217851675, -122.422328702149 37.790225557791, -122.422330480561 37.790239337421, -122.422334284847 37.79027003747, -122.422337133605 37.790293602628, -122.422341789803 37.790329232904, -122.422343307665 37.79033540931, -122.422356622151 37.790372768749, -122.422342172513 37.790374605108, -122.422356622151 37.790372768749, -122.422357189208 37.790374359969, -122.422360193227 37.790413928834, -122.422360860008 37.790419057228, -122.422371292327 37.790455510529, -122.42237654319 37.790479642049, -122.4223851106 37.790508989075, -122.422388871469 37.790522222289, -122.422390925872 37.790529648444, -122.422418857314 37.790652832705, -122.422451020752 37.790841612, -122.422486208218 37.791035066143, -122.422517437268 37.791166591283, -122.422519500576 37.791174580535, -122.422525700157 37.791200062798, -122.422527642989 37.791208415107, -122.422533101278 37.791239866025, -122.422539542094 37.7912577614, -122.42254301371 37.791291964273, -122.422543178864 37.791293591437, -122.422552349425 37.791328697494, -122.422555978931 37.791347359826, -122.422561268489 37.791377705231, -122.42256286275 37.791386161067, -122.422567916341 37.791412968366, -122.422569545729 37.791421608906, -122.422595093001 37.791555735553, -122.422630825095 37.79173662053, -122.422668246793 37.791917313979, -122.422696954135 37.792051135903, -122.422698818572 37.792059755773, -122.422704612509 37.792086513681, -122.422706436145 37.792094946143, -122.422713384606 37.792125081999, -122.422717298028 37.792143732677, -122.422722164032 37.792177710624, -122.422722398443 37.792179345011, -122.422731613463 37.792214487097, -122.422735034826 37.792234418818, -122.422740541833 37.792263500221, -122.422742132731 37.792271944341, -122.422747173968 37.792298726398, -122.422748797723 37.792307357023, -122.422773770959 37.792438898638, -122.422808939459 37.792617212078, -122.422845883869 37.79279531689, -122.42287410463 37.792926526769, -122.422875970252 37.792935125914, -122.422881752986 37.792961833353, -122.422883572127 37.792970252296, -122.422889801357 37.792999239254, -122.422894399057 37.793019045105, -122.422899208413 37.793053075282, -122.422899438292 37.793054703361, -122.422908633087 37.793089794069, -122.422912258216 37.793108487917, -122.422917507172 37.793138834188, -122.422919090155 37.793147297222, -122.422924101973 37.793174143229, -122.422925714409 37.793182788263, -122.422950966634 37.793316833639, -122.422986342871 37.793497541785, -122.423023418985 37.793678012453, -122.423051808712 37.793811558485, -122.423053656206 37.793820174739, -122.423059390245 37.793846902877, -122.423061191266 37.793855311901, -122.423068087813 37.793885439607, -122.423071973038 37.793904075845, -122.423076807522 37.79393807268, -122.423077039677 37.793939705264, -122.423086233523 37.793974813071, -122.423089873502 37.793993501508, -122.423095157788 37.79402385228, -122.42309675443 37.794032326125, -122.423101798169 37.794059152306, -122.42310342427 37.794067794637, -122.423128740956 37.794201122809, -122.423164256798 37.794381174111, -122.423201481615 37.794560998744, -122.423229964201 37.794693892444, -122.423231825363 37.794702503291, -122.423237602681 37.794729224218, -122.423239421904 37.794737648559, -122.423246362883 37.794767779864, -122.423250272038 37.794786425109, -122.423255147538 37.794820412931, -122.423255383101 37.794822056326, -122.423266044105 37.794856973444, -122.42326696841 37.794875556746, -122.423274176966 37.794906779166, -122.423275630611 37.794915197115, -122.423279793815 37.794940949147, -122.423280981897 37.794949056207, -122.423303265551 37.795082215156, -122.423346281328 37.795275055325, -122.423390264281 37.795462652134, -122.423412274426 37.795586954605, -122.423413230023 37.795594384994, -122.423414877128 37.795607976266, -122.423418240906 37.795637470675, -122.423422781637 37.795661852432, -122.423427186102 37.795698974557, -122.423428524123 37.79570379857, -122.42344075163 37.795740200794, -122.423441291495 37.79574181002, -122.423443129088 37.795781510097, -122.423444301585 37.795788838726, -122.423453667597 37.795823050983, -122.423461154084 37.795845896374, -122.423468901637 37.795875305276, -122.42347263465 37.795888360948, -122.423474529421 37.795895226649, -122.423503625398 37.796023768779, -122.423537279422 37.796220923214, -122.423575000576 37.796424513163, -122.42360876109 37.796565938149, -122.423610620229 37.796574111124, -122.4236160265 37.796600984202, -122.423617825879 37.796611181608, -122.423625774353 37.796641112194, -122.423626800541 37.796660861345, -122.423629404671 37.79669410985, -122.42362953352 37.796695758625, -122.423642540851 37.796730244667, -122.42364543294 37.796748759026, -122.423651408519 37.796777566579, -122.42365277159 37.79678548267, -122.423658040781 37.7968115863, -122.423659705697 37.796819987171, -122.423687653038 37.796965362411, -122.423725274966 37.797156414583, -122.423764924853 37.797347665397, -122.423795758862 37.797492882674, -122.423797616721 37.797501585405, -122.423803387544 37.797528599101, -122.423805656312 37.797537616356, -122.423812244883 37.797567143896, -122.423817511282 37.797585392094, -122.423821032586 37.797619647159, -122.423821201185 37.797621282429, -122.423831046391 37.797656500217, -122.423835586113 37.797674820329, -122.423839298643 37.79770453823, -122.423840865827 37.797713301259, -122.423845906435 37.797740814819, -122.423847559926 37.797749535523, -122.423875776561 37.797896377509, -122.423914062973 37.798089392917, -122.423953773462 37.798282236538, -122.423984876865 37.798428758383, -122.423986743855 37.798437454805, -122.423992809892 37.798464861369, -122.42399477566 37.798473576733, -122.424002962063 37.798502724407, -122.424005870197 37.798521266685, -122.424010177348 37.798555516507, -122.424010382285 37.798557154487, -122.424020256087 37.798592380369, -122.424024800451 37.798610711283, -122.424028500616 37.798640424666, -122.424030066706 37.798649187691, -122.424035104044 37.798676696733, -122.424036756444 37.798685413829, -122.424064762948 37.798831312401, -122.424102849686 37.799023396987, -122.424142385499 37.799215301682, -122.424173302657 37.799360848581, -122.424175169695 37.799369540494, -122.424181230207 37.799396928122, -122.424183197158 37.799405640779, -122.424191392823 37.799434782131, -122.424194302175 37.799453327105, -122.424198596971 37.799487595832, -122.424198801915 37.79948923291))",
+      null,
+      "2400",
+      "24 Hours",
+      "Filbert St",
+      "All Day",
+      "Mission St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "9800.1361304183301",
+      null,
+      "pending",
+      null
+    ],
+    [
+      "row-eicn-s5at-pfkw",
+      "00000000-0000-0000-6F60-43017A2A3E82",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "961",
+      "AZHANG",
+      1530650148,
+      "AZHANG",
+      1530650553,
+      "IB",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.397575192516 37.789757905407, -122.395828782948 37.791156023262))",
+      null,
+      "2400",
+      "24 Hours",
+      "Beale St",
+      "All Day",
+      "1st St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "716.87837797829604",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-4nrc-ya34-ywtv",
+      "00000000-0000-0000-202F-C1F6B1F62BCB",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "2",
+      "JKIBRICK",
+      1449700171,
+      "AZHANG",
+      1513809272,
+      null,
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.420021535214 37.770116392352, -122.42003703313 37.770114485361, -122.420067474707 37.770010259405, -122.420089670502 37.769934259279, -122.420097811236 37.769656573305, -122.420087112782 37.769056793423, -122.420065301134 37.768988567292, -122.419994726055 37.768278597461, -122.419838448306 37.766678544627, -122.419682186335 37.765056280708, -122.419525950378 37.763434216155, -122.41950807606 37.763248640893, -122.419489501197 37.763055782985, -122.419456949933 37.762717810185, -122.41937248074 37.761840798584, -122.419219256646 37.760240298, -122.419175709882 37.759785427923, -122.419065819928 37.758637509189, -122.419024746514 37.758204728426, -122.4189142417 37.757040344928, -122.418760786802 37.755441878555, -122.418751616098 37.755346349056, -122.418760786802 37.755441878555, -122.41860715772 37.753841530296, -122.418458483499 37.752244396457, -122.418301081924 37.750644592804, -122.418148463435 37.749046229537, -122.418106840319 37.748610302344, -122.4181098495 37.748483262138, -122.418234382626 37.748170631378, -122.418234409876 37.748170588139, -122.418249390801 37.748170386757))",
+      null,
+      "2400",
+      "24 hours",
+      "Duboce Ave",
+      "All Day",
+      "Cesar Chavez St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "8099.2001724598604",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-kxfd~eys7.vzsy",
+      "00000000-0000-0000-CC5F-475BFDB35539",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "9",
+      null,
+      null,
+      "AZHANG",
+      1513817552,
+      null,
+      null,
+      "O'Farrell St.",
+      null,
+      null,
+      "MULTILINESTRING ((-122.408033947895 37.786423032544, -122.409990919143 37.786187056562, -122.412208471513 37.785910933082, -122.418183740955 37.785144542185, -122.421214157543 37.784755708495, -122.422832756531 37.784552838032, -122.422904039641 37.784553234652, -122.423053409956 37.784558141284, -122.423337992899 37.784620000824, -122.423625135061 37.784771351335, -122.423755995892 37.784889484213, -122.423886857139 37.785007616043, -122.424183386907 37.785197757934, -122.424550791367 37.785278477058, -122.424700266716 37.785339515701, -122.424662314814 37.785360304316))",
+      null,
+      "2400",
+      "24 hours",
+      "Powell St.",
+      "All Day",
+      "Gough St.",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "4976.3263669581502",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-n3by_c28g-ejup",
+      "00000000-0000-0000-6C6F-D8A791CED8AB",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "15",
+      null,
+      null,
+      "AZHANG",
+      1513810220,
+      null,
+      null,
+      "Clay Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.40151072246 37.794843627159, -122.402387574039 37.794775824883, -122.403152519548 37.794671176643, -122.403642256603 37.794608148583, -122.403633680509 37.79460925158, -122.404809696471 37.794457899497, -122.405676441498 37.794350116924, -122.406318209809 37.794268522013, -122.406834440041 37.794202851602, -122.407307229699 37.794142705866, -122.407545483523 37.794112396456, -122.407916526616 37.79406519162, -122.408733581866 37.793961241991, -122.409204675523 37.793901303372, -122.40955427389 37.793856823049, -122.409557017515 37.793870275246))",
+      null,
+      "2100",
+      "7am to 9pm",
+      "Sansome St",
+      "Part Time",
+      "Powell St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "700",
+      "taxi allowed",
+      "2362.3978820270304",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-83ir_xfrc~3u6y",
+      "00000000-0000-0000-4186-EDF60B847882",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "20",
+      null,
+      null,
+      "AZHANG",
+      1513819892,
+      null,
+      null,
+      "Stockton",
+      null,
+      null,
+      "MULTILINESTRING ((-122.406831554189 37.788491280959, -122.406237536991 37.785743490573))",
+      null,
+      "2400",
+      "24 hours",
+      "Ellis St",
+      "unknown",
+      "Post St",
+      null,
+      "no",
+      null,
+      "unknown",
+      "unknown",
+      null,
+      "0",
+      "taxi allowed",
+      "1015.2281171619201",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-9aru.payp_65jq",
+      "00000000-0000-0000-2911-2FA7E1B44A4A",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "17",
+      null,
+      null,
+      "AZHANG",
+      1513810286,
+      null,
+      null,
+      "Bush St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.399593610885 37.791329915414, -122.40111476194 37.791137394335, -122.402374463073 37.79097304541))",
+      null,
+      "1900",
+      "3pm to 7pm",
+      "Battery St",
+      "Part Time",
+      "Montgomery St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "1500",
+      "taxi allowed",
+      "814.05567516318104",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-m9vq.eshe~tdre",
+      "00000000-0000-0000-4586-4B52A26D4B89",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "645",
+      "AZHANG",
+      1513808039,
+      "AZHANG",
+      1513819805,
+      "IB",
+      null,
+      "Taraval St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.473593688508 37.743181732519, -122.471374318434 37.743287099002))",
+      null,
+      "2400",
+      "24 hours",
+      "15th Ave",
+      "All Day",
+      "17th Ave",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "642.91564692305803",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-2s6v~vmnq.4gx8",
+      "00000000-0000-0000-2C90-A383F9805F02",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "41",
+      "JKIBRICK",
+      1456791824,
+      "AZHANG",
+      1513817589,
+      null,
+      null,
+      "Powell Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.408236118281 37.787362517596, -122.408033947895 37.786423032544))",
+      null,
+      "2400",
+      "24 hours",
+      "O'Farrell St",
+      "All Day",
+      "Geary Blvd",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "347.06701753009503",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-7c8d~kehr_hc26",
+      "00000000-0000-0000-D6B5-1FF7EDE8456E",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "5",
+      null,
+      null,
+      "AZHANG",
+      1513819156,
+      null,
+      null,
+      "Clay Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.401498194166 37.794844617556, -122.401390970833 37.794853817158, -122.400472993509 37.794965418968, -122.400342555423 37.795018045579, -122.399162642684 37.795168281038, -122.398479631858 37.795255239969, -122.397992349737 37.795313668092))",
+      null,
+      "2400",
+      "24 hours",
+      "Sansome St",
+      "All Day",
+      "Davis St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1029.4204943167799",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-w2dr_trrn-fgay",
+      "00000000-0000-0000-0166-807CF3C825B9",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "18",
+      null,
+      null,
+      "AZHANG",
+      1513820386,
+      null,
+      null,
+      "Geary Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.403178522357 37.788013846038, -122.405460247278 37.787718006377, -122.408236118281 37.787362517596))",
+      null,
+      null,
+      null,
+      "Market St",
+      "unknown",
+      "Powell St",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "taxi allowed",
+      "1480.73725993468",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-avjb.nduu~augt",
+      "00000000-0000-0000-53CC-A92945BC129B",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "21",
+      null,
+      null,
+      "AZHANG",
+      1513819753,
+      null,
+      null,
+      "Stockton",
+      null,
+      null,
+      "MULTILINESTRING ((-122.406605186485 37.787571950865, -122.406410289879 37.786613984435))",
+      "Stockton St. (Geary St. to O'Farrell St.)",
+      "1900",
+      null,
+      "O'Farrell St",
+      "Part time",
+      "Geary Blvd",
+      null,
+      "no",
+      "Lane is on right-side of one-way street.  The lane is also used for bus zones and unmetered commercial loading.",
+      null,
+      null,
+      null,
+      "700",
+      "taxi allowed",
+      "353.36161839601903",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-2pch_32tk~q2a5",
+      "00000000-0000-0000-8184-F5D6229357E1",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "965",
+      "AZHANG",
+      1532654427,
+      "AZHANG",
+      1532739539,
+      "OB",
+      null,
+      "Potrero Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.406392471411 37.752951177058, -122.406461924711 37.754225171513, -122.406725223103 37.75618338868, -122.407170750138 37.762032315437))",
+      "Potrero Ave (18th St to 25th St)",
+      "2400",
+      "24 Hours",
+      "24th St",
+      "All Day",
+      "18th St",
+      1530403200,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "3315.26020598684",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-c26b~kr95~i8f8",
+      "00000000-0000-0000-9655-873B9A758975",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "647",
+      "AZHANG",
+      1513818145,
+      "AZHANG",
+      1513819368,
+      null,
+      null,
+      "Market",
+      null,
+      null,
+      "MULTILINESTRING ((-122.420265843185 37.774369166085, -122.420267503742 37.77436356615, -122.420162194685 37.774382947962, -122.419292591892 37.775071515777, -122.419268830047 37.77515196691))",
+      null,
+      "2400",
+      "24 hours",
+      "Van Ness Ave",
+      "All Day",
+      "12th St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "418.46794328829003",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-i3mg-frnj_gr78",
+      "00000000-0000-0000-AF37-454C772DB8E4",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "641",
+      "AZHANG",
+      1508205408,
+      "AZHANG",
+      1513810119,
+      null,
+      null,
+      "Powell",
+      null,
+      null,
+      "MULTILINESTRING ((-122.409212273787 37.792043990018, -122.40942004401 37.793035921377))",
+      null,
+      "2400",
+      "24 hours",
+      "Sacramento St",
+      "All Day",
+      "California St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "366.16840064949901",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-bhr2-k86i-72xn",
+      "00000000-0000-0000-0CF6-742342DFB9E3",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "8",
+      null,
+      null,
+      "AZHANG",
+      1513808409,
+      null,
+      null,
+      "Judah Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.477077932459 37.761702580584, -122.484515405352 37.761374681806, -122.493100399506 37.760983843314, -122.495762412174 37.760878617687, -122.509129521415 37.760292356958))",
+      null,
+      "2400",
+      "24 hours",
+      "19th Ave",
+      "All Day",
+      "La Playa St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "9280.3002233235202",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-gzjz~7va9~dadk",
+      "00000000-0000-0000-91B5-A6A8A961510A",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "4",
+      null,
+      null,
+      "AZHANG",
+      1513818807,
+      null,
+      null,
+      "3rd Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.403442323516 37.787651865477, -122.403444022805 37.787646743314, -122.403355863631 37.787279522103, -122.403041416435 37.787029313468, -122.402588450032 37.786683101923, -122.402038642718 37.786253046814, -122.4015030578 37.785834108257, -122.401211951831 37.785606398458, -122.400480063764 37.785034421132, -122.400287542734 37.784879452174, -122.399100332719 37.783915814905, -122.39816268577 37.78316631041, -122.396914867128 37.78216602011, -122.396258870173 37.781644737339, -122.395702700426 37.781202347753, -122.394814966919 37.780497900642, -122.394034187535 37.77986952847, -122.392789934324 37.77887483024))",
+      null,
+      "2400",
+      "24 hours",
+      "Townsend St",
+      "All Day",
+      "Market St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "4461.5973342445404",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-mzzv-2fed-nudk",
+      "00000000-0000-0000-8333-5C7616C0947F",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "39",
+      null,
+      null,
+      "AZHANG",
+      1513817306,
+      "IB",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.406478064147 37.782728553705, -122.407366034729 37.782002706455, -122.41302534755 37.777509707847, -122.415259538232 37.775736279048, -122.417056396091 37.774346059663))",
+      null,
+      "2100",
+      "7am to 9pm",
+      "5th St",
+      "Part Time",
+      "11th St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "700",
+      "taxi allowed",
+      "4320.4801409959009",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-embt~pdmt.b3es",
+      "00000000-0000-0000-3A32-2B6A6C379216",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "31",
+      null,
+      null,
+      "AZHANG",
+      1513818930,
+      null,
+      null,
+      "4th Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.402715442643 37.783255537227, -122.404269867982 37.784484042616, -122.40523960089 37.785299277655, -122.40573872915 37.785693742641, -122.405838554672 37.785738824301))",
+      null,
+      "2400",
+      "24 hours",
+      "Howard St",
+      "unknown",
+      "Market St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1279.0207001538699",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-gqar~66du-cbaf",
+      "00000000-0000-0000-DDDA-B9DBF944D064",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "36",
+      null,
+      null,
+      "AZHANG",
+      1513817291,
+      "OB",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.404212123895 37.78458243164, -122.40677906419 37.782579057971, -122.409201022279 37.78064325743, -122.417149032545 37.774417544099))",
+      null,
+      "1800",
+      "4pm to 6pm",
+      "4th St",
+      "Part Time",
+      "11th St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "1600",
+      "taxi allowed",
+      "5261.44749360264",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-cn6q.fpp4.dj6g",
+      "00000000-0000-0000-BDCA-83E5EEBE4668",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "43",
+      "JKIBRICK",
+      1456791711,
+      "AZHANG",
+      1513817568,
+      null,
+      null,
+      "Powell Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.408033947895 37.786423032544, -122.407852861286 37.785459874711))",
+      null,
+      "2400",
+      "24 hours",
+      "Ellis St",
+      "All Day",
+      "O'Farrell St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "354.61715478230798",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-s29f~rcyu.v9d2",
+      "00000000-0000-0000-62DA-D4A25F9D6C07",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "19",
+      null,
+      null,
+      "AZHANG",
+      1514316164,
+      null,
+      null,
+      "O'Farrell St.",
+      null,
+      null,
+      "MULTILINESTRING ((-122.404600341652 37.786739301366, -122.404814252871 37.786840733935, -122.406532678154 37.786604058774, -122.408033947895 37.786423032544))",
+      null,
+      null,
+      null,
+      "Market St",
+      "unknown",
+      "Powell St",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "taxi allowed",
+      "1014.9038913055",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-2dqg-u6y4.vxnn",
+      "00000000-0000-0000-BD26-234BED0CE9E1",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "35",
+      "JKIBRICK",
+      1449700554,
+      "AZHANG",
+      1513809603,
+      "OB",
+      null,
+      "Van Ness",
+      null,
+      null,
+      "MULTILINESTRING ((-122.4245665632 37.801308420751, -122.424526225867 37.801182465008, -122.424497682245 37.801047990581, -122.42446020189 37.800866272694, -122.424424081066 37.800683957753, -122.424398244099 37.800548067579, -122.424396618848 37.800539402752, -122.424391577631 37.800512511788, -122.424389987514 37.800504038872, -122.424384827106 37.800473781016, -122.424381180803 37.800455104351, -122.424371886765 37.800419974137, -122.424386694858 37.800418092563, -122.424382273949 37.80038364363, -122.424379238393 37.800365346398, -122.424371138853 37.800336816833, -122.424369415588 37.800329231327, -122.424363390027 37.800302141035, -122.424361511613 37.800293380652, -122.424330951205 37.800148295191, -122.424291537029 37.799956411338, -122.424253239395 37.799763958307, -122.424225154022 37.799617488581, -122.424223506124 37.799608763382, -122.424218409462 37.799581681391, -122.424216985395 37.79957253009, -122.424213290776 37.799542845549, -122.424208795139 37.799524495736, -122.424198801915 37.79948923291))",
+      null,
+      "2400",
+      "24 hours",
+      "Lombard St",
+      "All Day",
+      "Filbert St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "675.57815691304506",
+      null,
+      "pending",
+      null
+    ],
+    [
+      "row-qpys~jsp6_tssv",
+      "00000000-0000-0000-15B1-C44C8CB4D230",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "14",
+      null,
+      null,
+      "AZHANG",
+      1513810236,
+      null,
+      null,
+      "Sacramento",
+      null,
+      null,
+      "MULTILINESTRING ((-122.396590487457 37.794612323415, -122.397745612376 37.794465825453, -122.400241248989 37.794172828039, -122.40296505827 37.79380094632, -122.404662092434 37.793598100357))",
+      null,
+      "1900",
+      "7am to 7pm",
+      "Drumm St",
+      "Part Time",
+      "Kearny St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "700",
+      "taxi allowed",
+      "2361.6306236134601",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-kzqw-54v8~wwjd",
+      "00000000-0000-0000-EDB7-BA45B99C4936",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "34",
+      "JKIBRICK",
+      1449700451,
+      "AZHANG",
+      1513809175,
+      "Both",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.4235934519 37.739888646146, -122.423103118239 37.740646828144, -122.422853789469 37.741032348906, -122.4223796708 37.741765429753, -122.422096996478 37.742202495012, -122.421981973226 37.742380339398, -122.421693660024 37.742826115514, -122.421498662262 37.743127605407, -122.421097699831 37.743747535803, -122.420906871651 37.744042573899, -122.420169877608 37.745181429596, -122.420047765322 37.745370124101, -122.419934812005 37.745567609698, -122.419898975686 37.745600037895, -122.419642590715 37.745995805385, -122.419518325491 37.7461876251, -122.419404445794 37.746363412049, -122.419134512972 37.74678008259, -122.418795012496 37.747304558513, -122.418234409876 37.748170588139, -122.418234382626 37.748170631378))",
+      null,
+      "2400",
+      "24 hours",
+      "Cesar Chavez Ave",
+      "All Day",
+      "Randall St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "3391.2664421300301",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-4ck9_hfzi_du3s",
+      "00000000-0000-0000-53BF-A88D128CDAFC",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "26",
+      null,
+      null,
+      "AZHANG",
+      1513808423,
+      null,
+      null,
+      "Judah Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.466214063287 37.762186415122, -122.472688461048 37.761893289873, -122.477014232602 37.761705389076, -122.477077932459 37.761702580584))",
+      null,
+      "2400",
+      "24 hours",
+      "9th Ave",
+      "All Day",
+      "19th Ave",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "3145.6271246061201",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-f3b3.653q.msii",
+      "00000000-0000-0000-9609-5E248DC388FA",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "3",
+      null,
+      null,
+      "AZHANG",
+      1530648713,
+      null,
+      null,
+      "1st Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.399165014967 37.791010402093, -122.399161821655 37.79102154463, -122.398602733909 37.790576121122, -122.398172914926 37.790233689622, -122.397951795198 37.790057562579, -122.397587689824 37.789767493529, -122.397283060758 37.789524802387, -122.39704801759 37.789337546903, -122.396812577352 37.789149973629, -122.396583988046 37.788967859172, -122.396054420966 37.788545951748))",
+      null,
+      "2400",
+      "24 hours",
+      "Howard St",
+      "All Day",
+      "Market St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1276.5915360310801",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-xj5g.xk3w-2d3r",
+      "00000000-0000-0000-880D-8C85508E8BAC",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "13",
+      null,
+      null,
+      "AZHANG",
+      1513817457,
+      "OB",
+      null,
+      "Mission",
+      null,
+      null,
+      "MULTILINESTRING ((-122.395021800086 37.791896430983, -122.402394626645 37.786024805152, -122.404204319567 37.784583874642, -122.404204320726 37.784581996148))",
+      null,
+      "1800",
+      "7am to 6pm",
+      "Main St",
+      "Part Time",
+      "4th St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "700",
+      "taxi allowed",
+      "3760.0572284519803",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-iy4s~zgxv-shzf",
+      "00000000-0000-0000-3B25-0E0C85C4102D",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "30",
+      null,
+      null,
+      "AZHANG",
+      1513818984,
+      null,
+      null,
+      "4th Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.394995603148 37.777086403815, -122.396545274738 37.77833004077, -122.398066425377 37.77956614136, -122.398722422012 37.780110922018, -122.399226303113 37.780445301542, -122.399625605465 37.780787194157))",
+      null,
+      "2400",
+      "24 hours",
+      "Townsend St",
+      "unknown",
+      "Harrison St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1900.1764567015",
+      "0",
+      "suspended",
+      null
+    ],
+    [
+      "row-ttxa~6pb3~w58c",
+      "00000000-0000-0000-A238-020F546E601F",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "38",
+      null,
+      null,
+      "AZHANG",
+      1530650172,
+      null,
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.4064756468 37.782735288363, -122.404303254707 37.78445970993, -122.404122618116 37.784534847053, -122.403728068802 37.784846666871, -122.402021529024 37.78619160636, -122.401066056555 37.78696549942, -122.400101075922 37.787735626315, -122.397575192516 37.789757905407))",
+      null,
+      "1800",
+      "7am to 6pm",
+      "1st St",
+      "Part Time",
+      "5th St",
+      null,
+      "no",
+      null,
+      "weekday only",
+      "weekdays",
+      "weekdays",
+      "700",
+      "taxi allowed",
+      "3629.8348867719501",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-6xny~9rsj~32ff",
+      "00000000-0000-0000-F3F7-448E15DD61DC",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "963",
+      "AZHANG",
+      1532653875,
+      "AZHANG",
+      1532654080,
+      null,
+      null,
+      "16th St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.39078125165 37.766819582861, -122.407537837187 37.765777943854))",
+      "16th St (4th St to Potrero Ave)",
+      "2400",
+      "24 Hours",
+      "Potrero Ave",
+      "All Day",
+      "4th St",
+      1483228800,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "4858.7855606063204",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-d3wu.wzt5_zia3",
+      "00000000-0000-0000-2D2B-5734F6A943AF",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "964",
+      "AZHANG",
+      1532654186,
+      "AZHANG",
+      1532654489,
+      "Both",
+      "Train",
+      "West Portal Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.470595051823 37.736598951277, -122.471571548254 37.734742984937))",
+      "West Portal Ave (15th Ave to Sloat Blvd)",
+      "2400",
+      "24 Hours",
+      "15th Ave",
+      "24 Hours",
+      "Sloat Blvd",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "732.47233816677999",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-vnmg~7tpb.uzxd",
+      "00000000-0000-0000-00A9-F265F92544EA",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "25",
+      null,
+      null,
+      "AZHANG",
+      1513809299,
+      null,
+      null,
+      "Duboce Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.42919000828 37.769461767838, -122.429924439478 37.769412918258))",
+      null,
+      "2400",
+      "24 hours",
+      "Church St",
+      "All Day",
+      "Fillmore St",
+      null,
+      "no",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "213.04269238241602",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-7e5v~9p8w_5anu",
+      "00000000-0000-0000-00F6-925A3E5D2E71",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "22",
+      null,
+      null,
+      "AZHANG",
+      1513809352,
+      "IB",
+      null,
+      "Haight Street",
+      null,
+      null,
+      "MULTILINESTRING ((-122.427156298585 37.772578980978, -122.423792047323 37.772955717238, -122.422213853437 37.773158618962))",
+      null,
+      "2400",
+      "24 hours",
+      "Gough St",
+      "All Day",
+      "Buchanan St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "no",
+      "1444.1988913478101",
+      "0",
+      "active",
+      null
+    ],
+    [
+      "row-k3bp.5qaf_pzm6",
+      "00000000-0000-0000-3044-41FD28A21E1F",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "44",
+      "JKIBRICK",
+      1449699670,
+      "AZHANG",
+      1513809400,
+      "OB",
+      null,
+      "Otis St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.41864644487 37.773058154272, -122.418631431666 37.77305839804, -122.418830702959 37.772985154382, -122.419685044319 37.772308147797, -122.420357583438 37.771775194011, -122.420318949723 37.771681709865, -122.420188177689 37.770257936472, -122.420031674004 37.77012500449, -122.420036548954 37.770116148407))",
+      null,
+      "2400",
+      "24 hours",
+      "South Van Ness Ave",
+      "All Day",
+      "13th St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "1316.8985526046399",
+      null,
+      "pending",
+      null
+    ],
+    [
+      "row-pb4i-xe2z_s9f3",
+      "00000000-0000-0000-3CFC-D4E5068BDF02",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "962",
+      "AZHANG",
+      1530650524,
+      "AZHANG",
+      1530650583,
+      "OB",
+      null,
+      "Mission St",
+      null,
+      null,
+      "MULTILINESTRING ((-122.394951279811 37.791842499314, -122.397587689824 37.789767493529))",
+      null,
+      "2400",
+      "24 Hours",
+      "Main St",
+      "All Day",
+      "1st St",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      null,
+      "0",
+      null,
+      "1073.0370737107701",
+      null,
+      "active",
+      null
+    ],
+    [
+      "row-3y2e_bqfr.ewmz",
+      "00000000-0000-0000-37E2-FD7235A4EB23",
+      0,
+      1536369715,
+      null,
+      1536369715,
+      null,
+      "{ }",
+      "40",
+      "JKIBRICK",
+      1439239857,
+      "AZHANG",
+      1513808606,
+      null,
+      null,
+      "Geneva Ave",
+      null,
+      null,
+      "MULTILINESTRING ((-122.445216229246 37.720194825099, -122.445421276231 37.720301744599, -122.446463090289 37.720712569704))",
+      null,
+      "24",
+      "24 hours",
+      "San Jose Ave",
+      "All Day",
+      "Delano Ave",
+      null,
+      "red lane",
+      null,
+      "weekends",
+      "weekdays",
+      "All times",
+      "0",
+      "taxi allowed",
+      "407.38970227395998",
+      "0",
+      "active",
+      null
+    ]
+  ]
 }
