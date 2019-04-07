@@ -1,7 +1,44 @@
 import React from "react";
 import axios from "axios";
-import { StyleSheet, Text, View, Button, AlertIOS } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  AlertIOS,
+  Animated,
+  TouchableOpacity
+} from "react-native";
 import { Stopwatch } from "react-native-stopwatch-timer";
+import { LinearGradient } from "expo";
+
+class FadeInView extends React.Component {
+  state = {
+    fadeAnim: new Animated.Value(0) // Initial value for opacity: 0
+  };
+
+  componentDidMount() {
+    Animated.timing(this.state.fadeAnim, {
+      toValue: 1,
+      duration: 1000
+    }).start();
+  }
+
+  render() {
+    let { fadeAnim } = this.state;
+
+    return (
+      <Animated.View // Special animatable View
+        style={{
+          ...this.props.style,
+          opacity: fadeAnim // Bind opacity to animated value
+        }}
+      >
+        {this.props.children}
+      </Animated.View>
+    );
+  }
+}
 
 export default class App extends React.Component {
   constructor(props) {
@@ -17,7 +54,8 @@ export default class App extends React.Component {
     navigator.geolocation.getCurrentPosition(
       location => {
         const data = {
-            geo: location, time: this.currentTime
+          geo: location,
+          time: this.currentTime
         };
         console.log("start");
         if (timerState === false) {
@@ -51,33 +89,72 @@ export default class App extends React.Component {
   };
   render() {
     return (
-      <View style={styles.container}>
-        <Button
-          title={!this.state.timerStart ? "Start" : "Stop"}
-          onPress={this.toggleTimer}
-          color="#5AB14C"
-        />
-        <View style={styles.timer}>
-          <Text>Timer Here</Text>
-          <Stopwatch
-            msecs
-            start={this.state.timerStart}
-            reset={this.state.resetTimer}
-            getTime={this.getFormattedTime}
-          />
+      <FadeInView>
+        <View style={styles.container}>
+          <LinearGradient
+            colors={["#D7A4FF", "#F5F2FF"]}
+            style={{
+              padding: 15,
+              alignItems: "center",
+              borderRadius: 5,
+              height: 700,
+              width: 375,
+
+              justifyContent: "space-around"
+            }}
+          >
+            <Text style={styles.header}>
+              Tranzip: Transit that's Tolerable{" "}
+            </Text>
+            <TouchableOpacity
+              onPress={this.toggleTimer}
+              style={{
+                borderRadius: 20,
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              <Text style={styles.button}>
+                {!this.state.timerStart ? "Start" : "Stop"}
+              </Text>
+            </TouchableOpacity>
+
+            <View style={styles.timer}>
+              <Text>Timer Here</Text>
+              <Stopwatch
+                msecs
+                start={this.state.timerStart}
+                reset={this.state.resetTimer}
+                getTime={this.getFormattedTime}
+              />
+            </View>
+          </LinearGradient>
         </View>
-      </View>
+      </FadeInView>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  header: {
+    fontSize: 17,
+    fontWeight: "bold"
+  },
+  button: {
+    fontSize: 25,
+    color: "#F5F2FF",
+    width: 300,
+    height: 70,
+    padding: 20,
+    textAlign: "center",
+    justifyContent: "center",
+    alignItems: "center",
+
+    backgroundColor: "#ED6DA6"
+  },
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "space-around",
-    height: 100
+    alignItems: "center"
   },
   timer: {
     justifyContent: "space-around",
