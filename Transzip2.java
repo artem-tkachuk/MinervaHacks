@@ -1,19 +1,69 @@
 import java.util.*;
 import java.awt.*;
 import java.util.Random;
+
+public class Station {
+    static Random time = new Random();
+
+    public double lat;
+    public double lng;
+    public int mag;
+    
+    public Station(double lat, double lng) {
+        this.lat = lat;
+        this.lng = lng;
+        this.mag = 0;
+    }
+}
+
+public class Bus {
+    public Station destinaton;
+    public int time;
+    public int people;
+    
+    public Bus(Station destinaton, int time, int people) {
+        this.destinaton = destinaton;
+        this.time = time;
+        this.people = people;
+    }
+}
+
 public class TransZip2{
 
     static class MyHandler implements HttpHandler {
-        //serverx
+        //server
         @Override
         public void handle(HttpExchange t) throws IOException {
-            String response = "This is the response";
+            Station[] stations = new Station[10];
+            stations[0] = new Station(37.784908, -122.400186);
+            stations[1] = new Station(37.782449, -122.397672);
+            stations[2] = new Station(37.782016, -122.396406);
+            stations[3] = new Station(37.779417, -122.393353);
+            stations[4] = new Station(37.780689, -122.390777);
+            stations[5] = new Station(37.781843, -122.391949);
+            stations[6] = new Station(37.784113, -122.395013);
+            stations[7] = new Station(37.786471, -122.397990);
+            stations[8] = new Station(37.787848, -122.400190);
+            stations[9] = new Station(37.787648, -122.395197);
+            
+            for(int i=0; i < 10; i++) {
+                stations[i].mag = stations[i].mag/(24*60);
+            }
+            
+            Bus[] buses = new Bus[10];
+            for(int i=0;i<10;i++){
+              buses[i] = new Bus(station[i], time.nextInt(20)+10, 0);
+            }
+            
+            
+            String response = "";
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
             os.close();
         }
     }
+    
   public static void main(String[] args){
     //calling server stuff
     HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
@@ -284,5 +334,6 @@ Mission St & 2nd St: ,
   
     System.out.println("The average percentage of red occurrences before algorithm is "+(double)(percentRed/(10*24*60))*100);
     System.out.println("The average percentage of red occurrences WITH ALGORITHM is "+(double)(opRed/(10*24*60))*100);
+
   }
 }
