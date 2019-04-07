@@ -39,12 +39,12 @@
 
                 db.collection('liveTraffic')
                     .onSnapshot(function(querySnapshot) {
-                        var stops = [];
-                        querySnapshot.forEach(function(doc) {
-                            cities.push(doc.data());
-                        });
-
+                    var stops = [];
+                    querySnapshot.forEach(function(doc) {
+                        cities.push(doc.data());
                     });
+
+                });
 
 
 
@@ -59,31 +59,33 @@
 
                 const response = await fetch('localhost:8000/Transzip2');
                 const busStops = await response.json();
-                
-                var busStops = stations[0]
-                console.log(busStops)
-                
-                var busStops = [{lat: 0, lng: 0, mag: 0}, ]
 
-                var features = busStops.map(function (stop) {
-                    return {
-                        "type": "Feature",
-                        "properties": {
-                            "mag": stop.mag,
-                            "time": 1507425650893,
-                            "felt": null,
-                            "tsunami": 0
-                        },
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [
-                                stop.lat, // stop.lat
-                                stop.lng, //stop.lng
-                                0
-                            ]
+                var busStops = stations[0];
+                console.log(busStops);
+
+                var busStops = [{lat: 0, lng: 0, mag: 0}, ];
+                var i;
+                for(i = 0; i < busStops.length; i++) {
+                    var features = busStops.map(function (stop) {
+                        return {
+                            "type": "Feature",
+                            "properties": {
+                                "mag": busStops.mag,
+                                "time": 1507425650893,
+                                "felt": null,
+                                "tsunami": 0
+                            },
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    stop.lat, // stop.lat
+                                    stop.lng, //stop.lng
+                                    0
+                                ]
+                            }
                         }
+                    });
                     }
-                })
 
                 return {
                     "type": "FeatureCollection",
