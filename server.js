@@ -1,8 +1,20 @@
 const express = require('express');
-//const nodemailer = require('nodemailer');
 const app = express();
+//const bodyParser = require('body-parser');
 
+const firebase = require('firebase');
+require('firebase/firestore');
+const admin = require('firebase-admin');
 
+//app.use(bodyParser.json());
+
+admin.initializeApp({
+    credential: admin.credential.applicationDefault()
+});
+
+const db = admin.firestore();
+
+//const nodemailer = require('nodemailer');
 
 /*var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -27,18 +39,26 @@ transporter.sendMail(mailOptions, function(error, info){
     }
 });
 */
+
+
 app.get('/', (req, res) => {
     res.send('Thank you for visiting the TransZip application website!');
 });
 
 app.post('/start', (req, res) => {
-    console.log(req);
-    res.send("uvu");
-    //log to db
-    //past to web UI
+    console.log(req.body);
+
+    //logging into firebase
+    //var docRef = db.collection('trips').doc();
+
+    //var setAda = docRef.set(req.body);
+
+    res.send("Hi");
 });
 
 app.post('/finish', (req, res) => {
+    console.log(req);
+    res.send("uvu");
    //log to db
    //past to UI
 });

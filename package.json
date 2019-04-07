@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/artem-tkachuk/MinvervaHacks#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "firebase": "^5.9.2",
+    "firebase-admin": "^7.2.0"
   }
 }
