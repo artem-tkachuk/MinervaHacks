@@ -1,12 +1,10 @@
-package com.javacreed.examples.gson.part1;
-
 import java.util.*;
 import java.awt.*;
 import java.util.Random;
 import java.io.*;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.fasterxml.jackson.databind.ObjectMapper;// in play 2.3
+
 
 
 
@@ -14,7 +12,7 @@ public class Station {
     static Random time = new Random();
 
     public double lat;
-    public double lng;
+    public double lng;  
     public int mag;
 
     public Station(double lat, double lng) {
@@ -63,11 +61,10 @@ public class TransZip2{
                 buses[i] = new Bus(station[i], time.nextInt(20)+10, 0);
             }
 
-            Gson gson = new GsonBuilder().create();
-            for(int i=0;i<10;i++){
-	           String jsonInString = gson.toJson(stations[i]);
-            }
-
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.enable(SerializationFeature.INDENT_OUTPUT);
+    	    String arrayToJson = objectMapper.writeValueAsString(stations);
+            
             String response = jsonInString;
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
