@@ -61,6 +61,8 @@ Efficient public transportation reduces the amount of cars on the road which in 
 
 TranZip would be able to identify which stations are “queue hotposts” at using an app for people to notify their queue status. With their input, the algorithm will would continuously recalculate the bus route for each destination to optimize utilization of transportation resources in huge cities. The efficiency of this new perception of public bus systems will increase overall smart city efficiency and reduce car/bus emissions by encouraging people to ride buses with a timely and adaptive schedule instead of taking their own cars.
 
+![Screenshot](screenshot2.png)
+
 ## DEMO:
 
 The prototype is a working simulation based off of a couple of given conditions and a sample city bus route system with 10 destinations over a period of 24 hours. TranZip 1.0 can successfully reduce the percent of overflow/hotspot occurrences by approximately 70-80% in any given random generator simulation. The second portion is a TranZip app for users to communicate their waiting status through a button system. A large influx of users at bus stations will correlate with a large influx of hotspots on the map display.
@@ -77,3 +79,5 @@ Future Aspirations for TranZip
 ## Future of the project
 
 TransZip holds potential to ultimately change the infrastructure of city public transportation systems and reduce city pollution production. Thus, this would raise living conditions through better air quality and a cleaner environment. Implementing more complex machine learning to dynamically evolve along with the changing dataset files originating from the app Using machine learning to predict possible “queue hotspots” Connect the backend code to a map display through web development, servers, and map api Create higher accuracy for larger and more realistic data (shifting from random generators and simulation to real time input) This application will also target specific times of the day where human pattern shows huge “spikes” for those in need of transportation (morning and evening rush hour for jobs).
+
+![Screenshot](screenshot3.png)
