@@ -58,7 +58,7 @@ firebase.initializeApp(config);
                 //const response = await fetch('http://localhost:8000/Transzip2');
                 //const busStops = await response.json();
                 $(document).ready(function () {
-                    $.getJSON("stopscoordinates.json", function(json) {
+                    $.getJSON("http://127.0.0.1:8080/stopscoordinates.json", function(json) {
                         console.log(json); // this will show the info it in firebug console
                         var i;
                         for(i = 0; i < busStops.length; i++) {
@@ -134,15 +134,21 @@ firebase.initializeApp(config);
             map.on('load', function() {
                 // Add a geojson point source.
                 // Heatmap layers also work with a vector tile source.
-                map.addSource('stopscoordinates', {
-                    "type": "json",
-                    "data": getData()
+                map.addSource('http://localhost:8080', {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                        "features": [
+                            { "type": "Feature", "properties": { "id": "stop1", "mag": 2.3}, "geometry": { "type": "Point", "coordinates": [ -122.396699384301, 37.790463147891, 0 ] } },
+                            { "type": "Feature", "properties": { "id": "stop2", "mag": 5}, "geometry": { "type": "Point", "coordinates": [ -122.424869811762, 37.786192083519, 0 ] } }
+                        ]}
                 });
 
                 map.addLayer({
                     "id": "earthquakes-heat",
                     "type": "heatmap",
-                    "source": "earthquakes",
+                    "source": "http://localhost:8080",
                     "paint": {
                         // Increase the heatmap weight based on frequency and property magnitude
                         "heatmap-weight": [
