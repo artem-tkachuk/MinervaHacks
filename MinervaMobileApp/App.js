@@ -4,13 +4,13 @@ import {
   StyleSheet,
   Text,
   View,
-  Button,
+  Image,
   AlertIOS,
   Animated,
   TouchableOpacity
 } from "react-native";
 import { Stopwatch } from "react-native-stopwatch-timer";
-import { LinearGradient } from "expo";
+import { LinearGradient, Font } from "expo";
 
 class FadeInView extends React.Component {
   state = {
@@ -45,10 +45,18 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       timerStart: false,
-      resetTimer: false
+      resetTimer: false,
+      fontLoaded: false
     };
     this.currentTime = 0;
   }
+  async componentDidMount() {
+    await Font.loadAsync({
+      "PT-Sans": require("./assets/PT_Sans-Web-Bold.ttf")
+    });
+    this.setState({ fontLoaded: true });
+  }
+
   toggleTimer = () => {
     const timerState = !this.state.timerStart;
     navigator.geolocation.getCurrentPosition(
@@ -103,9 +111,22 @@ export default class App extends React.Component {
               justifyContent: "space-around"
             }}
           >
-            <Text style={styles.header}>
-              Tranzip: Transit that's Tolerable{" "}
-            </Text>
+            <View
+              style={{
+                borderRadius: 20,
+                alignItems: "center"
+              }}
+            >
+              {this.state.fontLoaded ? (
+                <Text style={styles.header}>
+                  Tranzip{"\n"} Transit Transformed{" "}
+                </Text>
+              ) : null}
+              <Image
+                source={require("./assets/Fast_support.png")}
+                style={{ width: 200, height: 200, marginTop: 50 }}
+              />
+            </View>
             <TouchableOpacity
               onPress={this.toggleTimer}
               style={{
@@ -114,13 +135,16 @@ export default class App extends React.Component {
                 justifyContent: "center"
               }}
             >
-              <Text style={styles.button}>
-                {!this.state.timerStart ? "Start" : "Stop"}
-              </Text>
+              {this.state.fontLoaded ? (
+                <Text style={styles.button}>
+                  {!this.state.timerStart ? "Start" : "Stop"}
+                </Text>
+              ) : null}
             </TouchableOpacity>
-
             <View style={styles.timer}>
-              <Text>Timer Here</Text>
+              {this.state.fontLoaded ? (
+                <Text style={{ fontFamily: "PT-Sans" }}>Timer Here</Text>
+              ) : null}
               <Stopwatch
                 msecs
                 start={this.state.timerStart}
@@ -137,8 +161,11 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   header: {
-    fontSize: 17,
-    fontWeight: "bold"
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#F5F2FF",
+    textAlign: "center",
+    fontFamily: "PT-Sans"
   },
   button: {
     fontSize: 25,
@@ -149,8 +176,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
-
-    backgroundColor: "#ED6DA6"
+    backgroundColor: "#ED6DA6",
+    fontFamily: "PT-Sans"
   },
   container: {
     flex: 1,
