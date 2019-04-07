@@ -17,7 +17,7 @@ data.forEach(function(x) {
 	var longtitude = x[0];
 	var latitude = x[1];
 
-	var stop ="{ \"latitude\":" + latitude.toString() + ", \"longitude\": " + longtitude.toString() + ", \"counter\": 0 },";
+	var stop ="{ \"latitude\":" + latitude.toString() + ", \"longitude\": " + longtitude.toString() + ", \"mag\": " + Math.floor(Math.random() * 21).toString() + "},";
 	total += stop;
 	count++;
 

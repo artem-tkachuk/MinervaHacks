@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ba032d9-ab0b-472f-aa11-44b228c4361d" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/livedata/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/pics/2.jpg" afterDir="false" />
@@ -57,6 +58,8 @@
       <change beforePath="$PROJECT_DIR$/Website/images/pic02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Images/pic02.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/images/pic03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Images/pic03.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/index.html" beforeDir="false" />
+=======
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -74,8 +77,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/livedata/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="3040">
               <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+=======
+            <state relative-caret-position="100">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -167,11 +175,14 @@
               <item name="MinvervaHacks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+<<<<<<< Updated upstream
             <path>
               <item name="MinvervaHacks" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="livedata" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+=======
+>>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
@@ -442,7 +453,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="35859000" />
+=======
+    <option name="totallyTimeSpent" value="35592000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -618,6 +633,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="9860">
           <caret line="475" column="16" selection-start-line="475" selection-start-column="16" selection-end-line="475" selection-end-column="16" />
         </state>
@@ -627,6 +643,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3040">
           <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+=======
+        <state relative-caret-position="100">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
