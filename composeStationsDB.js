@@ -17,7 +17,7 @@ data.forEach(function(x) {
 	var longtitude = x[0];
 	var latitude = x[1];
 
-	var stop = count.toString() + ": { \"latitude\":" + latitude + ", \"longtitude\": " + longtitude + "},\n";
+	var stop = count.toString() + ": { \"latitude\":" + latitude + ", \"longtitude\": " + longtitude + ", \"counter\": " + 0 + "},\n";
 	total += stop;
 	count++;
 
@@ -27,7 +27,7 @@ total = total.slice(0, -2);
 
 total += "}";
 
-fs.writeFile('stopscoordinates.js', total, (err) => {
+fs.writeFile('stopscoordinates.json', total, (err) => {
 	if (err) {
 		throw err;
 	}
