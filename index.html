@@ -31,8 +31,14 @@
     <body>
         <div id='map'></div>
         <script>
-            function getData() {
-                var busStops = [{lat: 0, lng: 0, mag: 0}, ] // some backend call
+            async function getData() {
+                const response = await fetch('localhost:8000/Transzip2');
+                const busStops = await response.json();
+                
+                var busStops = stations[0]
+                console.log(busStops)
+                
+                var busStops = [{lat: 0, lng: 0, mag: 0}, ]
 
                 var features = busStops.map(function (stop) {
                     return {
