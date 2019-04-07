@@ -1,21 +1,55 @@
 import React from "react";
+import axios from "axios";
 import { StyleSheet, Text, View, Button, AlertIOS } from "react-native";
-import { Stopwatch, Timer } from "react-native-stopwatch-timer";
+import { Stopwatch } from "react-native-stopwatch-timer";
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: 0,
-      timerStart: false
+      timerStart: false,
+      resetTimer: false
     };
+    this.currentTime = 0;
   }
   toggleTimer = () => {
-    const newState = !this.state.timerStart;
-    this.setState({ timerStart: newState });
+    const timerState = !this.state.timerStart;
+    const resetState = !this.state.resetTimer;
+    navigator.geolocation.getCurrentPosition(
+      location => {
+        const data = JSON.stringify({
+          data: { geo: location, time: this.currentTime }
+        });
+        console.log("start");
+        if (timerState === false) {
+          axios
+            .post("https://transzip.appspot.com/stop", data)
+            .then(res => {
+              console.log("end", res.data, data);
+              this.setState({ timerStart: timerState, resetTimer: resetState });
+            })
+            .catch(error => {
+              console.log(error);
+              this.setState({ timerStart: timerState, resetTimer: resetState });
+            });
+        } else {
+          axios
+            .post("https://transzip.appspot.com/start", data)
+            .then(res => {
+              console.log("end", res.data, data);
+              this.setState({ timerStart: timerState, resetTimer: resetState });
+            })
+            .catch(error => {
+              console.log(error);
+              this.setState({ timerStart: timerState, resetTimer: resetState });
+            });
+        }
+      },
+      error => AlertIOS.alert(error)
+    );
   };
-  getFormattedTime = () => {
-    return this.state.time;
+  getFormattedTime = time => {
+    this.currentTime = time;
   };
   render() {
     return (
@@ -26,33 +60,18 @@ export default class App extends React.Component {
           color="#5AB14C"
         />
         <View style={styles.timer}>
-          <Timer
+          <Text>Timer Here</Text>
+          <Stopwatch
+            msecs
             start={this.state.timerStart}
-            // reset={this.state.timerReset}
-            // options={options}
-            // handleFinish={handleTimerComplete}
+            reset={this.state.resetTimer}
             getTime={this.getFormattedTime}
           />
-          <Text>Timer Here</Text>
         </View>
       </View>
     );
   }
 }
-
-const options = {
-  container: {
-    backgroundColor: "#000",
-    padding: 5,
-    borderRadius: 5,
-    width: 220
-  },
-  text: {
-    fontSize: 30,
-    color: "#FFF",
-    marginLeft: 7
-  }
-};
 
 const styles = StyleSheet.create({
   container: {
@@ -63,8 +82,7 @@ const styles = StyleSheet.create({
     height: 100
   },
   timer: {
-    flexDirection: "row",
     justifyContent: "space-around",
-    width: 300
+    textAlign: "center"
   }
 });
