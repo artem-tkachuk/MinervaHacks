@@ -1,7 +1,7 @@
 # TranZip - Minerva Hackathon 2019 Project
 ## United Nations SDG Goal 11: Sustainable Cities and Optimized Transportation
 
-
+![ScreenShot](screenshot1.png)
 ## Inspiration
 
 We live in the Bay Area and take public transportation. That is why we want to make this experience better. We thought we can use Artificial Intelligence power to adjust the routes of buses.
