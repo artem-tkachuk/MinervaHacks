@@ -14,7 +14,6 @@ export default class App extends React.Component {
   }
   toggleTimer = () => {
     const timerState = !this.state.timerStart;
-    const resetState = !this.state.resetTimer;
     navigator.geolocation.getCurrentPosition(
       location => {
         const data = JSON.stringify({
@@ -23,25 +22,24 @@ export default class App extends React.Component {
         console.log("start");
         if (timerState === false) {
           axios
-            .post("https://transzip.appspot.com/stop", data)
+            .post("https://transzip.appspot.com/finish", data)
             .then(res => {
-              console.log("end", res.data, data);
-              this.setState({ timerStart: timerState, resetTimer: resetState });
+              console.log("finish end", res.data, data);
+              this.setState({ timerStart: timerState, resetTimer: true });
             })
             .catch(error => {
               console.log(error);
-              this.setState({ timerStart: timerState, resetTimer: resetState });
+              this.setState({ timerStart: timerState, resetTimer: true });
             });
         } else {
           axios
             .post("https://transzip.appspot.com/start", data)
             .then(res => {
-              console.log("end", res.data, data);
-              this.setState({ timerStart: timerState, resetTimer: resetState });
+              console.log("start end", res.data, data);
+              this.setState({ timerStart: timerState, resetTimer: false });
             })
             .catch(error => {
               console.log(error);
-              this.setState({ timerStart: timerState, resetTimer: resetState });
             });
         }
       },
