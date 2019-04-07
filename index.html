@@ -32,6 +32,31 @@
         <div id='map'></div>
         <script>
             async function getData() {
+
+
+
+
+
+                db.collection('liveTraffic')
+                    .onSnapshot(function(querySnapshot) {
+                        var stops = [];
+                        querySnapshot.forEach(function(doc) {
+                            cities.push(doc.data());
+                        });
+
+                    });
+
+
+
+
+
+
+
+
+
+
+
+
                 const response = await fetch('localhost:8000/Transzip2');
                 const busStops = await response.json();
                 

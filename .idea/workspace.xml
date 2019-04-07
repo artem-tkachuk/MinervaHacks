@@ -17,22 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="213">
+              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="94" column="150" lean-forward="true" selection-start-line="94" selection-start-column="150" selection-end-line="94" selection-end-column="150" />
+            <state relative-caret-position="373">
+              <caret line="49" column="122" lean-forward="true" selection-start-line="49" selection-start-column="122" selection-end-line="49" selection-end-column="122" />
               <folding>
-                <element signature="n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#article#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -93,8 +92,8 @@
         <option value="$PROJECT_DIR$/services/jsonToFirestore.js" />
         <option value="$PROJECT_DIR$/postQueryTest" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Website/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -390,7 +389,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34448000" />
+    <option name="totallyTimeSpent" value="35119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -554,21 +553,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/Website/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="373">
+          <caret line="49" column="122" lean-forward="true" selection-start-line="49" selection-start-column="122" selection-end-line="49" selection-end-column="122" />
+          <folding>
+            <element signature="n#article#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="94" column="150" lean-forward="true" selection-start-line="94" selection-start-column="150" selection-end-line="94" selection-end-column="150" />
-          <folding>
-            <element signature="n#article#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#article#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="213">
+          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
         </state>
       </provider>
     </entry>
