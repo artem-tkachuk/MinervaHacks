@@ -1,3 +1,26 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@eshedd 
+1
+0 0 artem-tkachuk/MinervaHacks
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+MinervaHacks
+/
+livedata
+/
+index.html
+@artem-tkachuk artem-tkachuk Description and some website changes
+b606e84 an hour ago
+@eshedd @artem-tkachuk
+179 lines (153 sloc)  6.92 KB
+    
 <!doctype html>
 <html>
     <head>
@@ -36,11 +59,6 @@ firebase.initializeApp(config);
         <div id='map'></div>
         <script>
             async function getData() {
-
-
-
-
-
                 //                db.collection('liveTraffic')
                 //                    .onSnapshot(function(querySnapshot) {
                 //                    var stops = [];
@@ -49,13 +67,6 @@ firebase.initializeApp(config);
                 //                    });
                 //
                 //                });
-
-
-
-
-
-
-
                 //const response = await fetch('http://localhost:8000/Transzip2');
                 //const busStops = await response.json();
                 $(document).ready(function () {
@@ -95,11 +106,8 @@ firebase.initializeApp(config);
                         }
                     });
                 });
-
-
                 //                busStops = stations[0]
                 //                console.log(busStops)
-
                 //var busStops = [{lat: 0, lng: 0, mag: 0}, ];
                 //                var i;
                 //                for(i = 0; i < busStops.length; i++) {
@@ -124,7 +132,6 @@ firebase.initializeApp(config);
                 //                    });
                 //                }
             }
-
             mapboxgl.accessToken = 'pk.eyJ1Ijoic2hyZWF0aCIsImEiOiJjanU1eWcwYWsxZTEwNGRsbzA1ZHJ3YXpiIn0.qaCCr1XeaKaYOcpgd_0fIQ';
             var map = new mapboxgl.Map({
                 container: 'map',
@@ -139,7 +146,6 @@ firebase.initializeApp(config);
                     "type": "json",
                     "data": getData()
                 });
-
                 map.addLayer({
                     "id": "earthquakes-heat",
                     "type": "heatmap",
@@ -153,7 +159,6 @@ firebase.initializeApp(config);
                             0, 0,
                             6, 1
                         ],
-
                         // Color ramp for heatmap.  Domain is 0 (low) to 1 (high).
                         // Begin color ramp at 0-stop with a 0-transparancy color
                         // to create a blur-like effect.
@@ -168,11 +173,8 @@ firebase.initializeApp(config);
                             0.8, "rgb(217,140,47)",
                             1, "rgb(178,24,43)"
                         ],
-
                     }
                 }, 'waterway-label');
-
-
             });
         </script>
     </body>
