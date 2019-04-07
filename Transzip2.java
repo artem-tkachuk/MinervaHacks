@@ -28,7 +28,7 @@ public class TransZip2{
       //0 is free, 1 is occupied
     }
 
-    double[][] stations = new double[10][4];
+    double[][] stations = new double[10][5];
     stations[0][2] = 37.784908;
     stations[0][3] = -122.400186;
 
@@ -64,6 +64,7 @@ public class TransZip2{
     stations[i][1] = number of buses allocated to this specific route
     stations[i][2] = latitude of station
     stations[i][3] = longitude of station
+    stations[i][4] = severity counter
 
     bus[i][0] = destination
     bus[i][1] = time to travel the route
@@ -91,6 +92,7 @@ Mission St & 2nd St: ,
       //g.drawOval(i*50 +80,300, 15, 15);
       stations[i][0]=0;
       stations[i][1] = number;
+      stations[i][4] = 0;
 
 
     }
@@ -122,6 +124,7 @@ Mission St & 2nd St: ,
       if(stations[st1][0]>size){
         g.setColor(Color.RED);
         percentRed++;
+        stations[str1][4]++;
         g.drawLine(t+70,50+100*st1,t+72,50+100*st1);
       }else{
         if((stations[st1][0]<=size)&&(stations[st1][0]<2*(size/3))){
@@ -139,6 +142,7 @@ Mission St & 2nd St: ,
           if(stations[s][0]>size){
             g.setColor(Color.RED);
             percentRed++;
+            stations[s][4]++;
             g.drawLine(t+70,50+100*s,t+72,50+100*s);
           }else{
             if((stations[s][0]<=size)&&(stations[s][0]<20)){
@@ -154,6 +158,10 @@ Mission St & 2nd St: ,
         }
       }
     }
+    for(int i=0;i<10;i++){
+      stations[i][4] = stations[i][4]/(24*60);
+      System.out.println("The waiting(bad) magnitude for Route "+i+" is "+stations[i][4]);
+    }
     g.setColor(Color.CYAN);
     g.drawLine(70,1020,1500,1020);
     g.setColor(Color.BLACK);
@@ -161,6 +169,7 @@ Mission St & 2nd St: ,
 
 
     //with algorithm
+    //reset
     double opRed = 0;
     for(int i=0;i<10;i++){
     //  System.out.println("Graph for Station "+i);
@@ -169,6 +178,8 @@ Mission St & 2nd St: ,
       g.drawLine(70,1000+100*i,70,1200+100*i);
       //g.drawOval(i*50 +80,300, 15, 15);
       stations[i][0]=0;
+      stations[i][1] = number;
+      stations[i][4] = 0;
 
     }
     System.out.println("The percentage of red occurrences is "+(double)(percentRed/(10*24*60))*100);
@@ -194,6 +205,7 @@ Mission St & 2nd St: ,
       if(stations[st1][0]>size){
         g.setColor(Color.RED);
         opRed++;
+        stations[str1][4]++;
         g.drawLine(t+70,1050+100*st1,t+72,1050+100*st1);
         if(free.size()>0){
           int busUsed = free.get(0);
@@ -223,6 +235,7 @@ Mission St & 2nd St: ,
           if(stations[s][0]>size){
             opRed++;
             g.setColor(Color.RED);
+            stations[s][4]++;
             g.drawLine(t+70,1050+100*s,t+72,1050+100*s);
             if(free.size()>0){
               int busUsed = free.get(0);
@@ -250,7 +263,8 @@ Mission St & 2nd St: ,
 
 
     }
-    System.out.println("The percentage of red occurrences before algorithm is "+(double)(percentRed/(10*24*60))*100);
-    System.out.println("The percentage of red occurrences WITH ALGORITHM is "+(double)(opRed/(10*24*60))*100);
+  
+    System.out.println("The average percentage of red occurrences before algorithm is "+(double)(percentRed/(10*24*60))*100);
+    System.out.println("The average percentage of red occurrences WITH ALGORITHM is "+(double)(opRed/(10*24*60))*100);
   }
 }
